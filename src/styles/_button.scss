@@ -1,0 +1,54 @@
+/*VARIABLES*/
+$font-color: #091818;
+
+#landing, #landing2, #landing3 {
+.landing-right{
+    position: absolute !important;
+    cursor: pointer;
+    //right: 0 !important;
+a {
+    text-decoration: none;
+    color: $font-color;
+    border: 1px solid #013d49;
+    display: inline-block;
+    padding: 1.3rem 0 !important;
+    width: 11.9rem !important;
+    position: absolute;
+    margin-top: -3.6rem !important;
+    font-family: 'trirong thin';
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 1;
+    transition: 1s;
+span {
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0rem);
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.1);
+    border: 0 solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+}
+}
+.btn-1 a:hover span {
+    width: 100%;
+    padding: 0;
+}
+  
+.btn-1 a:hover {
+    color: rgb(1, 30, 30);
+    font-family: 'trirong thin';
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.9rem;
+    margin-top: 0;
+    cursor: pointer;
+}
+}
+}

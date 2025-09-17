@@ -1,0 +1,662 @@
+/*VARIABLES*/
+/*SASS SECTION*/
+header .nav-container {
+  width: 100% !important;
+  position: relative !important;
+}
+header .nav-container .navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.001) !important;
+  backdrop-filter: blur(1rem) !important;
+  background-clip: padding-box !important;
+  box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.1);
+  border: 0px solid transparent;
+  padding: 0.2rem 0.7rem !important;
+  width: 100% !important;
+  height: 4.4rem;
+  z-index: 9;
+  position: fixed;
+}
+header .nav-container .logo {
+  position: absolute !important;
+  width: 8.99rem !important;
+  top: -0.2rem !important;
+  left: 6rem !important;
+  display: flex !important;
+  justify-content: start !important;
+  image-rendering: auto !important;
+  cursor: pointer !important;
+}
+header .nav-container #menuBtn {
+  display: flex;
+  color: #1f4149;
+  justify-content: flex-end;
+  position: fixed;
+  left: 93%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000000000000000000000000;
+  cursor: pointer;
+}
+header .nav-container .navbar-nav li a {
+  position: relative;
+  color: #091818;
+  padding: 0.7rem 1.4rem !important;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "trirong light";
+  font-weight: 400;
+  z-index: 9999;
+  cursor: pointer;
+}
+header .nav-container .navbar-nav li a:hover {
+  color: rgb(0, 3, 4);
+}
+header .nav-container ul {
+  list-style: none;
+  overflow: hidden;
+  display: block;
+}
+header .nav-container ul li {
+  display: inline-block;
+}
+header .nav-container .side-nav {
+  height: 100% !important;
+  width: 0;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.001);
+  backdrop-filter: blur(0.47rem);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.1);
+  border: 5px solid transparent rgb(255, 255, 255);
+  border-radius: 0.3rem;
+  overflow-x: hidden !important;
+  overflow-y: hidden;
+  padding-top: 10px !important;
+  transition: 0.5s;
+  z-index: 2 !important;
+}
+header .nav-container .side-nav a {
+  padding: 6px 6px 6px 27px !important;
+  text-decoration: none;
+  text-align: start !important;
+  font-size: 2.4rem !important;
+  font-family: "trirong thin" !important;
+  font-weight: 600 !important;
+  position: relative;
+  left: 1rem !important;
+  top: 100px !important;
+  color: #091818;
+  display: block !important;
+  transition: 0.6s;
+  outline: none !important;
+  cursor: pointer;
+}
+header .nav-container .side-nav a:hover {
+  color: rgb(0, 18, 18) !important;
+  font-size: 3.2rem !important;
+  outline: none !important;
+}
+header .nav-container .side-nav .btn-close {
+  position: absolute !important;
+  left: 20% !important;
+  transform: translateX(-80%);
+  top: 50px !important;
+  right: 0px;
+  font-size: 3rem !important;
+  outline: none !important;
+  z-index: 0;
+}
+header .nav-container .side-footer {
+  font-family: "trirong thin";
+  width: 100%;
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: #091818;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: flex-end;
+  position: absolute;
+  top: 90%;
+  padding-top: 28px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+header .nav-container .side-footer p {
+  justify-content: center;
+  align-self: center;
+}
+
+#body {
+  transition: margin-left 0.5s !important;
+  padding: 0 0 !important;
+  overflow-x: hidden !important;
+  width: 100% !important;
+}
+
+/*
+a[href="#home"]:target ~ #home {
+    display: block;
+}
+*/
+/*VARIABLES*/
+#landing .landing-right, #landing2 .landing-right, #landing3 .landing-right {
+  position: absolute !important;
+  cursor: pointer;
+}
+#landing .landing-right a, #landing2 .landing-right a, #landing3 .landing-right a {
+  text-decoration: none;
+  color: #091818;
+  border: 1px solid #013d49;
+  display: inline-block;
+  padding: 1.3rem 0 !important;
+  width: 11.9rem !important;
+  position: absolute;
+  margin-top: -3.6rem !important;
+  font-family: "trirong thin";
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 1;
+  transition: 1s;
+}
+#landing .landing-right a span, #landing2 .landing-right a span, #landing3 .landing-right a span {
+  width: 0%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0rem);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.1);
+  border: 0 solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+#landing .landing-right .btn-1 a:hover span, #landing2 .landing-right .btn-1 a:hover span, #landing3 .landing-right .btn-1 a:hover span {
+  width: 100%;
+  padding: 0;
+}
+#landing .landing-right .btn-1 a:hover, #landing2 .landing-right .btn-1 a:hover, #landing3 .landing-right .btn-1 a:hover {
+  color: rgb(1, 30, 30);
+  font-family: "trirong thin";
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.9rem;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+/* FONTS*/
+@font-face {
+  font-family: "trirong thin";
+  src: url("../fonts/trirong-thin-webfont.woff2") format("woff2"), url("../fonts/trirong-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "trirong light";
+  src: url("../fonts/trirong-light-webfont.woff2") format("woff2"), url("../fonts/trirong-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "trirong extralight";
+  src: url("../fonts/trirong-extralight-webfont.woff2") format("woff2"), url("../fonts/trirong-extralight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "antic didone";
+  src: url("../fonts/anticdidone-regular-webfont.woff2") format("woff2"), url("../fonts/anticdidone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "italiana";
+  src: url("../fonts/italiana-regular-webfont.woff2") format("woff2"), url("../fonts/italiana-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cinzel";
+  src: url("../fonts/cinzel-variablefont_wght-webfont.woff2") format("woff2"), url("../fonts/cinzel-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "nixie one";
+  src: url("../fonts/nixieone-regular-webfont.woff2") format("woff2"), url("../fonts/nixieone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cinzel decorative";
+  src: url("../fonts/cinzeldecorative-regular-webfont.woff2") format("woff2"), url("../fonts/cinzeldecorative-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body, html {
+  overflow-x: hidden !important;
+  font-size: 65% !important;
+  min-height: 100vh !important;
+}
+
+/* CUSTOM SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 1.1rem !important;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(230, 255, 244, 0.5529411765) !important;
+  border-radius: 1rem !important;
+  margin-block: 0.1rem !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#D5EAF5, rgba(16, 29, 64, 0.8431372549));
+  border-radius: 1rem !important;
+  height: 1rem !important;
+}
+
+/* LANDING PAGE 1*/
+#landing {
+  position: relative !important;
+  width: 100% !important;
+  height: 100.1vh !important;
+  aspect-ratio: 16/10 !important;
+  background: linear-gradient(127deg, #A7CBD5, rgba(224, 251, 252, 0.2274509804)) !important;
+  z-index: 1;
+  overflow: hidden !important;
+}
+#landing::before {
+  content: " " !important;
+  position: absolute !important;
+  top: -5rem !important;
+  left: 0 !important;
+  width: 50% !important;
+  height: 100vh !important;
+  border-bottom-right-radius: 100% !important;
+  background: linear-gradient(225deg, rgba(167, 203, 213, 0.4666666667) 0%, rgba(167, 203, 213, 0.4666666667) 75%, rgba(167, 203, 213, 0.4666666667) 100%) !important;
+  backdrop-filter: blur(1.7rem) !important;
+  background-clip: border-box !important;
+  z-index: -1 !important;
+  animation: move-up 2s infinite alternate;
+}
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(4rem);
+  }
+}
+#landing::after {
+  content: " " !important;
+  position: absolute !important;
+  bottom: 0rem !important;
+  right: 0 !important;
+  width: 39% !important;
+  height: 70vh !important;
+  border-top-left-radius: 100% !important;
+  background: linear-gradient(125deg, rgba(167, 203, 213, 0.4392156863) 0%, rgba(167, 203, 213, 0.4392156863) 75%, rgba(167, 203, 213, 0.4392156863) 100%) !important;
+  backdrop-filter: blur(1rem) !important;
+  background-clip: border-box !important;
+  z-index: -2 !important;
+  animation: move-up 4s infinite alternate;
+}
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(4rem);
+  }
+}
+#landing .landing-right {
+  height: 100vh !important;
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: 90% !important;
+  place-content: start center !important;
+}
+#landing .landing-right h1 {
+  position: relative !important;
+  font-family: "antic didone" !important;
+  font-weight: 500 !important;
+  font-size: 4.2rem !important;
+  color: #091818 !important;
+  margin-top: 5.6rem !important;
+  padding-top: 0.9rem !important;
+  padding-left: 1.4rem !important;
+  padding-bottom: 0.9rem !important;
+  background-color: rgba(199, 236, 254, 0.2);
+  border-bottom: 0.2rem solid rgba(12, 49, 57, 0.2745098039) !important;
+  border-top: rgba(12, 49, 57, 0.2745098039) 0.6rem solid !important;
+  border-top-left-radius: 0.1rem !important;
+  border-bottom-left-radius: 0.1rem !important;
+}
+#landing .landing-right .sub-landing {
+  font-family: "trirong thin";
+  font-weight: 800;
+  font-size: 2.3rem;
+  color: #091818;
+  padding-top: 1rem !important;
+  padding-bottom: 0.3rem !important;
+  white-space: wrap !important;
+}
+#landing .landing-right .sub-landing2 {
+  font-family: "trirong thin";
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem !important;
+  color: #091818;
+}
+#landing .landing-right ul li {
+  font-family: "trirong thin";
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #091818;
+  list-style: none;
+  position: static;
+  left: 3rem !important;
+  white-space: wrap !important;
+  z-index: 9999;
+}
+#landing .image-box {
+  position: relative !important;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center !important;
+  align-items: center;
+}
+#landing .image-box img {
+  display: block;
+  position: absolute;
+  height: 95.5vh !important;
+  max-width: 100% !important;
+  object-fit: cover !important;
+  bottom: 0;
+  right: 0rem;
+}
+
+/*LANDING PAGE 2 */
+#landing2 {
+  position: relative !important;
+  width: 100% !important;
+  height: 102vh !important;
+  aspect-ratio: 16/10 !important;
+  background: linear-gradient(127deg, #CCE3DD, #F9FAF5) !important;
+  z-index: 1;
+  overflow: hidden !important;
+}
+#landing2::before {
+  content: " " !important;
+  position: absolute !important;
+  top: -4rem !important;
+  left: 0 !important;
+  width: 50% !important;
+  height: 100vh !important;
+  border-bottom-right-radius: 100% !important;
+  background: linear-gradient(225deg, #CCE3DD 0%, #CCE3DD 75%, #CCE3DD 100%) !important;
+  backdrop-filter: blur(0.7rem) !important;
+  background-clip: border-box !important;
+  z-index: -1 !important;
+  animation: move-up 2s infinite alternate;
+}
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(4rem);
+  }
+}
+#landing2::after {
+  content: " " !important;
+  position: absolute !important;
+  bottom: 0rem !important;
+  right: 0 !important;
+  width: 39% !important;
+  height: 70vh !important;
+  border-top-left-radius: 100% !important;
+  background: linear-gradient(125deg, rgba(204, 227, 221, 0.4666666667) 0%, rgba(204, 227, 221, 0.4666666667) 75%, rgba(204, 227, 221, 0.4666666667) 100%) !important;
+  backdrop-filter: blur(0rem) !important;
+  background-clip: border-box !important;
+  z-index: -2 !important;
+  animation: move-up 4s infinite alternate;
+}
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(4rem);
+  }
+}
+#landing2 .landing-right {
+  height: 100vh !important;
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: 90% !important;
+  place-content: start center !important;
+}
+#landing2 .landing-right h1 {
+  position: relative !important;
+  font-family: "antic didone";
+  font-weight: 500 !important;
+  font-size: 4.3rem !important;
+  color: #091818 !important;
+  margin-top: 5.6rem !important;
+  padding-top: 0.9rem !important;
+  padding-left: 1.4rem !important;
+  padding-bottom: 0.9rem !important;
+  background-color: rgba(204, 227, 221, 0.8);
+  border-bottom: rgba(5, 37, 44, 0.368627451) 0.2rem solid !important;
+  border-top: rgba(5, 37, 44, 0.368627451) 0.6rem solid !important;
+  border-top-left-radius: 0.1rem !important;
+  border-bottom-left-radius: 0.1rem !important;
+}
+#landing2 .landing-right .sub-landing {
+  font-family: "trirong thin";
+  font-weight: 800;
+  font-size: 2.3rem;
+  color: #091818;
+  padding-top: 1rem !important;
+  padding-bottom: 0.4rem !important;
+  white-space: wrap !important;
+}
+#landing2 .landing-right .sub-landing2 {
+  font-family: "trirong thin";
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem !important;
+  color: #091818;
+}
+#landing2 .landing-right ul li {
+  font-family: "trirong thin";
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #091818;
+  list-style: none;
+  position: static !important;
+  left: 3rem !important;
+  white-space: wrap !important;
+}
+#landing2 .image-box2 {
+  display: grid !important;
+  grid-template-rows: 100% !important;
+  justify-items: center !important;
+  align-items: center !important;
+}
+#landing2 .image-box2 img {
+  display: block !important;
+  position: absolute;
+  height: 113vh !important;
+  max-width: 100% !important;
+  object-fit: cover !important;
+  bottom: 0;
+  right: -8rem;
+  z-index: 9;
+}
+
+/*LANDING PAGE 3 */
+.border-white {
+  border: 9px solid #f9dede !important;
+  border-bottom: 3px solid #ffffff !important;
+  background-color: rgba(1, 59, 48, 0.0588235294);
+}
+
+#landing3 {
+  position: relative !important;
+  width: 100% !important;
+  height: 101vh !important;
+  aspect-ratio: 16/10 !important;
+  background: linear-gradient(127deg, #aab8c2, #F9FAF5) !important;
+  z-index: 1;
+  overflow: hidden !important;
+}
+#landing3::before {
+  content: " " !important;
+  position: absolute !important;
+  top: -4rem !important;
+  left: 0 !important;
+  width: 50% !important;
+  height: 100vh !important;
+  border-bottom-right-radius: 100% !important;
+  background: linear-gradient(225deg, #aab8c2 0%, #aab8c2 75%, #aab8c2 100%) !important;
+  backdrop-filter: blur(3rem) !important;
+  background-clip: border-box !important;
+  z-index: -1 !important;
+  animation: move-up 2s infinite alternate;
+}
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(4rem);
+  }
+}
+#landing3::after {
+  content: " " !important;
+  position: absolute !important;
+  bottom: 0rem !important;
+  right: 0 !important;
+  width: 39% !important;
+  height: 70vh !important;
+  border-top-left-radius: 100% !important;
+  background: linear-gradient(125deg, rgba(170, 184, 194, 0.4666666667) 0%, rgba(170, 184, 194, 0.4666666667) 75%, rgba(170, 184, 194, 0.4666666667) 100%) !important;
+  backdrop-filter: blur(1rem) !important;
+  background-clip: border-box !important;
+  z-index: -2 !important;
+  animation: move-up 4s infinite alternate;
+}
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(4rem);
+  }
+}
+#landing3 .landing-right {
+  height: 100vh !important;
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: 90% !important;
+  place-content: start center !important;
+}
+#landing3 .landing-right h1 {
+  position: relative !important;
+  font-family: "antic didone";
+  font-weight: 500 !important;
+  font-size: 4.1rem !important;
+  color: #091818 !important;
+  margin-top: 5.6rem !important;
+  padding-top: 0.9rem !important;
+  padding-left: 1.4rem !important;
+  padding-bottom: 0.9rem !important;
+  border-bottom: rgba(5, 37, 44, 0.368627451) 0.2rem solid !important;
+  border-top: rgba(5, 37, 44, 0.368627451) 0.6rem solid !important;
+  border-top-left-radius: 0.1rem !important;
+  border-bottom-left-radius: 0.1rem !important;
+}
+#landing3 .landing-right .audio-player h2 {
+  font-family: "antic didone";
+  font-weight: 500;
+  font-size: 3rem;
+  color: #091818;
+  padding-top: 1rem !important;
+  padding-bottom: 0.4rem !important;
+  white-space: wrap !important;
+}
+#landing3 .landing-right .audio-player #icon {
+  width: 7rem !important;
+  height: 20vh !important;
+  color: #091818 !important;
+  cursor: pointer !important;
+  transition: 0.3s !important;
+  margin-bottom: -3rem !important;
+  padding: 2rem !important;
+  border: #091818 0.1rem solid !important;
+  border-radius: 70% !important;
+}
+#landing3 .landing-right .sub-landing {
+  font-family: "trirong thin";
+  font-weight: 800;
+  font-size: 2.3rem;
+  color: #091818;
+  padding-top: 1rem !important;
+  padding-bottom: 0.4rem !important;
+  white-space: wrap !important;
+}
+#landing3 .landing-right .sub-landing2 {
+  font-family: "trirong thin";
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem !important;
+  color: #091818;
+}
+#landing3 .landing-right ul li {
+  font-family: "trirong thin";
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #091818;
+  list-style: none;
+  position: static !important;
+  left: 3rem !important;
+}
+#landing3 .image-box2 {
+  display: grid !important;
+  grid-template-rows: 100% !important;
+  justify-items: center !important;
+  align-items: center !important;
+}
+#landing3 .image-box2 img {
+  display: block !important;
+  position: absolute;
+  height: 95.4vh !important;
+  max-width: 100% !important;
+  object-fit: cover !important;
+  bottom: 0;
+  right: -1rem;
+  z-index: 9;
+}
+
+/*# sourceMappingURL=style.css.map */

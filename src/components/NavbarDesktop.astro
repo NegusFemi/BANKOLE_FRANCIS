@@ -1,0 +1,49 @@
+---
+---
+<!-- STYLESHEET -->
+<link rel="stylesheet" href="/styles/style.css" />
+<!--ALPINE JS CDN-->
+<!--script defer src="https://unpkg.com/alpinejs"></!--script-->
+
+<!-- NAVIGATION -->
+    <div class="container-fluid nav-container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar">
+            <a href="#" x-bind:href="tab==='tab1' ? '#tab1' : tab==='tab2' ? '#tab2 : tab==='tab3' ? '#tab3" ><img src="/images/bintanlogo2.png" alt="corporate company logo" class="logo"></a>
+            <span class="open-slide">
+              <a href="#/" onclick="openSlideMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="39" height="25" fill="currentColor" id="menuBtn" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                   </svg><!--img src="./IMAGES/hamburgerpng.png" alt="hamburger icon" id="menuBtn"--></a>
+            </span>
+            <ul class="navbar-nav">
+              <li><a href="#" x-bind:class="{'border-white': tab==='tab1'}" x-on:click="tab='tab1'">NOTHING BUT YOUR GRACE</a></li>
+              <li><a href="#" x-bind:class="{'border-white': tab==='tab2'}" x-on:click="tab='tab2'">WE LOVE YOUR NAME</a></li>
+              <li><a href="#" x-bind:class="{'border-white': tab==='tab3'}" x-on:click="tab='tab3'">CROWN HIM KING</a></li>
+              <!--li><a href="#client-section">PARTNERS</a></li-->
+              <!--li><a href="#contact">CONTACT</a></li-->
+          </ul>
+      </nav>
+      <div id="side-menu" class="side-nav">
+          <a href="#/" class="btn-close" onclick="closeSideMenu()"></a>
+          <a href="#" x-bind:href="tab==='tab1' ? '#tab1' : tab==='tab2' ? '#tab2 : tab==='tab3' ? '#tab3" onclick="closeSideMenu()">HOME</a>
+          <a href="#aboutUs" onclick="closeSideMenu()">ABOUT</a>
+          <a href="#services" onclick="closeSideMenu()">SERVICES</a>
+          <a href="#contact-service" onclick="closeSideMenu()">OUR APPROACH</a>
+          <a href="#service-industries" onclick="closeSideMenu()">INDUSTRIES & SECTORS</a>
+          <a href="#testimonial-section" onclick="closeSideMenu()">TESTIMONIES</a>
+          <a href="#footer" onclick="closeSideMenu()">CONTACT</a>
+          <div class="side-footer">
+              <p>&copy;<span x-text="new Date().getFullYear()"></span></p>
+              <p class = "elora">BEINGTAN LLC</p>
+              <p>ALL RIGHTS RESERVED</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NAVIGATION ENDS-->
+
+    <!-- NAVIGATION SCRIPT -->
+    <script src="/scripts/bankoleNav.js" is:inline></script>
+
+    <!--script-- type="module" src=('../scripts/bankoleScript.js')></!--script-->
