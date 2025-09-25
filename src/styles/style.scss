@@ -5,6 +5,7 @@ $font-color: #091818;
 @use "../styles/navigation";
 @use "../styles/button";
 @use "../styles/aboutUs";
+@use "../styles/gallerySection";
 @use "../styles/scrolling";
 @use "../styles/testimonial-section";
 @use "../styles/footer";
@@ -123,7 +124,7 @@ body, html {
     width: 50% !important;
     height: 100vh !important;
     border-bottom-right-radius: 100% !important;
-    background: linear-gradient(225deg, #a7cbd577 0%, #A7CBD577 75%, #A7CBD577 100%) !important;
+    background: linear-gradient(225deg, #a7c9d577 0%, #A7CBD577 75%, #A7CBD577 100%) !important;
     backdrop-filter: blur(1.7rem) !important;
     background-clip: border-box !important;
     z-index: -1 !important;
@@ -181,6 +182,28 @@ h1 {
     border-top: #0c313946 0.6rem solid !important;
     border-top-left-radius: 0.1rem !important;
     border-bottom-left-radius: 0.1rem !important;
+}
+#icon2 .fa-regular.fa-circle-play.fa-circle-play {
+    //width: 6rem !important;
+    //height: 10vh !important;
+    font-size: 6rem !important;
+    //font-weight: 600 !important;
+    color: rgba(4, 33, 39, 0.741)!important;
+    cursor: pointer !important;
+    //transition: 0.3s !important;
+    //margin-bottom: -3rem !important;
+    //margin-bottom:  0.2em !important;
+    margin-top: 1rem !important;
+    //position: absolute !important;
+    //z-index: 1 !important;
+    //border: #091818 0.1rem solid !important;
+    //border-radius: 70% !important;
+}
+.audio-player h2 {
+    font-family: 'antic didone' !important;
+    font-weight:500 !important;
+    font-size: 3rem !important;
+    color: $font-color !important;
 }
 .sub-landing {
     font-family: 'trirong thin';
@@ -304,6 +327,22 @@ h1 {
     border-top-left-radius: 0.1rem !important;
     border-bottom-left-radius: 0.1rem !important;
 }
+#icon1 .fa-regular.fa-circle-play.fa-circle-play {
+    //width: 6rem !important;
+    //height: 10vh !important;
+    font-size: 6rem !important;
+    //font-weight: 600 !important;
+    color: #13292fdb !important;
+    cursor: pointer !important;
+    //transition: 0.3s !important;
+    //margin-bottom: -3rem !important;
+    //padding-bottom: 0.5rem !important;
+    margin-top: 1rem !important;
+    //position: absolute !important;
+    //z-index: 1 !important;
+    //border: #091818 0.1rem solid !important;
+    //border-radius: 70% !important;
+}
 .sub-landing {
     font-family: 'trirong thin';
     font-weight: 800;
@@ -352,9 +391,12 @@ img {
 
 /*LANDING PAGE 3 */
 .border-white {
-    border: 9px solid #f9dede !important;
+    border: 9px solid #ffffff !important;
     border-bottom: 3px solid #ffffff !important;
+    z-index: 4 !important;
     background-color: #013b300f;
+    box-shadow: 0 -6px 12px -6px rgba(0,0,0,0.45), /* top shadow */
+                0 6px 12px -6px rgba(0,0,0,0.45);  /* bottom shadow */
 }
 #landing3 {
     position: relative !important;
@@ -394,7 +436,7 @@ img {
     width: 39% !important;
     height: 70vh !important;
     border-top-left-radius: 100% !important;
-    background: linear-gradient(125deg, #aab8c277 0%, #aab8c277 75%, #aab8c277 100%) !important;
+    background: linear-gradient(125deg, #82a7be77 0%, #aab8c277 75%, #aab8c277 100%) !important;
     backdrop-filter: blur(1rem) !important;
     background-clip: border-box !important;
     z-index: -2 !important;
@@ -440,16 +482,21 @@ h2 {
     padding-bottom: 0.4rem !important;
     white-space: wrap !important;
 }
-#icon {
-    width: 7rem !important;
-    height: 20vh !important;
-    color: $font-color !important;
+#icon .fa-regular.fa-circle-play.fa-circle-play{
+    //width: 6rem !important;
+    //height: 10vh !important;
+    font-size: 6rem !important;
+    //font-weight: 600 !important;
+    color: rgba(4, 33, 39, 0.952) !important;
     cursor: pointer !important;
-    transition: 0.3s !important;
-    margin-bottom: -3rem !important;
-    padding: 2rem !important;
-    border: #091818 0.1rem solid !important;
-    border-radius: 70% !important;
+    //transition: 0.3s !important;
+    //margin-bottom: -3rem !important;
+    padding: 0rem !important;
+    margin-top: 1rem !important;
+    //position: absolute !important;
+    //z-index: 1 !important;
+    //border: #091818 0.1rem solid !important;
+    //border-radius: 70% !important;
 }
 }   
 .sub-landing {

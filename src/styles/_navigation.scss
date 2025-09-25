@@ -30,7 +30,7 @@ header{
     }
     #menuBtn {
             display: flex;
-            color: #1f4149;
+            color: $font-color;
             justify-content: flex-end;
             position: fixed;
             left: 93%;
@@ -51,7 +51,7 @@ header{
             cursor: pointer;
         &:hover {
                // background-color: rgba(187, 248, 236, 0.213);
-                color: rgb(0, 3, 4);
+                color: rgb(31, 0, 30);
         }
     }
     ul {
@@ -83,7 +83,7 @@ header{
                 padding: 6px 6px 6px 27px !important;
                 text-decoration: none;
                 text-align: start !important;
-                font-size: 2.4rem !important;
+                font-size: 2.2rem !important;
                 font-family: 'trirong thin' !important;
                 font-weight: 600 !important;
                 position: relative;
@@ -96,8 +96,8 @@ header{
                 cursor: pointer;
             }
             a:hover {
-                color: rgb(0, 18, 18) !important;
-                font-size: 3.2rem !important;
+                color: rgb(18, 0, 2) !important;
+                font-size: 3.0rem !important;
                 outline: none !important;
             }
             .btn-close {

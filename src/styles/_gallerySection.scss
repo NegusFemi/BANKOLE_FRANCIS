@@ -1,0 +1,137 @@
+$font-color: #091818;
+
+/* SERVICE INDUSTRIES SECTION START*/
+#service-industries {
+    height: 115vh !important;
+    width: 100% !important;
+    position: relative !important;
+    background: linear-gradient(127deg, #aab8c2 , #F9FAF5) !important;
+    z-index: 1;
+    aspect-ratio: 16/10 !important;
+    overflow: hidden !important;
+    &::before{
+        content: ' ' !important;
+        position: absolute !important;
+        top: -4rem !important;
+        left: 0 !important;
+        width: 50% !important;
+        height: 100vh !important;
+        border-bottom-right-radius: 100% !important;
+        background: linear-gradient(225deg, #aab8c2 0%, #aab8c2 75%, #aab8c2 100%) !important;
+        backdrop-filter: blur(3rem) !important;
+        background-clip: border-box !important;
+        z-index: -1 !important;
+        animation: move-up 2s infinite alternate;
+    @keyframes move-up {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(4rem);
+        }
+        }
+    }
+    &::after{
+        content: ' ' !important;
+        position: absolute !important;
+        bottom: 0rem !important;
+        right: 0 !important;
+        width: 39% !important;
+        height: 70vh !important;
+        border-top-left-radius: 100% !important;
+        background: linear-gradient(125deg, #aab8c277 0%, #aab8c277 75%, #aab8c277 100%) !important;
+        backdrop-filter: blur(1rem) !important;
+        background-clip: border-box !important;
+        z-index: -2 !important;
+        animation: move-up 4s infinite alternate;
+    @keyframes move-up {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(4rem);
+        }
+        }
+    }
+.service-industries {
+    height: 122vh !important;
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: 98.5% !important;
+    place-content: center !important;
+h1 {
+    font-family: 'antic didone';
+    font-weight: 500 !important;
+    font-size: 2.3rem !important;
+    color: $font-color;
+    padding-top: 4rem !important;
+    margin-top: 6rem !important;
+}
+.gallery {
+    height: 90% !important;
+    width: 100% !important;
+    display: flex !important;
+    margin-top: 2% !important;
+    margin-bottom: 0rem !important;
+    box-sizing: border-box;
+.active {
+    flex-basis: 50% !important;
+}
+&:hover .active{
+    flex-basis: 0 !important;
+}
+}
+.image-box {
+    margin: 0 1% !important;
+    flex-grow: 1 !important;
+    flex-basis: 0 !important;
+    transition: 1s !important;
+    position: relative !important;
+img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: 1s !important;
+}
+&:hover {
+    flex-basis: 50% !important;
+}
+&:nth-child(1):hover {
+    flex-basis: 50% !important;
+}
+.overlay {
+    width: 100% !important;
+    height: 90vh !important;
+    position: absolute !important;
+    top: 0% !important;
+    cursor: pointer;
+    background: linear-gradient(rgba(12, 34, 48, 0.2), rgba(1, 7, 8, 0.9));
+    opacity: 0 !important;
+    transition: 1s !important;
+&:hover {
+        opacity: 1 !important;
+    }
+h2{
+    color: rgb(255, 255, 255) !important;
+    font-family: 'antic didone' !important;
+    font-weight: 500 !important;
+    font-size: 2.7rem !important;
+    position: static !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 2rem !important;
+}
+p {
+    color: white !important;
+    font-family: 'trirong thin' !important;
+    font-weight: 600 !important;
+    font-size: 2rem !important;
+    position: absolute !important;
+    padding: 3rem !important;
+    top: 67% !important;
+    transform: translateY(-33%);
+}
+}
+}
+}
+}

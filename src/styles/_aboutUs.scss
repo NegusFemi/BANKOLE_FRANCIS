@@ -1,0 +1,43 @@
+/*VARIABLES*/
+$font-color: #091818;
+
+/* ABOUT-US SECTION START*/
+
+#aboutUs {
+    position: relative !important;
+    width: 100% !important;
+    height: 105vh !important;
+    //object-fit: contain !important;
+    //object-position: center !important;
+    //display: block !important;
+    //margin: 0 auto !important;
+    background-image: linear-gradient(75deg, rgba(16, 29, 64, 0.5), rgb(255, 255, 255, 0.15)),url(/images/BANKY8.jpg);
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+.aboutUs {
+    height: 100vh !important;
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 97% !important;
+    justify-content: center !important;
+    align-content: end !important;
+    position: relative !important;
+h1 {
+    font-family: 'antic didone' !important;
+    font-weight: 500 !important;
+    font-size: 2.3rem !important;
+    //position: absolute !important;
+    color: rgb(252, 247, 253);
+    text-align: center !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(0.99rem) !important;
+    background-clip: padding-box !important;
+    padding: 1rem !important;
+    margin-top: 6rem !important;
+    margin-bottom: -2rem !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    //border-radius: 2rem !important;
+}
+}
+}

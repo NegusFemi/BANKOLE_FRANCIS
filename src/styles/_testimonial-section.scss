@@ -1,0 +1,162 @@
+$font-color: #091818;
+
+/* TESTIMONIAL SECTION START*/
+#testimonial-section {
+    height: 101vh !important;
+    width: 100% !important;
+    position: relative !important;
+    background: linear-gradient(127deg, #aac2bf , #e7fbf7) !important;
+    z-index: 1;
+    aspect-ratio: 16/10 !important;
+    overflow: hidden !important;
+    &::before{
+        content: ' ' !important;
+        position: absolute !important;
+        top: -4rem !important;
+        left: 0 !important;
+        width: 50% !important;
+        height: 100vh !important;
+        border-bottom-right-radius: 100% !important;
+        background: linear-gradient(225deg, #aac2c270 0%, #aac2bd86 75%, #aac2c2 100%) !important;
+        backdrop-filter: blur(3rem) !important;
+        background-clip: border-box !important;
+        z-index: -1 !important;
+        animation: move-up 2s infinite alternate;
+    @keyframes move-up {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(4rem);
+        }
+        }
+    }
+    &::after{
+        content: ' ' !important;
+        position: absolute !important;
+        bottom: 0rem !important;
+        right: 0 !important;
+        width: 39% !important;
+        height: 70vh !important;
+        border-top-left-radius: 100% !important;
+        background: linear-gradient(125deg, #aac2be77 0%, #aac2bf77 75%, #aac2c177 100%) !important;
+        backdrop-filter: blur(1rem) !important;
+        background-clip: border-box !important;
+        z-index: -2 !important;
+        animation: move-up 4s infinite alternate;
+    @keyframes move-up {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(4rem);
+        }
+        }
+    }
+.testimonial-section {
+    position:  relative !important;
+    display: grid !important;
+    grid-template-columns: 100% !important;
+    place-content: center center !important;
+    h2 {
+        font-family: 'antic didone';
+        font-weight: 500 !important;
+        font-size: 3rem !important;
+        color: $font-color;
+        padding-top: 4.8rem !important;
+    }
+    .testimony{
+        width: 90% !important;
+        max-width: 800px !important;
+        margin: auto !important;
+        padding-top: 0.8rem !important;
+    .testimonial-text {
+        background: rgba(255, 255, 255, 0.1) !important;
+        backdrop-filter: blur(1rem) !important;
+        background-clip: padding-box !important;
+        color: $font-color;
+        width: 100% !important;
+        height: 310px !important;
+        position: relative !important;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+        border: 2px solid transparent rgba(255, 255, 255, 1);
+    }
+    .user-text {
+        font-family: 'trirong thin';
+        font-weight: 600 !important;
+        font-size: 1.5rem !important;
+        color: $font-color;
+        width: 90% !important;
+        text-align: center !important;
+        line-height: 30px !important;
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        display: none !important;
+    }
+    .user-text.fas {
+        font-size: 30px !important;
+        margin-bottom: 50px !important;
+        margin-top: 20px !important;
+    }
+    .user-text .ceoName {
+        display: block !important;
+        font-size: 2rem !important;
+        margin-top: 20px !important;
+        font-family: 'antic didone';
+        font-weight: 500 !important;
+        color: $font-color;
+        text-transform: uppercase !important;
+    }
+    .user-text.active-text {
+        display: block !important;
+        animation: moveup 0.5s linear forwards;
+    }
+    @keyframes moveup {
+        0%{
+            margin-top: 25px;
+        }
+        100% {
+            margin-top: 0px;
+        }
+    }
+    .testimonial-pic {
+        margin-top: 0px !important;
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: center !important;
+    }
+    .user-pic {
+        width: 55px !important;
+        padding: 8px !important;
+        border-radius: 45% !important;
+        //margin: 10px !important;
+        margin-bottom: 2rem !important;
+        cursor: pointer;
+    }
+    .user-pic.active-pic {
+        width: 60px !important;
+        border: 2px solid $font-color !important;
+        padding: 1rem !important;
+        margin-top: 0.3rem !important;
+    }
+    }
+}
+.testimonial-right {
+    display: grid !important;
+    grid-template-rows: 100% !important;
+    justify-items: center !important;
+    align-items: center !important;
+    img {
+        display: block !important;
+        position: absolute;
+        height: 93.6vh !important;
+        width: 40% !important;
+        object-fit: cover !important;
+        bottom: 0;
+        right: -2rem;
+        z-index: 0;
+    }
+}
+}
