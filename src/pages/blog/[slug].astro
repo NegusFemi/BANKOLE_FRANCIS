@@ -1,0 +1,32 @@
+---
+import { getEntryBySlug } from 'astro:content';
+
+// Get the slug parameter from the URL
+const { slug } = Astro.params;
+// Load the post by its slug
+const post = await getEntryBySlug('blog', slug);
+
+if (!post) {
+  throw new Error(`Blog post not found: ${slug}`);
+}
+---
+
+<article style="max-width: 800px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.09);">
+  <img 
+    src={post.data.image} 
+    alt={post.data.title}
+    style="width: 100%; max-width: 400px; display: block; margin: 0 auto 2rem auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);"
+  />
+
+  <h1 style="margin: 0 0 1rem 0; text-align: center;">{post.data.title}</h1>
+  <p style="text-align: center; color: #767676;">
+    Published on {post.data.pubDate.toLocaleDateString()} by {post.data.author}
+  </p>
+  <p style="font-size: 1rem; color: #224488; margin-bottom: 2rem; text-align: center;">
+    {post.data.description}
+  </p>
+  
+  <div style="margin-top: 2rem;">
+    {post.render()}
+  </div>
+</article>

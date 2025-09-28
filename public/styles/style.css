@@ -20,8 +20,8 @@ header .nav-container .navbar {
 }
 header .nav-container .logo {
   position: absolute !important;
-  width: 8.99rem !important;
-  top: -0.2rem !important;
+  width: 9.1rem !important;
+  top: -4.2rem !important;
   left: 6rem !important;
   display: flex !important;
   justify-content: start !important;
@@ -228,7 +228,7 @@ a[href="#home"]:target ~ #home {
 }
 
 /* SERVICE INDUSTRIES SECTION START*/
-#service-industries {
+#Gallery {
   height: 115vh !important;
   width: 100% !important;
   position: relative !important;
@@ -237,7 +237,7 @@ a[href="#home"]:target ~ #home {
   aspect-ratio: 16/10 !important;
   overflow: hidden !important;
 }
-#service-industries::before {
+#Gallery::before {
   content: " " !important;
   position: absolute !important;
   top: -4rem !important;
@@ -259,7 +259,7 @@ a[href="#home"]:target ~ #home {
     transform: translateY(4rem);
   }
 }
-#service-industries::after {
+#Gallery::after {
   content: " " !important;
   position: absolute !important;
   bottom: 0rem !important;
@@ -281,14 +281,14 @@ a[href="#home"]:target ~ #home {
     transform: translateY(4rem);
   }
 }
-#service-industries .service-industries {
+#Gallery .Gallery {
   height: 122vh !important;
   position: relative !important;
   display: grid !important;
   grid-template-columns: 98.5% !important;
   place-content: center !important;
 }
-#service-industries .service-industries h1 {
+#Gallery .Gallery h1 {
   font-family: "antic didone";
   font-weight: 500 !important;
   font-size: 2.3rem !important;
@@ -296,7 +296,7 @@ a[href="#home"]:target ~ #home {
   padding-top: 4rem !important;
   margin-top: 6rem !important;
 }
-#service-industries .service-industries .gallery {
+#Gallery .Gallery .gallery {
   height: 90% !important;
   width: 100% !important;
   display: flex !important;
@@ -304,32 +304,32 @@ a[href="#home"]:target ~ #home {
   margin-bottom: 0rem !important;
   box-sizing: border-box;
 }
-#service-industries .service-industries .gallery .active {
+#Gallery .Gallery .gallery .active {
   flex-basis: 50% !important;
 }
-#service-industries .service-industries .gallery:hover .active {
+#Gallery .Gallery .gallery:hover .active {
   flex-basis: 0 !important;
 }
-#service-industries .service-industries .image-box {
+#Gallery .Gallery .image-box {
   margin: 0 1% !important;
   flex-grow: 1 !important;
   flex-basis: 0 !important;
   transition: 1s !important;
   position: relative !important;
 }
-#service-industries .service-industries .image-box img {
+#Gallery .Gallery .image-box img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
   transition: 1s !important;
 }
-#service-industries .service-industries .image-box:hover {
+#Gallery .Gallery .image-box:hover {
   flex-basis: 50% !important;
 }
-#service-industries .service-industries .image-box:nth-child(1):hover {
+#Gallery .Gallery .image-box:nth-child(1):hover {
   flex-basis: 50% !important;
 }
-#service-industries .service-industries .image-box .overlay {
+#Gallery .Gallery .image-box .overlay {
   width: 100% !important;
   height: 90vh !important;
   position: absolute !important;
@@ -339,10 +339,10 @@ a[href="#home"]:target ~ #home {
   opacity: 0 !important;
   transition: 1s !important;
 }
-#service-industries .service-industries .image-box .overlay:hover {
+#Gallery .Gallery .image-box .overlay:hover {
   opacity: 1 !important;
 }
-#service-industries .service-industries .image-box .overlay h2 {
+#Gallery .Gallery .image-box .overlay h2 {
   color: rgb(255, 255, 255) !important;
   font-family: "antic didone" !important;
   font-weight: 500 !important;
@@ -352,7 +352,7 @@ a[href="#home"]:target ~ #home {
   justify-content: center !important;
   padding: 2rem !important;
 }
-#service-industries .service-industries .image-box .overlay p {
+#Gallery .Gallery .image-box .overlay p {
   color: white !important;
   font-family: "trirong thin" !important;
   font-weight: 600 !important;
