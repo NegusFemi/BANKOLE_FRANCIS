@@ -1,32 +1,100 @@
 ---
-import { getEntryBySlug } from 'astro:content';
+import { getCollection } from 'astro:content';
 
-// Get the slug parameter from the URL
+// This function tells Astro which blog post pages to generate
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug }
+  }));
+}
+
+// Now grab the current slug from params
 const { slug } = Astro.params;
-// Load the post by its slug
-const post = await getEntryBySlug('blog', slug);
+const posts = await getCollection('blog');
+const post = posts.find(post => post.slug === slug);
 
 if (!post) {
   throw new Error(`Blog post not found: ${slug}`);
 }
+
+const { Content } = await post.render();
 ---
 
-<article style="max-width: 800px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.09);">
-  <img 
-    src={post.data.image} 
-    alt={post.data.title}
-    style="width: 100%; max-width: 400px; display: block; margin: 0 auto 2rem auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);"
-  />
+<article>
 
-  <h1 style="margin: 0 0 1rem 0; text-align: center;">{post.data.title}</h1>
-  <p style="text-align: center; color: #767676;">
+  <h1 class="title">
+    {post.data.title}
+  </h1>
+  
+  <p class="date">
     Published on {post.data.pubDate.toLocaleDateString()} by {post.data.author}
   </p>
-  <p style="font-size: 1rem; color: #224488; margin-bottom: 2rem; text-align: center;">
+  
+  <p class="description">
     {post.data.description}
   </p>
-  
-  <div style="margin-top: 2rem;">
-    {post.render()}
-  </div>
+    <div>
+    <Content />
+    </div>
 </article>
+
+<style>
+@font-face {
+    font-family: 'antic didone';
+    src: url('../fonts/anticdidone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/anticdidone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'trirong thin';
+    src: url('../fonts/trirong-thin-webfont.woff2') format('woff2'),
+         url('../fonts/trirong-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'trirong light';
+    src: url('../fonts/trirong-light-webfont.woff2') format('woff2'),
+         url('../fonts/trirong-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'trirong extralight';
+    src: url('../fonts/trirong-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/trirong-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    font-family: 'antic didone';
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+    text-align: center;
+    color: rgb(1, 2, 63);
+  }
+.date {
+    font-family: 'trirong thin';
+    font-size: 0.64rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    color: rgb(149, 149, 149);
+  }
+.description {
+    font-family: 'trirong thin';
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: rgb(1, 2, 63);
+  }
+
+</style>

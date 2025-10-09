@@ -7,6 +7,8 @@ const blog = defineCollection({
     description: z.string(),
     author: z.string(),
     image: z.string(), // Add this line
+    video: z.string(), 
+    content: z.string().optional(),
   }),
 });
 

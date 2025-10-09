@@ -1,20 +1,46 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
+
 const posts = await getCollection('blog');
+
+const introductionPost = await getEntry('blog', 'introduction')!;
+if (!introductionPost) {
+  throw new Error(`Blog post not found: Introduction`);
+}
 ---
 
 <h1>Blog Posts</h1>
 <ul style="list-style: none; padding: 0;">
-  {posts?.map((post: any) => (
+  {introductionPost && (
     <li style="margin-bottom: 2rem;">
-      <a href={`/blog/${post.slug}/`} style="text-decoration: none; color: inherit;">
+      <a href={`/blog/${introductionPost.slug}/`} style="text-decoration: none; color: inherit;">
         <img 
-          src={post.data.image} 
-          alt={post.data.title} 
+          src={introductionPost.data.image} 
+          alt={introductionPost.data.title} 
           style="width: 150px; height: auto; display: block; border-radius: 8px; margin-bottom: 0.5rem;"
         />
-        <h2 style="margin: 0;">{post.data.title}</h2>
+        <h2 style="margin: 0;">{introductionPost.data.title}</h2>
+		<h2 style="margin: 0;">{introductionPost.data.author}</h2>
+		<h2 style="margin: 0;">{introductionPost.data.description}</h2>
+		<h2 style="margin: 0;">{introductionPost.data.pubDate}</h2>
       </a>
     </li>
+  )}
+  {posts?.map((post: any) => (
+    post.slug !== 'introduction' && (
+      <li style="margin-bottom: 2rem;">
+        <a href={`/blog/${post.slug}/`} style="text-decoration: none; color: inherit;">
+          <img 
+            src={post.data.image} 
+            alt={post.data.title} 
+            style="width: 350px; height: 100vh; display: block; border-radius: 8px; margin-bottom: 0.5rem;"
+          />
+          <h2 style="margin: 0; text-decoration: none;">{post.data.title}</h2>
+		  <h2 style="margin: 0; text-decoration: none;">{post.data.author}</h2>
+		  <h2 style="margin: 0; text-decoration: none;">{post.data.description}</h2>
+		  <h2 style="margin: 0; text-decoration: none;">{post.data.pubDate}</h2>
+        </a>
+      </li>
+ )
   ))}
 </ul>

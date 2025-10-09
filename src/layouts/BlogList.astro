@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+const posts = await getCollection('blog');
+---
+
+<ul id="blog-list" class="blog-list">
+  <h1 class="text-center pb-0 mb-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" data-aos-reverse="true">  STEP INTO THE WORLD OF BANKOLE FRANCIS.</h1>
+  <p class="text-center text-muted pt-0 mt-n5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">Discover the latest events, experiences, and charity outreach. 
+    Here you’ll find all upcoming live shows, special projects, exclusive blog posts,
+     and Community outreaches insight from Bankole Francis. Stay connected, join the journey, 
+     and never miss an update!
+  </p>
+  {posts.map(post => (
+    <li>
+      <div class="card mb-3" style="max-width: 540px;" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="row g-0 landing-right">
+          <div class="col-md-4">
+            <img src={post.data.image} class="img-fluid rounded-start" alt={post.data.title} />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">{post.data.title}</h2>
+              <p class="card-text">{post.data.description}</p>
+              <p class="card-text"><small class="text-muted">Last updated {new Date(post.data.pubDate).toLocaleString()}</small></p>
+            </div>
+            <div class="btn-1 text-start p-5 m-5"><a href={`/blog/${post.slug}`}><span></span>EXPLORE</a></div>
+          </div>
+        </div>
+      </div>
+    </li>
+  ))}
+</ul>
+

@@ -8,6 +8,7 @@ $font-color: #091818;
 @use "../styles/gallerySection";
 @use "../styles/scrolling";
 @use "../styles/testimonial-section";
+@use "../styles/blogList";
 @use "../styles/footer";
 
 /* FONTS*/
@@ -200,9 +201,9 @@ h1 {
     //border-radius: 70% !important;
 }
 .audio-player h2 {
-    font-family: 'antic didone' !important;
-    font-weight:500 !important;
-    font-size: 3rem !important;
+    font-family: 'trirong thin' !important;
+    font-weight:600 !important;
+    font-size: 2.3rem !important;
     color: $font-color !important;
 }
 .sub-landing {
@@ -326,6 +327,17 @@ h1 {
     border-top: #05252c5e 0.6rem solid !important;
     border-top-left-radius: 0.1rem !important;
     border-bottom-left-radius: 0.1rem !important;
+}
+.audio-player {
+h2 {
+    font-family: 'trirong thin';
+    font-weight: 600;
+    font-size: 2.3rem;
+    color: $font-color;
+    padding-top: 0rem !important;
+    padding-bottom: 0.4rem !important;
+    white-space: wrap !important;
+}
 }
 #icon1 .fa-regular.fa-circle-play.fa-circle-play {
     //width: 6rem !important;
@@ -474,11 +486,11 @@ h1 {
 }
 .audio-player {
 h2 {
-    font-family: 'antic didone';
-    font-weight: 500;
-    font-size: 3rem;
+    font-family: 'trirong thin';
+    font-weight: 600;
+    font-size: 2.3rem;
     color: $font-color;
-    padding-top: 1rem !important;
+    padding-top: 0rem !important;
     padding-bottom: 0.4rem !important;
     white-space: wrap !important;
 }

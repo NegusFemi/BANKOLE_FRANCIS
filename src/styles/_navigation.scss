@@ -70,7 +70,7 @@ header{
                 top: 0;
                 left: 0;
                 background-color: rgba(255, 255, 255, 0.001);
-                backdrop-filter: blur(0.47rem);
+                backdrop-filter: blur(0.9rem) !important;
                 background-clip: padding-box;
                 box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.1);
                 border: 5px solid transparent rgba(255, 255, 255, 1);
@@ -90,7 +90,7 @@ header{
                 position: relative;
                 left: 1rem !important;
                 top: 100px !important;
-                color: $font-color;
+                color: rgb(0, 56, 58) !important;
                 display: block !important;
                 transition: 0.6s;
                 outline: none !important;

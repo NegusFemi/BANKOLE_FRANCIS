@@ -1,0 +1,193 @@
+/*VARIABLES*/
+$font-color: #091818;
+
+@font-face {
+    font-family: 'antic didone';
+    src: url('../fonts/anticdidone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/anticdidone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'trirong thin';
+    src: url('../fonts/trirong-thin-webfont.woff2') format('woff2'),
+         url('../fonts/trirong-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'trirong light';
+    src: url('../fonts/trirong-light-webfont.woff2') format('woff2'),
+         url('../fonts/trirong-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'trirong extralight';
+    src: url('../fonts/trirong-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/trirong-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer-right {
+    display: grid !important;
+    grid-template-rows: 100% !important;
+    justify-items: center !important;
+    align-items: center !important;
+    img {
+        display: block !important;
+        position: absolute;
+        height: 61.9vh !important;
+        width: 40% !important;
+        object-fit: cover !important;
+        bottom: 0;
+        right: 0 !important;
+        z-index: 1 !important;
+    }
+}
+.footer-glass {
+    background: linear-gradient(127deg, #A7CBD5, #e0fbfc3a) !important;
+    background-size: auto, contain, auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 63vh !important;
+    width: 100% !important;
+    position: relative !important;
+    z-index: 0 !important;
+    aspect-ratio: 16/10 !important;
+    overflow: hidden !important;
+    
+    &::before {
+        content: ' ' !important;
+        position: absolute !important;
+        top: -4rem !important;
+        left: 0 !important;
+        width: 54% !important;
+        height: 100vh !important;
+        border-bottom-right-radius: 100% !important;
+        background: linear-gradient(5deg, #a7c9d577 0%, #A7CBD577 75%, #A7CBD577 100%) !important;
+        backdrop-filter: blur(3rem) !important;
+        background-clip: border-box !important;
+        z-index: -1 !important;
+        animation: move-up 2s infinite alternate;
+        
+        @keyframes move-up {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(4rem);
+            }
+        }
+    }
+    
+    &::after {
+        content: ' ' !important;
+        position: absolute !important;
+        bottom: 0rem !important;
+        right: 0 !important;
+        width: 39% !important;
+        height: 70vh !important;
+        border-top-left-radius: 100% !important;
+        background: linear-gradient(125deg, #A7CBD570 0%, #a7cbd570 75%, #A7CBD570 100%) !important;
+        backdrop-filter: blur(0rem) !important;
+        background-clip: border-box !important;
+        z-index: -9999999999999999 !important;
+        animation: move-up 4s infinite alternate;
+        
+        @keyframes move-up {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(4rem);
+            }
+        }
+    }
+}
+
+footer-content {
+  width: 100%;
+  text-align: center;
+  color: #222;
+  padding: 24px 0;
+}
+.footer-content h2 {
+  font-family: 'antic didone';
+  font-weight: 500 !important;
+  font-size: 5.3rem !important;
+  color: $font-color;
+  padding: 1rem 0 0 0 !important;
+  margin: 1rem 0rem 0rem 2rem !important;
+  text-align: start !important;
+}
+.social-icons {
+  list-style: none !important;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.8rem !important;
+  margin-left: 2.6rem !important;
+  padding: 0 !important;
+}
+.social-icons li a {
+  background: rgba(255,255,255,0.25);
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  font-size: 1.7rem;
+  box-shadow: 0 2px 12px rgba(90,120,255,0.10);
+  transition: background 0.2s, transform 0.2s;
+  display: inline-block !important;
+  text-align: center !important;
+  margin: 0 !important;
+  padding-top: 0.9rem !important;
+}
+.social-icons li a:hover {
+  background: linear-gradient(120deg,#b1f3fa 40%,#e1c1fe 100%);
+  transform: scale(1.1);
+  color: #014d57;
+}
+.newsletter {
+  margin: 0 auto 24px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.newsletter input[type="email"] {
+  padding: 10px 18px;
+  border-radius: 14px;
+  border: none;
+  background: rgba(255,255,255,0.30);
+  font-size: 1rem;
+  outline: none;
+  margin-right: 8px;
+}
+.newsletter button {
+  padding: 10px 22px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(120deg,#89f7fe 30%, #66a6ff 100%);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 1px 7px rgba(127,159,255,0.13);
+  transition: background 0.2s;
+}
+.newsletter button:hover {
+  background: #222;
+}
+.footer-note {
+  font-size: 1rem;
+  margin-top: 16px;
+  color: #555;
+  opacity: 0.75;
+}
