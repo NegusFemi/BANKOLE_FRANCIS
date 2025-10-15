@@ -11,22 +11,22 @@ video: "/src/assets/BANKYV3.mp4"
 <!-- markdownlint-disable MD033 -->
 <link rel="stylesheet" href="/styles/style.css" />
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center; margin-top: 2rem;">
+<article>
+<div class="profile-container">
   <!-- Picture and Video Column -->
-  <div style="display: flex; flex-direction: column; align-items: center;">
+  <div class="profile-picture">
     <img
-      src="/src/assets/BANKY3ed.jpg"
-      style="width: 100%; max-width: 400px !important; height: 80vh !important; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); margin-bottom: 1.5rem;"
-      alt="Bankole Francis leading worship service"
+      src="/src/assets/BANKY3ed.jpg" alt="Bankole Francis leading worship service"
     />
-    <video controls style="width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
+    <video controls>
       <source src="/src/assets/BANKYV3.mp4" type="video/mp4" />
     </video>
   </div>
 
   <!-- Text Column -->
+
   <div class="profile-header">
-    <h2>MEET <br>BANKOLE FRANCIS</h2>
+    <h2>MEET BANKOLE FRANCIS</h2>
     <p>
       Bankole Francis is a gospel Minister, Recording Artist, Vocal Instructor, Drummer, and Songwriter with a powerful and dynamic vocal range, backed by over 20 years of singing experience. A versatile praise and worship leader, he has shared the stage with both international and Nigerian Gospel artists, passionately using music as a tool to win souls for Jesus Christ.<br /><br />
       Over the years, he has worked with notable artists including Tosin Martins, Gloria Braimah, Esther Osaji, Tope Alabi, Tony Adoki, Timi Dakolo, and Chris Shalom. For 13 years, he served at RCCG Tabernacle of David, Ajah, Lagos as lead vocalist, backup drummer, and band coordinator. In 2022, he ministered as a backup vocalist alongside Tope Alabi at The Experience, one of the world's largest gospel concerts.<br /><br />
@@ -43,4 +43,6 @@ video: "/src/assets/BANKYV3.mp4"
     </p>
   </div>
 </div>
+</article>
+
 <!-- markdownlint-enable MD033 -->
