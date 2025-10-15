@@ -15,8 +15,9 @@ const posts = await getCollection('blog');
       <div class="card mb-3" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
         <div class="row g-0 landing-right">
           <div class="col-md-4">
-            <img src={`/images/${post.data.image}`} class="img-fluid rounded-start" alt={post.data.title} />
-          </div>
+           <img src={post.data.image.startsWith('/') ? post.data.image : `/images/${post.data.image}`} 
+  class="img-fluid rounded-start" alt={post.data.title}>
+  </div>
           <div class="col-md-8">
             <div class="card-body">
               <h2 class="card-title">{post.data.title}</h2>
