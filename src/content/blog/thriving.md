@@ -3,7 +3,7 @@ title: "THRIVING IN A NEW LAND"
 pubDate: 2025-10-04
 description: "Thriving in a New Land: A Personal Journey of Growth and Transformation"
 author: "Bankole Francis"
-image: "/src/assets/BANKY17.jpg"
+image: "/src/assets/BANKY13rt.jpg"
 alt: "Bankole Francis leading worship service"
 video: "/src/assets/BANKYV1.mp4"
 ---
