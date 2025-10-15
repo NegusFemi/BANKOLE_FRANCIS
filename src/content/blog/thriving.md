@@ -8,6 +8,7 @@ alt: "Bankole Francis leading worship service"
 video: "/src/assets/BANKYV1.mp4"
 ---
 
+<!-- markdownlint-disable MD033 -->
 <article>
 <div style="display: grid; grid-template-columns: 1fr; align-items: center; margin-top: 2rem;"  class="profile-header">
 
@@ -182,3 +183,4 @@ body {
   padding: 1.7rem 1.5rem 1.3rem 1.5rem
 }
 </style>
+<!-- markdownlint-enable MD033 -->
