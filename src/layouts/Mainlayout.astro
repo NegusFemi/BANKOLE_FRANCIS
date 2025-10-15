@@ -69,6 +69,8 @@ const { title = "BANKOLE FRANCES | Gospel Artist | Musician" } = Astro.props;
 <!--KURSOR.JS CDN & SCRIPT-->
 <script src="https://cdn.jsdelivr.net/npm/kursor@0.1.6/dist/kursor.min.js"></script>
     <script>
+      // Declare kursor as a global variable to avoid TS error
+      declare const kursor: any;
       window.onload = () => {
         new kursor({
             type: 4,

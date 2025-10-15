@@ -2,7 +2,7 @@
 $font-color: #091818;
 
 #blog-list {
-    height: 101vh !important;
+    height: 102vh !important;
     width: 100% !important;
     position: relative !important;
     background: linear-gradient(127deg, #aab8c2 , #F9FAF5) !important;
@@ -57,12 +57,12 @@ $font-color: #091818;
         background: rgba(255, 255, 255, 0.1) !important;
         backdrop-filter: blur(1rem) !important;
         background-clip: padding-box !important;
-        width: 110% !important;
+        width: 100% !important;
         height: 282px !important;
         position: relative !important;
         box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2) !important;
-        border: 2px solid transparent rgba(255, 255, 255, 1) !important;
-        margin-top: 1.2rem !important;
+        border: 5px solid transparent rgba(255, 255, 255, 1) !important;
+        margin: 1.8rem !important;
     }
 }
 
@@ -75,7 +75,7 @@ $font-color: #091818;
   }
   .blog-list li {
     margin: 1rem;
-    flex-basis: 45%;
+    flex-basis: 50%;
   }
   .blog-list a {
     text-decoration: none;
