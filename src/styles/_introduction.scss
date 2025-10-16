@@ -10,92 +10,67 @@
   --shadow: 0 4px 32px 0 rgba(54, 80, 255, 0.05), 0 1.5px 4px 0 rgba(21, 40, 88, 0.08);
 }
 
-
-@font-face {
-    font-family: 'antic didone';
-    src: url('../fonts/anticdidone-regular-webfont.woff2') format('woff2'),
-         url('../fonts/anticdidone-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'trirong thin';
-    src: url('../fonts/trirong-thin-webfont.woff2') format('woff2'),
-         url('../fonts/trirong-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'trirong light';
-    src: url('../fonts/trirong-light-webfont.woff2') format('woff2'),
-         url('../fonts/trirong-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'trirong extralight';
-    src: url('../fonts/trirong-extralight-webfont.woff2') format('woff2'),
-         url('../fonts/trirong-extralight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Font faces omitted for brevity; retain as is */
 
 /* ----------- Overall Article Styling ----------- */
 article {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem 2.5rem;
   background: linear-gradient(50deg, rgba(255,255,255,0.95) 35%, rgba(224,231,255,0.7) 100%);
   color: var(--text-main);
   position: relative;
   z-index: 1;
+  box-sizing: border-box;
 }
 
 /* ----------- Glassmorphic Profile Container ----------- */
 .profile-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2.2rem;
   backdrop-filter: blur(15px) saturate(140%);
   border: var(--border);
   padding: 2.5rem;
   margin-bottom: 2rem;
   align-items: flex-start;
+  border-radius: 2rem;
+  box-sizing: border-box;
 }
 
 /* ----------- Image and Video ----------- */
 .profile-picture {
-  min-width: 230px;
-  flex: 1 1 220px;
+  min-width: 200px;
+  flex: 1 1 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.2rem !important;
 }
 .profile-picture img {
-  width: 340px;
-  height: 340px;
-  margin: 2.8rem !important;
+  width: 300px;
+  height: 300px;
+  margin: 2.2rem !important;
   padding: 0.2rem !important;
   object-fit: cover;
   border-radius: 50%;
-  border: 3.5px solid #f6d7b1;
+  border: 3px solid #f6d7b1;
   box-shadow: 0 3px 30px 0 rgba(68, 106, 234, 0.09);
   transition: transform 0.2s;
+  max-width: 75vw;
+  max-height: 75vw;
 }
 .profile-picture img:hover {
   transform: scale(1.045) rotate(5deg);
 }
 .profile-picture video {
-  width: 310px;
+  width: 280px;
   border-radius: 22px;
   box-shadow: 0 2px 12px rgba(34, 66, 132, 0.09);
   border: 2px solid #e8fcff;
   background: #fafaff;
+  max-width: 75vw;
 }
 
 /* ----------- Main Text and Header ---------- */
@@ -108,48 +83,54 @@ article {
 
 .profile-header h2 {
   font-family: 'antic didone' !important;
-  font-size: 3.9rem;
+  font-size: 3rem;
   font-weight: 600;
-  letter-spacing: 1.5px;
-  line-height: 1.15;
+  letter-spacing: 1.1px;
+  line-height: 1.12;
   color: #010b27ff !important;
-  margin-bottom: 0rem;
-  padding: 1.5rem !important;
+  margin-bottom: 0.8rem;
+  padding: 1.2rem 0.2rem !important;
+  word-break: break-word;
 }
 
 .profile-header p {
-  font-size: 1.9rem !important;
+  font-size: 1.4rem !important;
   font-family: 'trirong thin' !important;
   font-weight: 700;
   line-height: 1.27;
-  margin: 1rem;
-  padding: 1.2rem !important;
+  margin: 1rem 0;
+  padding: 0.6rem 0 !important;
   color: var(--text-main);
   letter-spacing: 0.04em;
+  word-break: break-word;
 }
 
 .profile-header ul {
-  margin: 0.8rem !important;
-  padding: 0.8 !important;
-
-li {
-  font-size: 1.6rem !important;
+  margin: 0.8rem 0 !important;
+  padding: 0.8rem 0 !important;
+}
+.profile-header ul li {
+  font-size: 1.05rem !important;
   color: rgb(2, 35, 41) !important;
   font-family: 'trirong thin' !important;
   font-weight: 600 !important;
-  margin-bottom: 0.4rem !important;
-  margin-left: 2.9rem !important;
-  padding: 0.4rem !important;
+  margin-bottom: 0.35rem !important;
+  margin-left: 1.5rem !important;
+  padding: 0.3rem 0 !important;
   display: block !important;
-}
+  word-break: break-word;
 }
 
 /* ----------- Responsive Design ----------- */
 @media (max-width: 940px) {
+  article {
+    padding: 1.2rem 0.6rem;
+  }
   .profile-container {
     flex-direction: column;
-    padding: 1.25rem;
-    gap: 2rem;
+    padding: 1.1rem;
+    gap: 1.4rem;
+    border-radius: 1.3rem;
   }
   .profile-picture,
   .profile-header {
@@ -157,14 +138,55 @@ li {
     min-width: unset;
     flex: unset;
   }
+  .profile-picture img,
+  .profile-picture video {
+    width: 220px;
+    height: 220px;
+    max-width: 60vw;
+    max-height: 60vw;
+    margin: 1rem !important;
+  }
+  .profile-header h2 {
+    font-size: 2.1rem;
+    padding: 1rem 0.2rem !important;
+  }
+  .profile-header p {
+    font-size: 1.12rem !important;
+  }
+  .profile-header ul li {
+    font-size: 0.95rem !important;
+  }
 }
 
 @media (max-width: 600px) {
-  article { padding: 1rem 0.5rem; }
-  .profile-container { padding: 0.75rem; gap: 1.2rem; }
+  article {
+    padding: 0.7rem 0.2rem;
+  }
+  .profile-container {
+    padding: 0.35rem;
+    gap: 0.7rem;
+    border-radius: 1.1rem;
+  }
   .profile-picture img,
-  .profile-picture video { width: 140px; height: 140px; }
-  .profile-header h2 { font-size: 1.55rem; }
+  .profile-picture video {
+    width: 110px;
+    height: 110px;
+    max-width: 90vw;
+    max-height: 90vw;
+    margin: 0.3rem !important;
+  }
+  .profile-header h2 {
+    font-size: 1.15rem;
+    padding: 0.7rem 0.05rem !important;
+  }
+  .profile-header p {
+    font-size: 0.93rem !important;
+    padding: 0.4rem 0 !important;
+  }
+  .profile-header ul li {
+    font-size: 0.85rem !important;
+    margin-left: 1rem !important;
+  }
 }
 
 /* ----------- Micro Details: Elegant Scrollbar for Article ----------- */

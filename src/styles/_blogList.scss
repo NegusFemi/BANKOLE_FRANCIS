@@ -120,3 +120,114 @@ small {
     padding: 0.5rem !important;
   }
   }
+
+  /* --- Responsive Design: Tablets and Phones --- */
+@media (max-width: 940px) {
+  #blog-list {
+    height: 54vh !important;
+    aspect-ratio: unset !important;
+    &::before {
+      height: 34vh !important;
+      width: 65% !important;
+      top: -1.5rem !important;
+    }
+    &::after {
+      height: 20vh !important;
+      width: 51% !important;
+    }
+    .card {
+      height: 148px !important;
+      margin: 0.8rem !important;
+      border-width: 2.5px !important;
+      box-shadow: 0 7px 13px rgba(0, 0, 0, 0.12) !important;
+    }
+  }
+  .blog-list {
+    padding: 0.8rem !important;
+    flex-direction: column !important;
+    li {
+      margin: 0.5rem !important;
+      flex-basis: 100% !important;
+    }
+    img {
+      width: 96vw !important;
+      height: 18vh !important;
+      min-height: 75px !important;
+      max-width: 98vw !important;
+      border-radius: 3px !important;
+      object-fit: cover !important;
+    }
+    h1 {
+      font-size: 2rem !important;
+      margin: 1.2rem auto 0.05rem !important;
+      line-height: 2.2rem !important;
+    }
+    h2 {
+      font-size: 1.11rem !important;
+      padding: 0.39rem !important;
+      margin: 0.22rem 0 0 0 !important;
+    }
+    p {
+      font-size: 0.91rem !important;
+      padding: 0.17rem !important;
+      margin: 0.13rem 0 0 0 !important;
+      small {
+        font-size: 0.79rem !important;
+        padding: 0.05rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #blog-list {
+    height: 33vh !important;
+    min-height: 186px !important;
+    &::before {
+      height: 13vh !important;
+      width: 88% !important;
+      top: -0.8rem !important;
+    }
+    &::after {
+      height: 7vh !important;
+      width: 82% !important;
+    }
+    .card {
+      height: 82px !important;
+      margin: 0.3rem !important;
+      border-width: 1.15px !important;
+    }
+  }
+  .blog-list {
+    padding: 0.21rem !important;
+    li {
+      margin: 0.17rem !important;
+      flex-basis: 100% !important;
+    }
+    img {
+      width: 99vw !important;
+      height: 9vh !important;
+      min-height: 36px !important;
+      border-radius: 2px !important;
+    }
+    h1 {
+      font-size: 1.05rem !important;
+      margin: 0.41rem auto 0.01rem !important;
+      line-height: 1.09rem !important;
+    }
+    h2 {
+      font-size: 0.67rem !important;
+      padding: 0.15rem !important;
+      margin: 0.07rem 0 0 0 !important;
+    }
+    p {
+      font-size: 0.54rem !important;
+      padding: 0.05rem !important;
+      margin: 0.03rem 0 0 0 !important;
+      small {
+        font-size: 0.42rem !important;
+        padding: 0.01rem !important;
+      }
+    }
+  }
+}

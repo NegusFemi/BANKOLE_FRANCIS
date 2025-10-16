@@ -54,3 +54,50 @@ $font-color: #091818;
 }
 }
 }
+
+/* --- Responsive: Tablets and Phones --- */
+@media (max-width: 940px) {
+  #continuous-scroll .cont-scroll {
+    height: 60px !important; // give enough banner height
+    min-height: 48px !important;
+    div {
+      height: 60px !important;
+      min-height: 48px !important;
+    }
+    div:nth-child(2) {
+      max-height: 60px !important;
+      clip-path: circle(85px at center) !important;
+    }
+    div h1 {
+      font-size: 1.15rem !important;
+      top: 0 !important;               // fixed: start at top
+      line-height: 60px !important;    // fixed: matches container height
+      animation-duration: 32s !important;
+      white-space: nowrap !important;
+      left: 0 !important;              // always zero so scroll from 0
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #continuous-scroll .cont-scroll {
+    height: 38px !important;
+    min-height: 36px !important;
+    div {
+      height: 38px !important;
+      min-height: 36px !important;
+    }
+    div:nth-child(2) {
+      max-height: 38px !important;
+      clip-path: circle(30px at center) !important;
+    }
+    div h1 {
+      font-size: 0.83rem !important;
+      top: 0 !important;               // fixed: start at top
+      line-height: 38px !important;    // fixed: matches container height
+      animation-duration: 24s !important;
+      white-space: nowrap !important;
+    }
+  }
+}
