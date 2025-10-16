@@ -3,9 +3,9 @@ title: "INTRODUCTION TO BANKOLE FRANCIS"
 pubDate: 2025-09-26
 description: "Bankole Francis: Gospel Minister, Vocal Instructor, and Worship Leader"
 author: "Bankole Francis"
-image: "/src/assets/BANKY3ed.jpg"
+image: "/images/BANKY3ed.jpg"
 alt: "Bankole Francis leading worship service"
-video: "/src/assets/BANKYV3.mp4"
+video: "/images/BANKYV3.mp4"
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -16,10 +16,10 @@ video: "/src/assets/BANKYV3.mp4"
   <!-- Picture and Video Column -->
   <div class="profile-picture">
     <img
-      src="/src/assets/BANKY3ed.jpg" alt="Bankole Francis leading worship service"
+      src="/images/BANKY3ed.jpg" alt="Bankole Francis leading worship service"
     />
     <video controls>
-      <source src="/src/assets/BANKYV3.mp4" type="video/mp4" />
+      <source src="/images/BANKYV3.mp4" type="video/mp4" />
     </video>
   </div>
 

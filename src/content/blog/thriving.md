@@ -3,9 +3,9 @@ title: "THRIVING IN A NEW LAND"
 pubDate: 2025-10-04
 description: "Thriving in a New Land: A Personal Journey of Growth and Transformation"
 author: "Bankole Francis"
-image: "/src/assets/BANKY17.jpg"
+image: "/images/BANKY17.jpg"
 alt: "Bankole Francis leading worship service"
-video: "/src/assets/BANKYV4.mp4"
+video: "/images/BANKYV4.mp4"
 ---
 
 <!-- markdownlint-disable MD033 -->
@@ -16,7 +16,7 @@ video: "/src/assets/BANKYV4.mp4"
 
 <div style="display: flex; flex-direction: column; align-items: center;">
     <img
-      src="/src/assets/BANKY13rt.jpg"
+      src="/images/BANKY13rt.jpg"
       style="width: 97%; max-width: 530px !important; height: 95vh !important; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); margin-bottom: 1rem; margin-top: -1rem;"
       alt="Bankole Francis leading worship service"
     />
@@ -46,7 +46,7 @@ As I reflect on my journey, I realize that I've been blessed to share my experie
 </p>
 </div>
 <video controls style="width: 84%; max-height: 100vh !important; padding : 0.2rem; margin-bottom: 1.9rem; margin-top: 1.9rem; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); object-fit: contain; display: block; margin: auto;">
-      <source src="/src/assets/BANKYV4.mp4" type="video/mp4" />
+      <source src="/images/BANKYV4.mp4" type="video/mp4" />
     </video>
 <h2>Looking Ahead: A Legacy of Praise</h2>
 <p>
