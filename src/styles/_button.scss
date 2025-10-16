@@ -52,38 +52,3 @@ span {
 }
 }
 }
-
-@media (max-width: 940px) {
-  #landing, #landing2, #landing3, .card, .error-left {
-    .landing-right {
-      a {
-        width: 8.2rem !important;
-        font-size: 1rem !important;
-        padding: 0.8rem 0 !important;
-        margin-top: -1.5rem !important;
-      }
-      .btn-1 a:hover {
-        font-size: 1.13rem !important;
-      }
-      span {
-        // Span is the animated background, so keep height but reduce side paddings if added in the future
-      }
-    }
-  }
-}
-
-@media (max-width: 600px) {
-  #landing, #landing2, #landing3, .card, .error-left {
-    .landing-right {
-      a {
-        width: 5.2rem !important;
-        font-size: 0.63rem !important;
-        padding: 0.33rem 0 !important;
-        margin-top: -0.35rem !important;
-      }
-      .btn-1 a:hover {
-        font-size: 0.81rem !important;
-      }
-    }
-  }
-}

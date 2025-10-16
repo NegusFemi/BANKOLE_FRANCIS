@@ -1,0 +1,40 @@
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    #aboutUs {
+        height: 80vh !important;
+        background-size: contain !important; /* Adjust image size for better fit */
+        background-position: top center !important; /* Shift focus to top for visibility */
+    }
+    .aboutUs {
+        height: 80vh !important;
+        grid-template-columns: 90% !important; /* Slightly reduce width for better margins */
+    }
+    .aboutUs h1 {
+        font-size: 1.8rem !important; /* Smaller font size for tablets */
+        padding: 0.8rem !important; /* Reduce padding */
+        margin-top: 4rem !important; /* Adjust margin for better spacing */
+        margin-bottom: -1rem !important;
+        backdrop-filter: blur(0.8rem) !important; /* Slightly less blur for performance */
+    }
+}
+
+/* Media Query for Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+    #aboutUs {
+        height: 60vh !important; /* Shorter height for mobile */
+        background-size: contain !important; /* Ensure image fits within viewport */
+        background-position: top center !important;
+    }
+    .aboutUs {
+        height: 60vh !important;
+        grid-template-columns: 85% !important; /* Further reduce width for mobile */
+    }
+    .aboutUs h1 {
+        font-size: 1.4rem !important; /* Smaller font for mobile readability */
+        padding: 0.6rem !important; /* Tighter padding */
+        margin-top: 2.5rem !important; /* Reduced margin for compact layout */
+        margin-bottom: -0.8rem !important;
+        border-width: 1px !important; /* Thinner border for smaller screens */
+        backdrop-filter: blur(0.6rem) !important; /* Optimize blur for mobile performance */
+    }
+}

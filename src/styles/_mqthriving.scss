@@ -1,0 +1,76 @@
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  article {
+    padding: 0.8rem !important; /* Slightly reduced padding */
+  }
+  .profile-container {
+    gap: 1.5rem !important; /* Smaller gap between elements */
+    flex-direction: column !important; /* Stack elements vertically */
+    align-items: center !important;
+  }
+  .profile-picture {
+    min-width: 200px !important; /* Allow smaller minimum width */
+    flex: 1 1 100% !important; /* Full width for profile picture */
+  }
+  .profile-picture img {
+    width: 220px !important; /* Smaller image size for tablets */
+    height: 220px !important;
+    border-width: 2.5px !important; /* Thinner border */
+  }
+  .profile-video {
+    max-width: 100% !important; /* Full width video */
+    height: 300px !important; /* Adjusted height for tablets */
+  }
+  .profile-header {
+    flex: 1 1 100% !important; /* Full width for header */
+    text-align: center !important;
+  }
+  .Profile-content h2 {
+    font-size: 1.8rem !important; /* Smaller header font */
+    margin-bottom: 0.6rem !important;
+  }
+  .Profile-content p {
+    font-size: 1.4rem !important; /* Smaller paragraph font */
+    padding: 1rem !important; /* Reduced padding */
+    margin: 0.8rem !important;
+  }
+}
+
+/* Media Query for Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+  article {
+    padding: 0.5rem !important; /* Minimal padding for mobile */
+  }
+  .profile-container {
+    gap: 1rem !important; /* Tighter gap */
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .profile-picture {
+    min-width: 150px !important; /* Further reduced minimum width */
+    flex: 1 1 100% !important;
+  }
+  .profile-picture img {
+    width: 150px !important; /* Smaller image for mobile */
+    height: 150px !important;
+    border-width: 2px !important; /* Thinner border */
+    box-shadow: 0 2px 20px 0 rgba(68, 106, 234, 0.07) !important; /* Lighter shadow */
+  }
+  .profile-video {
+    max-width: 100% !important;
+    height: 200px !important; /* Smaller video height */
+    border-radius: 6px !important; /* Slightly smaller border radius */
+  }
+  .profile-header {
+    flex: 1 1 100% !important;
+  }
+  .Profile-content h2 {
+    font-size: 1.4rem !important; /* Smaller header font */
+    margin-bottom: 0.5rem !important;
+  }
+  .Profile-content p {
+    font-size: 1.2rem !important; /* Smaller paragraph font */
+    padding: 0.8rem !important;
+    margin: 0.5rem !important;
+  }
+}

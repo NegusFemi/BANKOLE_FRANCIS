@@ -1,0 +1,65 @@
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  header {
+    .nav-container {
+      .navbar {
+        padding: 0.15rem 0.5rem !important; /* Reduced padding */
+        height: 3.5rem !important; /* Smaller height */
+        box-shadow: 8px 8px 8px rgba(45, 55, 68, 0.08) !important; /* Lighter shadow */
+        backdrop-filter: blur(0.8rem) !important; /* Reduced blur for performance */
+      }
+      .logo {
+        width: 7rem !important; /* Smaller logo */
+        top: -3.5rem !important;
+        left: 2rem !important; /* Adjusted position */
+      }
+      #menuBtn {
+        left: 90% !important; /* Adjusted position */
+        font-size: 1.2rem !important; /* Smaller icon size */
+      }
+      .navbar-nav li a {
+        padding: 0.5rem 1rem !important; /* Reduced padding */
+        font-size: 1.2rem !important; /* Smaller font */
+      }
+      ul {
+        li {
+          display: block !important; /* Stack menu items vertically */
+          margin: 0.3rem 0 !important; /* Adjusted spacing */
+        }
+      }
+    }
+  }
+}
+
+/* Media Query for Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+  header {
+    .nav-container {
+      .navbar {
+        padding: 0.1rem 0.3rem !important; /* Minimal padding */
+        height: 3rem !important; /* Smaller height */
+        box-shadow: 6px 6px 6px rgba(45, 55, 68, 0.06) !important; /* Lighter shadow */
+        backdrop-filter: blur(0.5rem) !important; /* Further reduced blur */
+      }
+      .logo {
+        width: 5.5rem !important; /* Smaller logo */
+        top: -3rem !important;
+        left: 1rem !important; /* Adjusted position */
+      }
+      #menuBtn {
+        left: 88% !important; /* Adjusted position */
+        font-size: 1rem !important; /* Smaller icon size */
+      }
+      .navbar-nav li a {
+        padding: 0.3rem 0.8rem !important; /* Minimal padding */
+        font-size: 1rem !important; /* Smaller font */
+      }
+      ul {
+        li {
+          display: block !important; /* Stack menu items vertically */
+          margin: 0.2rem 0 !important; /* Minimal spacing */
+        }
+      }
+    }
+  }
+}

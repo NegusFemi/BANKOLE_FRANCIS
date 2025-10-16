@@ -1,0 +1,41 @@
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  #landing, #landing2, #landing3, .card, .error-left {
+    .landing-right {
+      a {
+        padding: 1rem 0 !important; /* Reduced padding */
+        width: 9rem !important; /* Smaller button width */
+        margin-top: -2.5rem !important; /* Adjusted margin */
+        font-size: 1.2rem !important; /* Smaller font */
+        border-width: 0.8px !important; /* Thinner border */
+        span {
+          box-shadow: 8px 8px 8px rgba(45, 55, 68, 0.08) !important; /* Lighter shadow */
+        }
+      }
+      .btn-1 a:hover {
+        font-size: 1.4rem !important; /* Smaller hover font */
+      }
+    }
+  }
+}
+
+/* Media Query for Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+  #landing, #landing2, #landing3, .card, .error-left {
+    .landing-right {
+      a {
+        padding: 0.8rem 0 !important; /* Minimal padding */
+        width: 7rem !important; /* Smaller button width */
+        margin-top: -2rem !important; /* Adjusted margin */
+        font-size: 1rem !important; /* Smaller font */
+        border-width: 0.6px !important; /* Thinner border */
+        span {
+          box-shadow: 6px 6px 6px rgba(45, 55, 68, 0.06) !important; /* Lighter shadow */
+        }
+      }
+      .btn-1 a:hover {
+        font-size: 1.2rem !important; /* Smaller hover font */
+      }
+    }
+  }
+}

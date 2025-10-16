@@ -1,0 +1,120 @@
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  #Gallery {
+    height: 80vh !important; /* Reduced height for tablets */
+    aspect-ratio: 4/3 !important; /* Adjusted aspect ratio */
+    &::before {
+      width: 60% !important; /* Wider pseudo-element */
+      height: 80vh !important;
+      backdrop-filter: blur(2rem) !important; /* Reduced blur for performance */
+    }
+    &::after {
+      width: 45% !important;
+      height: 50vh !important;
+      backdrop-filter: blur(0.8rem) !important;
+    }
+  }
+  .Gallery {
+    height: 80vh !important;
+    grid-template-columns: 90% !important; /* Slightly reduced width */
+    h1 {
+      font-size: 1.5rem !important; /* Smaller font size */
+      padding-top: 4rem !important;
+      margin-top: 6rem !important;
+      margin-bottom: -0.3rem !important;
+    }
+    .gallery {
+      height: 85% !important; /* Adjusted height */
+      flex-direction: column !important; /* Stack images vertically */
+      margin-top: 1% !important;
+    }
+    .image-box {
+      margin: 0.5% !important; /* Reduced margin */
+      flex-basis: auto !important; /* Allow natural sizing */
+      img {
+        height: 25vh !important; /* Smaller image height */
+        object-fit: contain !important; /* Ensure full image visibility */
+      }
+      &:hover {
+        flex-basis: auto !important; /* Disable hover expansion */
+      }
+      &:nth-child(1):hover {
+        flex-basis: auto !important;
+      }
+      .overlay {
+        height: 25vh !important; /* Match image height */
+        opacity: 0.8 !important; /* Slightly visible overlay for better UX */
+        h2 {
+          font-size: 1.8rem !important; /* Smaller heading */
+          padding: 1.5rem !important;
+        }
+        p {
+          font-size: 1.4rem !important; /* Smaller paragraph */
+          padding: 2rem !important;
+          top: 60% !important;
+          transform: translateY(-30%) !important;
+        }
+      }
+    }
+  }
+}
+
+/* Media Query for Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+  #Gallery {
+    height: 60vh !important; /* Further reduced height */
+    aspect-ratio: 3/2 !important; /* Adjusted for mobile */
+    &::before {
+      width: 70% !important; /* Wider pseudo-element */
+      height: 60vh !important;
+      backdrop-filter: blur(1.5rem) !important; /* Further reduced blur */
+    }
+    &::after {
+      width: 50% !important;
+      height: 40vh !important;
+      backdrop-filter: blur(0.5rem) !important;
+    }
+  }
+  .Gallery {
+    height: 60vh !important;
+    grid-template-columns: 85% !important; /* Further reduced width */
+    h1 {
+      font-size: 1.2rem !important; /* Smaller font */
+      padding-top: 3rem !important;
+      margin-top: 4rem !important;
+      margin-bottom: -0.2rem !important;
+    }
+    .gallery {
+      height: 80% !important;
+      flex-direction: column !important;
+      margin-top: 0.5% !important;
+    }
+    .image-box {
+      margin: 0.3% !important; /* Minimal margin */
+      img {
+        height: 20vh !important; /* Smaller image height */
+        object-fit: contain !important;
+      }
+      &:hover {
+        flex-basis: auto !important;
+      }
+      &:nth-child(1):hover {
+        flex-basis: auto !important;
+      }
+      .overlay {
+        height: 20vh !important; /* Match image height */
+        opacity: 0.9 !important; /* More visible overlay */
+        h2 {
+          font-size: 1.4rem !important; /* Smaller heading */
+          padding: 1rem !important;
+        }
+        p {
+          font-size: 1rem !important; /* Smaller paragraph */
+          padding: 1.5rem !important;
+          top: 55% !important;
+          transform: translateY(-25%) !important;
+        }
+      }
+    }
+  }
+}

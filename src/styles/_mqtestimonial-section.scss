@@ -1,0 +1,133 @@
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  #testimonial-section {
+    height: 80vh !important; /* Reduced height for tablets */
+    aspect-ratio: 4/3 !important; /* Adjusted aspect ratio */
+    &::before {
+      width: 60% !important; /* Wider pseudo-element */
+      height: 80vh !important;
+      backdrop-filter: blur(2rem) !important; /* Reduced blur for performance */
+    }
+    &::after {
+      width: 45% !important;
+      height: 50vh !important;
+      backdrop-filter: blur(0.8rem) !important;
+    }
+  }
+  .testimonial-section {
+    h2 {
+      font-size: 2.2rem !important; /* Smaller font size */
+      padding-top: 3rem !important;
+    }
+    .testimony {
+      width: 95% !important; /* Slightly wider for better fit */
+      max-width: 600px !important;
+      padding-top: 0.5rem !important;
+      .testimonial-text {
+        height: 250px !important; /* Smaller testimonial box */
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15) !important; /* Lighter shadow */
+      }
+      .user-text {
+        font-size: 1.5rem !important; /* Smaller font */
+        line-height: 24px !important;
+        width: 85% !important;
+      }
+      .user-text.fas {
+        font-size: 24px !important;
+        margin-bottom: 30px !important;
+        margin-top: 15px !important;
+      }
+      .user-text .ceoName {
+        font-size: 1.6rem !important;
+        margin-top: 15px !important;
+      }
+      .testimonial-pic {
+        margin-bottom: 1.5rem !important;
+      }
+      .user-pic {
+        width: 45px !important; /* Smaller profile picture */
+        padding: 6px !important;
+      }
+      .user-pic.active-pic {
+        width: 50px !important;
+        padding: 0.8rem !important;
+        margin-top: 0.2rem !important;
+      }
+    }
+  }
+  .testimonial-right {
+    img {
+      height: 70vh !important; /* Smaller image height */
+      width: 50% !important; /* Wider for better visibility */
+      object-fit: contain !important; /* Ensure full image visibility */
+      right: -1rem !important;
+    }
+  }
+}
+
+/* Media Query for Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+  #testimonial-section {
+    height: 60vh !important; /* Further reduced height */
+    aspect-ratio: 3/2 !important; /* Adjusted for mobile */
+    &::before {
+      width: 70% !important; /* Wider pseudo-element */
+      height: 60vh !important;
+      backdrop-filter: blur(1.5rem) !important; /* Further reduced blur */
+    }
+    &::after {
+      width: 50% !important;
+      height: 40vh !important;
+      backdrop-filter: blur(0.5rem) !important;
+    }
+  }
+  .testimonial-section {
+    h2 {
+      font-size: 1.6rem !important; /* Smaller font */
+      padding-top: 2rem !important;
+    }
+    .testimony {
+      width: 90% !important;
+      max-width: 400px !important;
+      padding-top: 0.3rem !important;
+      .testimonial-text {
+        height: 200px !important; /* Smaller testimonial box */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1) !important; /* Lighter shadow */
+      }
+      .user-text {
+        font-size: 1.2rem !important; /* Smaller font */
+        line-height: 20px !important;
+        width: 80% !important;
+      }
+      .user-text.fas {
+        font-size: 20px !important;
+        margin-bottom: 20px !important;
+        margin-top: 10px !important;
+      }
+      .user-text .ceoName {
+        font-size: 1.3rem !important;
+        margin-top: 10px !important;
+      }
+      .testimonial-pic {
+        margin-bottom: 1rem !important;
+      }
+      .user-pic {
+        width: 35px !important; /* Smaller profile picture */
+        padding: 4px !important;
+      }
+      .user-pic.active-pic {
+        width: 40px !important;
+        padding: 0.6rem !important;
+        margin-top: 0.1rem !important;
+      }
+    }
+  }
+  .testimonial-right {
+    img {
+      height: 50vh !important; /* Further reduced image height */
+      width: 60% !important; /* Wider for small screens */
+      object-fit: contain !important;
+      right: 0 !important;
+    }
+  }
+}

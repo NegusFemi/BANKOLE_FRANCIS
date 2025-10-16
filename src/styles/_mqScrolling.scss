@@ -1,0 +1,49 @@
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  #continuous-scroll {
+    .cont-scroll {
+      height: 12vh !important; /* Reduced height for tablets */
+      border-top: 4px solid #122023 !important; /* Thinner border */
+      border-bottom: 4px solid #122023 !important;
+      div {
+        height: 15vh !important; /* Adjusted container height */
+      }
+      div:nth-child(2) {
+        clip-path: circle(120px at center) !important; /* Smaller clip-path circle */
+      }
+      div h1 {
+        font-size: 2rem !important; /* Smaller font size */
+        top: -150px !important; /* Adjusted positioning */
+        animation: animate 30s linear infinite !important; /* Faster animation for smaller screens */
+      }
+      div:nth-child(2) h1 {
+        -webkit-text-stroke: 1.5px !important; /* Thinner stroke */
+      }
+    }
+  }
+}
+
+/* Media Query for Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+  #continuous-scroll {
+    .cont-scroll {
+      height: 10vh !important; /* Further reduced height for mobile */
+      border-top: 3px solid #122023 !important; /* Thinner border */
+      border-bottom: 3px solid #122023 !important;
+      div {
+        height: 12vh !important; /* Smaller container height */
+      }
+      div:nth-child(2) {
+        clip-path: circle(80px at center) !important; /* Smaller clip-path circle */
+      }
+      div h1 {
+        font-size: 1.5rem !important; /* Smaller font size */
+        top: -120px !important; /* Adjusted positioning */
+        animation: animate 20s linear infinite !important; /* Even faster animation */
+      }
+      div:nth-child(2) h1 {
+        -webkit-text-stroke: 1px !important; /* Thinner stroke for mobile */
+      }
+    }
+  }
+}

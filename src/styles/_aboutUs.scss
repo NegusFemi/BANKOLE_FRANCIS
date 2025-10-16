@@ -62,20 +62,3 @@ h1 {
   }
 }
 
-@media (max-width: 600px) {
-  #aboutUs {
-    height: 23vh !important;
-    background-size: cover !important;
-    background-position: center !important;
-    .aboutUs {
-      height: 21vh !important;
-      h1 {
-        font-size: 0.99rem !important;
-        padding: 0.32rem !important;
-        margin-top: 0.7rem !important;
-        margin-bottom: -0.35rem !important;
-        border-width: 0.5px !important;
-      }
-    }
-  }
-}

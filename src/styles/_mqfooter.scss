@@ -1,0 +1,116 @@
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .footer-right {
+    img {
+      height: 50vh !important; /* Smaller image height */
+      width: 50% !important; /* Wider image to maintain visibility */
+      object-fit: contain !important; /* Ensure full image visibility */
+    }
+  }
+  .footer-glass {
+    height: 50vh !important; /* Reduced height for tablets */
+    aspect-ratio: 4/3 !important; /* Adjusted aspect ratio */
+    &::before {
+      width: 60% !important; /* Wider pseudo-element for better coverage */
+      height: 80vh !important;
+      backdrop-filter: blur(2rem) !important; /* Reduced blur for performance */
+    }
+    &::after {
+      width: 45% !important;
+      height: 50vh !important;
+      backdrop-filter: blur(0rem) !important;
+    }
+  }
+  .footer-content h2 {
+    font-size: 3.5rem !important; /* Smaller font size */
+    line-height: 3.5rem !important;
+    margin: 1.5rem 0rem 0rem 2rem !important; /* Adjusted margins */
+  }
+  .social-icons {
+    gap: 0.6rem !important; /* Smaller gap */
+    margin-left: 2rem !important;
+    padding-top: 0.3rem !important;
+  }
+  .social-icons li a {
+    width: 38px !important; /* Smaller icons */
+    height: 38px !important;
+    font-size: 1.4rem !important;
+    padding-top: 0.8rem !important;
+  }
+  #footer2 {
+    height: 8vh !important; /* Shorter footer */
+    margin-top: 1.5rem !important;
+    padding-bottom: 0.3rem !important;
+    .footer-D {
+      h3 {
+        font-size: 0.9rem !important; /* Smaller font */
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        &:nth-child(2) {
+          font-size: 1.4rem !important;
+          margin-top: -0.5rem !important;
+        }
+      }
+    }
+  }
+}
+
+/* Media Query for Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+  .footer-right {
+    img {
+      height: 40vh !important; /* Further reduced image height */
+      width: 60% !important; /* Wider for small screens */
+      object-fit: contain !important;
+    }
+  }
+  .footer-glass {
+    height: 40vh !important; /* Compact height for mobile */
+    aspect-ratio: 3/2 !important; /* Adjusted for mobile */
+    &::before {
+      width: 70% !important; /* Wider pseudo-element */
+      height: 60vh !important;
+      backdrop-filter: blur(1.5rem) !important; /* Further reduced blur */
+    }
+    &::after {
+      width: 50% !important;
+      height: 40vh !important;
+      backdrop-filter: blur(0rem) !important;
+    }
+  }
+  .footer-content h2 {
+    font-size: 2.2rem !important; /* Much smaller font */
+    line-height: 2.2rem !important;
+    margin: 1rem 0rem 0rem 1.5rem !important;
+  }
+  .social-icons {
+    gap: 0.4rem !important; /* Tighter gap */
+    margin-left: 1.5rem !important;
+    padding-top: 0.2rem !important;
+    justify-content: center !important; /* Center icons for mobile */
+  }
+  .social-icons li a {
+    width: 32px !important; /* Smaller icons */
+    height: 32px !important;
+    font-size: 1.2rem !important;
+    padding-top: 0.6rem !important;
+  }
+  #footer2 {
+    height: 6vh !important; /* Minimal footer height */
+    margin-top: 1rem !important;
+    padding-bottom: 0.2rem !important;
+    .footer-D {
+      flex-direction: column !important; /* Stack items vertically */
+      align-items: center !important;
+      h3 {
+        font-size: 0.8rem !important;
+        padding-left: 0.8rem !important;
+        padding-right: 0.8rem !important;
+        &:nth-child(2) {
+          font-size: 1.2rem !important;
+          margin-top: 0.2rem !important;
+        }
+      }
+    }
+  }
+}

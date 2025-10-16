@@ -1,0 +1,79 @@
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .error-page {
+    height: 80vh !important; /* Reduced height for tablets */
+    grid-template-columns: 1fr !important; /* Single column layout */
+    grid-gap: 1.5rem !important; /* Smaller gap */
+  }
+  .error-left {
+    h1 {
+      font-size: 2.5rem !important; /* Smaller font size */
+      height: 250px !important; /* Smaller container height */
+      padding: 1.5rem 1rem 0.8rem 1rem !important; /* Reduced padding */
+      margin: 0.8rem !important;
+      border-radius: 15px !important; /* Smaller border radius */
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15) !important; /* Lighter shadow */
+      border-width: 1.5px !important; /* Thinner border */
+    }
+    a {
+      width: 9rem !important; /* Smaller button width */
+      padding: 1rem 0 !important;
+      margin-top: 0.8rem !important;
+      margin-left: 1.2rem !important;
+      font-size: 1.2rem !important; /* Smaller font */
+    }
+    .btn-1 a:hover {
+      font-size: 1.2rem !important;
+    }
+  }
+  .error-right {
+    height: 40vh !important; /* Reduced height for video section */
+    padding: 0 0 0.3rem 0.3rem !important; /* Reduced padding */
+    video {
+      height: 40vh !important; /* Smaller video height */
+      width: 100% !important; /* Full width */
+      padding: 0.8rem !important;
+      border-radius: 15px !important; /* Smaller border radius */
+    }
+  }
+}
+
+/* Media Query for Mobile Phones (480px and below) */
+@media screen and (max-width: 480px) {
+  .error-page {
+    height: 60vh !important; /* Further reduced height */
+    grid-template-columns: 1fr !important;
+    grid-gap: 1rem !important; /* Tighter gap */
+  }
+  .error-left {
+    h1 {
+      font-size: 1.8rem !important; /* Smaller font size */
+      height: 200px !important; /* Smaller container height */
+      padding: 1rem 0.8rem 0.6rem 0.8rem !important; /* Minimal padding */
+      margin: 0.5rem !important;
+      border-radius: 10px !important; /* Smaller border radius */
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1) !important; /* Lighter shadow */
+      border-width: 1px !important; /* Thinner border */
+    }
+    a {
+      width: 7rem !important; /* Smaller button width */
+      padding: 0.8rem 0 !important;
+      margin-top: 0.5rem !important;
+      margin-left: 0.8rem !important;
+      font-size: 1rem !important; /* Smaller font */
+    }
+    .btn-1 a:hover {
+      font-size: 1rem !important;
+    }
+  }
+  .error-right {
+    height: 30vh !important; /* Further reduced height */
+    padding: 0 0 0.2rem 0.2rem !important; /* Minimal padding */
+    video {
+      height: 30vh !important; /* Smaller video height */
+      width: 100% !important;
+      padding: 0.5rem !important;
+      border-radius: 10px !important; /* Smaller border radius */
+    }
+  }
+}
