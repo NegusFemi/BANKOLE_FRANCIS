@@ -8,11 +8,6 @@
   --text-main: #3b3b3b;
   --text-muted: #8590ad;
   --shadow: 0 4px 32px 0 rgba(54, 80, 255, 0.05), 0 1.5px 4px 0 rgba(21, 40, 88, 0.08);
-  --radius: 28px;
-  --border: 0.5px solid rgba(131, 145, 169, 0.10);
-  --highlight: linear-gradient(90deg, #ffdbad 0, #e8fcff 100%);
-  --font-header: 'Satoshi', 'Segoe UI', 'Montserrat', sans-serif;
-  --font-body: 'Inter', 'Roboto', 'Segoe UI', Arial, sans-serif;
 }
 
 
@@ -79,7 +74,7 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.2rem !important;
 }
 .profile-picture img {
   width: 340px;
@@ -123,29 +118,30 @@ article {
 }
 
 .profile-header p {
-  font-size: 2rem;
+  font-size: 1.9rem !important;
   font-family: 'trirong thin' !important;
   font-weight: 700;
   line-height: 1.27;
   margin: 1rem;
-  padding: 1rem !important;
+  padding: 1.2rem !important;
   color: var(--text-main);
   letter-spacing: 0.04em;
 }
 
 .profile-header ul {
-  margin: 0.8rem 0 1rem 0;
-  padding: 0;
-}
-.profile-header ul li {
-  font-size: 1.5rem;
-  color: rgb(1, 75, 88);
+  margin: 0.8rem !important;
+  padding: 0.8 !important;
+
+li {
+  font-size: 1.6rem !important;
+  color: rgb(2, 35, 41) !important;
   font-family: 'trirong thin' !important;
-  font-weight: 600;
-  margin-bottom: 0.5em;
-  margin-left: 2.9rem ! important;
-  padding: 0.8rem;
-  display: block;
+  font-weight: 600 !important;
+  margin-bottom: 0.4rem !important;
+  margin-left: 2.9rem !important;
+  padding: 0.4rem !important;
+  display: block !important;
+}
 }
 
 /* ----------- Responsive Design ----------- */
