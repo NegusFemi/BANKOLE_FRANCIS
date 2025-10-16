@@ -12,17 +12,16 @@ video: "/images/BANKYV4.mp4"
 <link rel="stylesheet" href="/styles/style.css" />
 
 <article>
-<div style="display: grid; grid-template-columns: 1fr; align-items: center; margin-top: 2rem;"  class="profile-header">
+<div class="profile-container">
 
-<div style="display: flex; flex-direction: column; align-items: center;">
+<div class="profile-picture">
     <img
       src="/images/BANKY13rt.jpg"
-      style="width: 97%; max-width: 530px !important; height: 95vh !important; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); margin-bottom: 1rem; margin-top: -1rem;"
       alt="Bankole Francis leading worship service"
     />
   </div>
 <!-- Content goes here -->
-<div class="Profile-header">
+<div class="Profile-content">
 <h2>My Journey of Faith and Music in Scotland</h2>
 <p>
 When I arrived in Scotland in 2023, I was filled with a mix of emotions - excitement to start a new chapter, but also uncertainty about what the future held. I brought with me not only decades of musical experience, but also an unwavering passion to serve and uplift others through my music.
@@ -45,14 +44,16 @@ My heart for outreach found new expressions in Scotland. Partnering with foundat
 As I reflect on my journey, I realize that I've been blessed to share my experiences with others. I've started informal mentorship programs for aspiring worship leaders and drummers, hoping to pass on some of the lessons I've learned along the way. My aim is to empower the next generation of gospel musicians with practical skills and a deeper understanding of the spiritual discipline required to lead worship effectively. Through these youth workshops, I hope to make a positive impact on Scotland's emerging gospel talent.
 </p>
 </div>
-<video controls style="width: 84%; max-height: 100vh !important; padding : 0.2rem; margin-bottom: 1.9rem; margin-top: 1.9rem; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); object-fit: contain; display: block; margin: auto;">
+<video controls class="profile-video">
       <source src="/images/BANKYV4.mp4" type="video/mp4" />
     </video>
+<div class="profile-text">
 <h2>Looking Ahead: A Legacy of Praise</h2>
 <p>
 For me, Scotland is more than a new chapter - it's a platform to unleash new sounds and inspire transformation. Looking ahead, I remain committed to spreading the gospel through innovative music projects, cross-cultural concerts, and continued partnership with churches and charities across the UK and beyond.
 My journey is a testament to the boundless reach of worship, and as I frequently remind both audiences and mentees: Wherever God sends us, our song becomes a bridge - connecting hearts to His love.
 </p>
+</div>
 </div>
 </article>
 

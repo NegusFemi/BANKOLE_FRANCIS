@@ -1,3 +1,20 @@
+/* Elegant Blog Post CSS - 2025 Trends */
+
+/* ----------- Root Variables for Easy Theme Change ----------- */
+:root {
+  --primary-bg: rgba(245, 248, 255, 0.98);
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --accent: #234284;
+  --text-main: #3b3b3b;
+  --text-muted: #8590ad;
+  --shadow: 0 4px 32px 0 rgba(54, 80, 255, 0.05), 0 1.5px 4px 0 rgba(21, 40, 88, 0.08);
+  --radius: 28px;
+  --border: 0.5px solid rgba(131, 145, 169, 0.10);
+  --highlight: linear-gradient(90deg, #ffdbad 0, #e8fcff 100%);
+  --font-header: 'Satoshi', 'Segoe UI', 'Montserrat', sans-serif;
+  --font-body: 'Inter', 'Roboto', 'Segoe UI', Arial, sans-serif;
+}
+
 @font-face {
     font-family: 'antic didone';
     src: url('../fonts/anticdidone-regular-webfont.woff2') format('woff2'),
@@ -30,97 +47,135 @@
     font-style: normal;
 }
 
-body {
-  /* Subtle gradient background with depth and a sense of vibrance */
-  min-height: 100vh;
-  margin: 0;
-  background: linear-gradient(120deg, #e0e7ff 0%, #f9fafb 60%, #ffe0f1 100%);
-  overflow-x: hidden !important;
+
+/* ----------- Overall Article Styling ----------- */
+article {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: linear-gradient(50deg, rgba(255,255,255,0.95) 35%, rgba(224,231,255,0.7) 100%);
+  color: var(--text-main);
+  position: relative;
+  z-index: 1;
 }
 
-.main-profile-hero {
-  max-width: 1100px;
-  min-height: 100vh;
-  margin: 0 auto;
+/* ----------- Glassmorphic Profile Container ----------- */
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(50deg, rgba(255,255,255,0.95) 35%, rgba(224,231,255,0.7) 100%);
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+/* ----------- Image and Video ----------- */
+.profile-picture {
+  min-width: 330px;
+  flex: 1 1 220px;
   display: flex;
   flex-direction: column;
-  padding: 0;
-  justify-content: flex-start;
-  background: linear-gradient(50deg, rgba(255,255,255,0.95) 35%, rgba(224,231,255,0.7) 100%);
-  box-shadow: 0 8px 32px 0 rgba(39,52,135,0.10), 0 1.5px 16px rgba(255,192,203,0.08);
-  border-radius: 28px;
-  overflow: hidden;
-  position: relative;
+  align-items: center;
+  gap: 1.25rem;
 }
-
-.profile-header {
-  width: 100%;
+.profile-picture img {
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3.5px solid #f6d7b1;
+  box-shadow: 0 3px 30px 0 rgba(68, 106, 234, 0.09);
+  transition: transform 0.2s;
+}
+.profile-picture img:hover {
+  transform: scale(1.045) rotate(5deg);
+}
+.profile-video {
+  width: 100% !important;
+  max-width: 850px !important;
+  height: 450px !important;
+  border-radius: 8px;
+  background: #fafaff;
+  object-fit: contain !important;
+  display: block;
   margin: 0 auto;
-  padding: 0.2rem 0.3rem 0.3rem 0.2rem !important;
-  text-align: center !important;
-  position: relative;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* ----------- Main Text and Header ---------- */
+.profile-header {
+  flex: 2 1 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.profile-header h1 {
+h2 {
   font-family: 'antic didone' !important;
-  font-size: 3rem;
-  letter-spacing: 0.03em;
-  color: #061c2cff;
-  font-weight: 500 !important;
-  margin-bottom: 0.35rem;
-  text-shadow: 0 2px 2px #dee9ff;
-}
-
-.profile-header h2 {
-  font-family: 'antic didone' !important;
-  font-size: 2.8rem;
-  color: #010b27ff;
-  font-weight: 500;
-  margin-top: 0.4rem;
-  margin-bottom: 0.6rem;
-}
-.profile-header p {
-  color: #03181cff !important;
-  max-width: 900px !important;
-  margin: 0 auto !important;
-  padding: 0rem !important;
-  font-family: 'trirong thin' !important;
-  font-weight: 700 !important;
-  font-size: 1.15rem !important;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  color: #010b27ff !important;
+  margin-bottom: 0.8rem;
   text-align: center !important;
 }
 
-.profile-header ul{
-  color: #03181cff !important;
-  margin-right: 1rem !important;
-  padding: 0rem !important;
-  font-family: 'trirong thin' !important;
-  font-weight: 700 !important;
-  font-size: 1rem !important;
+p {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'trirong thin';
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  color: var(--text-main);
+  letter-spacing: 0.02em;
+  padding: 1.5rem !important;
+  margin: 1rem !important;
 }
 
-.profile-header li {
-  text-decoration: none !important;
+.profile-header ul {
+  margin: 0.5rem 0 1rem 0;
+  padding: 0;
+}
+.profile-header ul li {
+  font-size: 1rem;
+  color: var(--accent);
+  font-family: var(--font-header);
+  background: rgba(211, 224, 255, 0.27);
+  margin-bottom: 0.8em;
+  padding: 0.45em 1.2em;
+  border-radius: 15px;
+  box-shadow: 0 1px 8px #abc9ee55;
+  border-left: 3px solid #f6d7b1;
+  display: block;
 }
 
-.profile-main-grid {
-  display: grid;
-  grid-template-columns: 1.02fr 2fr;
-  gap: 1.7rem 1.7rem;
-  align-items: start;
-  padding: 0.4rem 0rem 0.8rem 0rem;
-}
-@media (max-width: 950px) {
-  .profile-main-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1.5rem 0.7rem 1.7rem 0.7rem;
+/* ----------- Responsive Design ----------- */
+@media (max-width: 940px) {
+  .profile-container {
+    flex-direction: column;
+    padding: 1.25rem;
+    gap: 2rem;
+  }
+  .profile-picture,
+  .profile-header {
+    width: 100%;
+    min-width: unset;
+    flex: unset;
   }
 }
 
-/* Picture card, with glass effect and glow */
-.profile-media-card {
-  background: rgba(255, 255, 255, 0.46);
-  border-radius: 21px;
-  padding: 1.7rem 1.5rem 1.3rem 1.5rem
+@media (max-width: 600px) {
+  article { padding: 1rem 0.5rem; }
+  .profile-container { padding: 0.75rem; gap: 1.2rem; }
+  .profile-picture img,
+  .profile-picture video { width: 140px; height: 140px; }
+  .profile-header h2 { font-size: 1.55rem; }
 }
+
+/* ----------- Micro Details: Elegant Scrollbar for Article ----------- */
+article::-webkit-scrollbar { width: 8px; background: transparent; }
+article::-webkit-scrollbar-thumb {
+  background: rgba(34,66,132,0.09);
+  border-radius: 8px;
+}
+
