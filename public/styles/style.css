@@ -1295,7 +1295,7 @@ article {
   justify-content: center;
 }
 
-h2 {
+.Profile-content h2 {
   font-family: "antic didone" !important;
   font-size: 2.5rem;
   font-weight: 700;
@@ -1306,7 +1306,7 @@ h2 {
   text-align: center !important;
 }
 
-p {
+.Profile-content p {
   font-size: 2rem;
   font-weight: 600;
   font-family: "trirong thin";
