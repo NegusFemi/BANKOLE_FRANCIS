@@ -151,8 +151,8 @@ article {
   article { padding: 1rem 0.5rem; }
   .profile-container { padding: 0.75rem; gap: 1.2rem; }
   .profile-picture img,
-  .profile-picture video { width: 140px; height: 140px; }
-  .profile-header h2 { font-size: 1.55rem; }
+  .profile-picture video { width: 200px; height: 200px; }
+  .profile-header h2 { font-size: 1.85rem; }
 }
 
 /* ----------- Micro Details: Elegant Scrollbar for Article ----------- */
@@ -211,21 +211,21 @@ article::-webkit-scrollbar-thumb {
     gap: 0.7rem;
   }
   .profile-picture img {
-    width: 95px;
-    height: 95px;
-    max-width: 80vw;
-    max-height: 80vw;
+    width: 100px;
+    height: 100px;
+    max-width: 90vw;
+    max-height: 90vh;
   }
   .profile-video {
-    max-width: 98vw !important;
+    max-width: 105vw !important;
     border-radius: 0.35rem;
   }
   .Profile-content h2 {
-    font-size: 1.07rem !important;
+    font-size: 1.35rem !important;
     padding: 0.3rem 0.03rem !important;
   }
   .Profile-content p {
-    font-size: 0.82rem !important;
+    font-size: 1rem !important;
     padding: 0.23rem 0.02rem !important;
     margin: 0.37rem 0.1rem !important;
   }

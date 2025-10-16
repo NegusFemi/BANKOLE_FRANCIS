@@ -270,15 +270,15 @@ a[href="#home"]:target ~ #home {
 }
 @media (max-width: 600px) {
   #aboutUs {
-    height: 27vh !important;
+    height: 23vh !important;
     background-size: cover !important;
     background-position: center !important;
   }
   #aboutUs .aboutUs {
-    height: 23vh !important;
+    height: 21vh !important;
   }
   #aboutUs .aboutUs h1 {
-    font-size: 0.79rem !important;
+    font-size: 0.99rem !important;
     padding: 0.32rem !important;
     margin-top: 0.7rem !important;
     margin-bottom: -0.35rem !important;
@@ -1943,11 +1943,11 @@ article {
   }
   .profile-picture img,
   .profile-picture video {
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
   }
   .profile-header h2 {
-    font-size: 1.55rem;
+    font-size: 1.85rem;
   }
 }
 /* ----------- Micro Details: Elegant Scrollbar for Article ----------- */
@@ -2009,21 +2009,21 @@ article::-webkit-scrollbar-thumb {
     gap: 0.7rem;
   }
   .profile-picture img {
-    width: 95px;
-    height: 95px;
-    max-width: 80vw;
-    max-height: 80vw;
+    width: 100px;
+    height: 100px;
+    max-width: 90vw;
+    max-height: 90vh;
   }
   .profile-video {
-    max-width: 98vw !important;
+    max-width: 105vw !important;
     border-radius: 0.35rem;
   }
   .Profile-content h2 {
-    font-size: 1.07rem !important;
+    font-size: 1.35rem !important;
     padding: 0.3rem 0.03rem !important;
   }
   .Profile-content p {
-    font-size: 0.82rem !important;
+    font-size: 1rem !important;
     padding: 0.23rem 0.02rem !important;
     margin: 0.37rem 0.1rem !important;
   }
