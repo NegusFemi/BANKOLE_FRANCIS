@@ -51,7 +51,6 @@ header{
             z-index: 9999;
             cursor: pointer;
         &:hover {
-               // background-color: rgba(187, 248, 236, 0.213);
                 color: rgb(31, 0, 30);
         }
     }
@@ -102,14 +101,16 @@ header{
                 outline: none !important;
             }
             .btn-close {
-                position: absolute!important;
-                left: 20% !important;
-                transform: translateX(-80%);
-                top: 50px !important;
+                position: absolute !important;
+                left: 22% !important;
+                transform: translateX(-78%);
+                top: 60px !important;
                 right: 0px;
                 font-size: 3rem !important;;
                 outline: none !important;
-                z-index: 0;
+                z-index: 999 !important;
+                padding: 1rem !important;
+                margin: 0 !important;
     }
     }
     .side-footer {

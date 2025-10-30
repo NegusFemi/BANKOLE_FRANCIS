@@ -24,10 +24,12 @@
   #landing, #landing2, #landing3, .card, .error-left {
     .landing-right {
       a {
-        padding: 0.8rem 0 !important; /* Minimal padding */
-        width: 7rem !important; /* Smaller button width */
-        margin-top: -2rem !important; /* Adjusted margin */
-        font-size: 1rem !important; /* Smaller font */
+        //top: -4rem !important;
+        right: 11rem !important;
+        padding: 1.5rem 0 !important; /* Minimal padding */
+        width: 10rem !important; /* Smaller button width */
+        margin-bottom: 3rem !important; /* Adjusted margin */
+        font-size: 1.7rem !important; /* Smaller font */
         border-width: 0.6px !important; /* Thinner border */
         span {
           box-shadow: 6px 6px 6px rgba(45, 55, 68, 0.06) !important; /* Lighter shadow */

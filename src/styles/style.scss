@@ -125,25 +125,24 @@ body, html {
 /* LANDING PAGE 1*/
 #landing{
     position: relative !important;
-    width: 100% !important;
-    height: 100.1vh !important;
-    aspect-ratio: 16/10 !important;
-    background: linear-gradient(127deg, #A7CBD5, #e0fbfc3a) !important;
-    z-index: 1;
-    overflow: hidden !important;
-    //padding-bottom: 1rem !important;
+    width: 100%;
+    height: 100.1vh;
+    aspect-ratio: 16/10;
+    background: linear-gradient(127deg, #A7CBD5, #e0fbfc3a);
+    z-index: 1 !important;
+    overflow: hidden;
 &::before{
-    content: ' ' !important;
-    position: absolute !important;
-    top: -5rem !important;
-    left: 0 !important;
-    width: 50% !important;
-    height: 100vh !important;
-    border-bottom-right-radius: 100% !important;
-    background: linear-gradient(225deg, #a7c9d577 0%, #A7CBD577 75%, #A7CBD577 100%) !important;
-    backdrop-filter: blur(1.7rem) !important;
-    background-clip: border-box !important;
-    z-index: -1 !important;
+    content: ' ';
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    border-bottom-right-radius: 100%;
+    background: linear-gradient(225deg, #a7c9d577 0%, #A7CBD577 75%, #A7CBD577 100%);
+    backdrop-filter: blur(1.7rem);
+    background-clip: border-box;
+    z-index: -3 !important;
     animation: move-up 2s infinite alternate;
 @keyframes move-up {
     from {
@@ -155,16 +154,16 @@ body, html {
     }
 }
 &::after{
-    content: ' ' !important;
-    position: absolute !important;
-    bottom: 0rem !important;
-    right: 0 !important;
-    width: 39% !important;
-    height: 70vh !important;
-    border-top-left-radius: 100% !important;
-    background: linear-gradient(125deg, #A7CBD570 0%, #a7cbd570 75%, #A7CBD570 100%) !important;
-    backdrop-filter: blur(1rem) !important;
-    background-clip: border-box !important;
+    content: ' ';
+    position: absolute;
+    bottom: 0rem;
+    right: 0;
+    width: 39%;
+    height: 70vh;
+    border-top-left-radius: 100%;
+    background: linear-gradient(125deg, #A7CBD570 0%, #a7cbd570 75%, #A7CBD570 100%);
+    backdrop-filter: blur(1rem);
+    background-clip: border-box;
     z-index: -2 !important;
     animation: move-up 4s infinite alternate;
 @keyframes move-up {
@@ -177,55 +176,54 @@ body, html {
     }
 }
 .landing-right {
-    height: 100vh !important;
-    position: relative !important;
-    display: grid !important;
-    grid-template-columns: 90% !important;
-    place-content: start center !important;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 90%;
+    place-content: start center;
 h1 {
-   position: relative !important;
-    font-family: 'antic didone' !important;
-    font-weight: 500 !important;
-    font-size: 4.2rem !important;
-    color: $font-color !important;
-    margin-top: 5.6rem !important;
-    padding-top: 0.9rem !important;
-    padding-left: 1.4rem !important;
-    padding-bottom: 0.9rem !important;
+   position: relative;
+    font-family: 'antic didone';
+    font-weight: 500;
+    font-size: 4.2rem;
+    color: $font-color;
+    transform: translateY(5.6rem);
+    padding-top: 0.9rem;
+    padding-left: 1.4rem;
+    padding-bottom: 0.9rem;
     background-color: rgba(199, 236, 254, 0.2);
-    //border-left: #0c313946 0.2rem solid !important;
-    border-bottom:  0.2rem solid #0c313946 !important;
-    border-top: #0c313946 0.6rem solid !important;
-    border-top-left-radius: 0.1rem !important;
-    border-bottom-left-radius: 0.1rem !important;
+    border-bottom:  0.2rem solid #0c313946;
+    border-top: #0c313946 0.6rem solid;
+    border-top-left-radius: 0.1rem;
+    border-bottom-left-radius: 0.1rem;
 }
-#icon2 .fa-regular.fa-circle-play.fa-circle-play {
-    //width: 6rem !important;
-    //height: 10vh !important;
-    font-size: 6rem !important;
-    //font-weight: 600 !important;
-    color: rgba(4, 33, 39, 0.741)!important;
-    cursor: pointer !important;
-    //transition: 0.3s !important;
-    //margin-bottom: -3rem !important;
-    //margin-bottom:  0.2em !important;
-    margin-top: 1rem !important;
-    //position: absolute !important;
-    //z-index: 1 !important;
-    //border: #091818 0.1rem solid !important;
-    //border-radius: 70% !important;
-}
-.audio-player h2 {
+
+.audio-player {
+     h2 {
     font-family: 'trirong thin' !important;
     font-weight:600 !important;
     font-size: 2.3rem !important;
     color: $font-color !important;
+    transform: translateY(6.3rem);
+    white-space: wrap !important;
+}
+}
+#icon2 .fa-regular.fa-circle-play.fa-circle-play {
+    font-size: 6rem !important;
+    color: rgba(4, 33, 39, 0.741) !important;
+    cursor: pointer !important;
+    top: 150% !important;
+    transform: translateY(100%) !important;
+    position: relative !important;
+    z-index: 9999 !important;
 }
 .sub-landing {
+    position: relative;
     font-family: 'trirong thin';
     font-weight: 800;
     font-size: 2.3rem;
     color: $font-color;
+    transform: translateY(5.6rem);
     padding-top: 1rem !important;
     padding-bottom: 0.3rem !important;
     white-space: wrap !important;
@@ -234,6 +232,7 @@ h1 {
     font-family: 'trirong thin';
     font-weight: 600;
     font-size: 2rem;
+    transform: translateY(5.6rem);
     padding-bottom: 1rem !important;
     color: $font-color;
 }
@@ -250,32 +249,33 @@ ul li {
 }
 }
 .image-box {
-    position: relative !important;
+    position: relative;
     display: grid;
     grid-template-columns: 100%;
-    justify-items: center !important;
+    justify-items: center;
     align-items: center;
 img {
     display: block;
-    position: absolute;
-    height: 95.5vh !important;
-    max-width: 100% !important;
-    object-fit: cover !important;
-    bottom: 0;
-    right: 0rem;
+    height: 95.5vh;
+    max-width: 100%;
+    object-fit: cover;
+    bottom: 0rem;
+    left: 140%;
+    transform: translateY(2rem) translateX(121%);
+    z-index: -1 !important;
 }
 }
 }
 
 /*LANDING PAGE 2 */
 #landing2 {
-    position: relative !important;
-    width: 100% !important;
-    height: 102vh !important;
-    aspect-ratio: 16/10 !important;
-    background: linear-gradient(127deg, #CCE3DD , #F9FAF5) !important;
-    z-index: 1;
-    overflow: hidden !important;
+    position: relative;
+    width: 100%;
+    height: 100.1vh;
+    aspect-ratio: 16/10;
+    background: linear-gradient(127deg, #CCE3DD , #F9FAF5);
+    z-index: 1 !important;
+    overflow: hidden;
 &::before{
     content: ' ' !important;
     position: absolute !important;
@@ -327,21 +327,20 @@ img {
     grid-template-columns: 90% !important;
     place-content: start center !important;
 h1 {
-   position: relative !important;
+   position: relative;
     font-family: 'antic didone';
-    font-weight: 500 !important;
-    font-size: 4.3rem !important;
-    color: $font-color !important;
+    font-weight: 500;
+    font-size: 4.3rem;
+    color: $font-color;
     margin-top: 5.6rem !important;
-    padding-top: 0.9rem !important;
-    padding-left: 1.4rem !important;
-    padding-bottom: 0.9rem !important;
+    padding-top: 0.9rem;
+    padding-left: 1.4rem;
+    padding-bottom: 0.9rem;
     background-color: rgba(204, 227, 221, 0.8);
-    //border-left: #05252c5e 0.2rem solid !important;
-    border-bottom: #05252c5e 0.2rem solid !important;
-    border-top: #05252c5e 0.6rem solid !important;
-    border-top-left-radius: 0.1rem !important;
-    border-bottom-left-radius: 0.1rem !important;
+    border-bottom: #05252c5e 0.2rem solid;
+    border-top: #05252c5e 0.6rem solid;
+    border-top-left-radius: 0.1rem;
+    border-bottom-left-radius: 0.1rem;
 }
 .audio-player {
 h2 {
@@ -355,20 +354,10 @@ h2 {
 }
 }
 #icon1 .fa-regular.fa-circle-play.fa-circle-play {
-    //width: 6rem !important;
-    //height: 10vh !important;
     font-size: 6rem !important;
-    //font-weight: 600 !important;
     color: #13292fdb !important;
     cursor: pointer !important;
-    //transition: 0.3s !important;
-    //margin-bottom: -3rem !important;
-    //padding-bottom: 0.5rem !important;
     margin-top: 1rem !important;
-    //position: absolute !important;
-    //z-index: 1 !important;
-    //border: #091818 0.1rem solid !important;
-    //border-radius: 70% !important;
 }
 .sub-landing {
     font-family: 'trirong thin';
@@ -398,17 +387,16 @@ ul li {
 }
 }
 .image-box2 {
-    //position: relative !important;
-    display: grid !important;
-    grid-template-rows: 100% !important;
-    justify-items: center !important;
-    align-items: center !important;
+    display: grid;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
 img {
-    display: block !important;
+    display: block;
     position: absolute;
-    height: 113vh !important;
-    max-width: 100% !important;
-    object-fit: cover !important;
+    height: 111vh;
+    max-width: 100%;
+    object-fit: cover;
     bottom: 0;
     right: -8rem;
     z-index: 9;
@@ -426,13 +414,13 @@ img {
                 0 6px 12px -6px rgba(0,0,0,0.45);  /* bottom shadow */
 }
 #landing3 {
-    position: relative !important;
-    width: 100% !important;
-    height: 101vh !important;
-    aspect-ratio: 16/10 !important;
-    background: linear-gradient(127deg, #aab8c2 , #F9FAF5) !important;
-    z-index: 1;
-    overflow: hidden !important;
+    position: relative;
+    width: 100%;
+    height: 101vh;
+    aspect-ratio: 16/10;
+    background: linear-gradient(127deg, #aab8c2 , #F9FAF5);
+    z-index: 1 !important;
+    overflow: hidden;
 &::before{
     content: ' ' !important;
     position: absolute !important;
@@ -484,16 +472,15 @@ img {
     grid-template-columns: 90% !important;
     place-content: start center !important;
 h1 {
-    position: relative !important;
+    position: relative;
     font-family: 'antic didone';
-    font-weight: 500 !important;
-    font-size: 4.1rem !important;
-    color: $font-color !important;
+    font-weight: 500;
+    font-size: 4.1rem;
+    color: $font-color;
     margin-top: 5.6rem !important;
     padding-top: 0.9rem !important;
     padding-left: 1.4rem !important;
     padding-bottom: 0.9rem !important;
-    //border-left: #05252c5e 0.2rem solid !important;
     border-bottom: #05252c5e 0.2rem solid !important;
     border-top: #05252c5e 0.6rem solid !important;
     border-top-left-radius: 0.1rem !important;
@@ -510,20 +497,11 @@ h2 {
     white-space: wrap !important;
 }
 #icon .fa-regular.fa-circle-play.fa-circle-play{
-    //width: 6rem !important;
-    //height: 10vh !important;
     font-size: 6rem !important;
-    //font-weight: 600 !important;
     color: rgba(4, 33, 39, 0.952) !important;
     cursor: pointer !important;
-    //transition: 0.3s !important;
-    //margin-bottom: -3rem !important;
     padding: 0rem !important;
     margin-top: 1rem !important;
-    //position: absolute !important;
-    //z-index: 1 !important;
-    //border: #091818 0.1rem solid !important;
-    //border-radius: 70% !important;
 }
 }   
 .sub-landing {
@@ -553,17 +531,16 @@ ul li {
 }
 }
 .image-box2 {
-    //position: relative !important;
-    display: grid !important;
-    grid-template-rows: 100% !important;
-    justify-items: center !important;
-    align-items: center !important;
+    display: grid;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
 img {
-    display: block !important;
+    display: block;
     position: absolute;
-    height: 95.4vh !important;
-    max-width: 100% !important;
-    object-fit: cover !important;
+    height: 95.4vh;
+    max-width: 100%;
+    object-fit: cover;
     bottom: 0;
     right: -1rem;
     z-index: 9;

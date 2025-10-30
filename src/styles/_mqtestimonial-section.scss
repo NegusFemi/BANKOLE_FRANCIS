@@ -1,7 +1,7 @@
 /* Media Query for Tablets (768px and below) */
 @media screen and (max-width: 768px) {
   #testimonial-section {
-    height: 80vh !important; /* Reduced height for tablets */
+    height: 100vh !important; /* Reduced height for tablets */
     aspect-ratio: 4/3 !important; /* Adjusted aspect ratio */
     &::before {
       width: 60% !important; /* Wider pseudo-element */
@@ -16,7 +16,7 @@
   }
   .testimonial-section {
     h2 {
-      font-size: 2.2rem !important; /* Smaller font size */
+      font-size: 2.1rem !important; /* Smaller font size */
       padding-top: 3rem !important;
     }
     .testimony {
@@ -28,7 +28,7 @@
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15) !important; /* Lighter shadow */
       }
       .user-text {
-        font-size: 1.5rem !important; /* Smaller font */
+        font-size: 1.4rem !important; /* Smaller font */
         line-height: 24px !important;
         width: 85% !important;
       }
@@ -38,7 +38,7 @@
         margin-top: 15px !important;
       }
       .user-text .ceoName {
-        font-size: 1.6rem !important;
+        font-size: 1.4rem !important;
         margin-top: 15px !important;
       }
       .testimonial-pic {
@@ -66,9 +66,9 @@
 }
 
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 37.5em) {
   #testimonial-section {
-    height: 60vh !important; /* Further reduced height */
+    height: 70vh !important; /* Further reduced height */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
     &::before {
       width: 70% !important; /* Wider pseudo-element */
@@ -83,19 +83,19 @@
   }
   .testimonial-section {
     h2 {
-      font-size: 1.6rem !important; /* Smaller font */
-      padding-top: 2rem !important;
+      font-size: 2.1rem !important; /* Smaller font */
+      margin-top: -2.8rem !important;
     }
     .testimony {
       width: 90% !important;
       max-width: 400px !important;
       padding-top: 0.3rem !important;
       .testimonial-text {
-        height: 200px !important; /* Smaller testimonial box */
+        height: 340px !important; /* Smaller testimonial box */
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1) !important; /* Lighter shadow */
       }
       .user-text {
-        font-size: 1.2rem !important; /* Smaller font */
+        font-size: 1.4rem !important; /* Smaller font */
         line-height: 20px !important;
         width: 80% !important;
       }
@@ -105,15 +105,18 @@
         margin-top: 10px !important;
       }
       .user-text .ceoName {
-        font-size: 1.3rem !important;
+        font-size: 1.6rem !important;
         margin-top: 10px !important;
       }
       .testimonial-pic {
         margin-bottom: 1rem !important;
       }
       .user-pic {
+        position: relative !important;
         width: 35px !important; /* Smaller profile picture */
         padding: 4px !important;
+        left: 6.9rem !important;
+        z-index: 99 !important;
       }
       .user-pic.active-pic {
         width: 40px !important;
@@ -125,9 +128,11 @@
   .testimonial-right {
     img {
       height: 50vh !important; /* Further reduced image height */
-      width: 60% !important; /* Wider for small screens */
-      object-fit: contain !important;
-      right: 0 !important;
+      width: 70% !important; /* Wider for small screens */
+      object-fit: cover !important;
+      right: -7rem !important;
+      top: 7rem !important;
+      z-index: -1 !important;
     }
   }
 }

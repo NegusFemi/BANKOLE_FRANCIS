@@ -41,18 +41,18 @@ $font-color: #091818;
     img {
         display: block !important;
         position: absolute;
-        height: 64.2vh !important;
-        width: 40% !important;
-        object-fit: cover !important;
+        height: 64.2vh;
+        width: 40%;
+        object-fit: cover;
         bottom: 0;
-        right: 0 !important;
+        right: 0;
         z-index: 1 !important;
     }
 }
 .footer-glass {
     background: linear-gradient(127deg, #A7CBD5, #e0fbfc3a) !important;
     background-size: auto, contain, auto !important;
-    height: 65vh !important;
+    height: 65vh;
     width: 100% !important;
     position: relative !important;
     z-index: 1 !important;

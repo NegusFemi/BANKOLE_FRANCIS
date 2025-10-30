@@ -102,13 +102,15 @@ header .nav-container .side-nav a:hover {
 }
 header .nav-container .side-nav .btn-close {
   position: absolute !important;
-  left: 20% !important;
-  transform: translateX(-80%);
-  top: 50px !important;
+  left: 22% !important;
+  transform: translateX(-78%);
+  top: 60px !important;
   right: 0px;
   font-size: 3rem !important;
   outline: none !important;
-  z-index: 0;
+  z-index: 999 !important;
+  padding: 1rem !important;
+  margin: 0 !important;
 }
 header .nav-container .side-footer {
   font-family: "trirong thin";
@@ -156,7 +158,8 @@ a[href="#home"]:target ~ #home {
   padding: 1.3rem 0 !important;
   width: 11.9rem !important;
   position: absolute;
-  margin-top: -3.6rem !important;
+  margin-top: 1rem !important;
+  bottom: 1.9rem !important;
   font-family: "trirong thin";
   font-weight: 600;
   font-size: 1.5rem;
@@ -215,40 +218,21 @@ a[href="#home"]:target ~ #home {
 #aboutUs .aboutUs h1 {
   font-family: "antic didone" !important;
   font-weight: 500 !important;
-  font-size: 2.3rem !important;
+  font-size: 2.3rem;
   color: rgb(252, 247, 253);
   text-align: center !important;
   background-color: rgba(255, 255, 255, 0.1) !important;
   backdrop-filter: blur(0.99rem) !important;
   background-clip: padding-box !important;
-  padding: 1rem !important;
+  padding: 0.7rem !important;
   margin-top: 6rem !important;
-  margin-bottom: -1.6rem !important;
+  margin-bottom: -1.6rem;
   border: 1.5px solid rgba(255, 255, 255, 0.3);
 }
 
-/* --- Responsive Design: Tablets and Phones --- */
-@media (max-width: 940px) {
-  #aboutUs {
-    height: 60vh !important;
-    background-size: cover !important;
-    background-position: center !important;
-  }
-  #aboutUs .aboutUs {
-    height: 55vh !important;
-    grid-template-columns: 100% !important;
-  }
-  #aboutUs .aboutUs h1 {
-    font-size: 1.25rem !important;
-    padding: 0.7rem !important;
-    margin-top: 2.3rem !important;
-    margin-bottom: -0.7rem !important;
-    border-width: 1px !important;
-  }
-}
 /* SERVICE INDUSTRIES SECTION START*/
 #Gallery {
-  height: 115vh !important;
+  height: 115vh;
   width: 100% !important;
   position: relative !important;
   background: linear-gradient(127deg, #aab8c2, #F9FAF5) !important;
@@ -310,14 +294,14 @@ a[href="#home"]:target ~ #home {
 #Gallery .Gallery h1 {
   font-family: "antic didone";
   font-weight: 500 !important;
-  font-size: 1.9rem !important;
+  font-size: 1.9rem;
   color: #091818;
-  padding-top: 6rem !important;
+  padding-top: 6rem;
   margin-bottom: -0.5rem !important;
   margin-top: 8rem !important;
 }
 #Gallery .Gallery .gallery {
-  height: 90% !important;
+  height: 90%;
   width: 100% !important;
   display: flex !important;
   margin-top: 2% !important;
@@ -339,7 +323,7 @@ a[href="#home"]:target ~ #home {
 }
 #Gallery .Gallery .image-box img {
   width: 100% !important;
-  height: 100% !important;
+  height: 100%;
   object-fit: cover !important;
   transition: 1s !important;
 }
@@ -350,8 +334,8 @@ a[href="#home"]:target ~ #home {
   flex-basis: 50% !important;
 }
 #Gallery .Gallery .image-box .overlay {
-  width: 100% !important;
-  height: 90vh !important;
+  width: 100%;
+  height: 90vh;
   position: absolute !important;
   top: 0% !important;
   cursor: pointer;
@@ -366,7 +350,7 @@ a[href="#home"]:target ~ #home {
   color: rgb(255, 255, 255) !important;
   font-family: "antic didone" !important;
   font-weight: 500 !important;
-  font-size: 2.7rem !important;
+  font-size: 2.7rem;
   position: static !important;
   display: flex !important;
   justify-content: center !important;
@@ -376,69 +360,67 @@ a[href="#home"]:target ~ #home {
   color: white !important;
   font-family: "trirong thin" !important;
   font-weight: 600 !important;
-  font-size: 2rem !important;
+  font-size: 2rem;
   position: absolute !important;
-  padding: 3rem !important;
-  top: 67% !important;
-  transform: translateY(-33%);
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
 }
 
 /* SCROLLING TEXT BANNER START*/
 #continuous-scroll .cont-scroll {
-  position: relative !important;
-  width: 100% !important;
-  height: 15vh !important;
-  overflow: hidden !important;
-  margin: 0 !important;
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+  margin: 0;
   border-top: 6px solid #122023;
   border-bottom: 6px solid #122023;
 }
 #continuous-scroll .cont-scroll div {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 20vh !important;
-  background: linear-gradient(127deg, #aabdc2, #F9FAF5) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(127deg, #aabdc2, #F9FAF5);
 }
 #continuous-scroll .cont-scroll div:nth-child(2) {
-  background: linear-gradient(127deg, #aab8c2, #F9FAF5) !important;
-  max-height: 20vh !important;
-  clip-path: circle(180px at center) !important;
+  background: linear-gradient(127deg, #aab8c2, #F9FAF5);
+  max-height: 100%;
+  clip-path: circle(180px at center);
 }
 #continuous-scroll .cont-scroll div h1 {
-  position: absolute !important;
-  top: -200px !important;
+  position: absolute;
+  top: 68%;
   left: 0;
-  font-family: "antic didone" !important;
-  font-weight: 500 !important;
-  font-size: 3rem !important;
-  color: #091818 !important;
+  transform: translateY(-32%);
+  font-family: "antic didone";
+  font-weight: 500;
+  font-size: 3rem;
+  color: #091818;
   white-space: nowrap;
-  line-height: 100vh;
   cursor: default;
-  animation: animate 46s linear infinite;
+  display: inline-block;
+  will-change: transform;
+  animation: animate 30s linear infinite;
 }
 #continuous-scroll .cont-scroll div:nth-child(2) h1 {
-  -webkit-text-stroke: 2px !important;
-  -webkit-text-stroke-color: rgba(39, 27, 43, 0.592) !important;
+  -webkit-text-stroke: 2px rgba(39, 27, 43, 0.592);
   color: transparent;
 }
+
 @keyframes animate {
   0% {
-    transform: translateX(-80%);
-  }
-  50% {
-    transform: translateX(50%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-90%);
+    transform: translateX(-100%);
   }
 }
-
 /* TESTIMONIAL SECTION START*/
 #testimonial-section {
-  height: 102vh !important;
+  height: 102vh;
   width: 100% !important;
   position: relative !important;
   background: linear-gradient(127deg, #aac2bf, #e7fbf7) !important;
@@ -499,35 +481,35 @@ a[href="#home"]:target ~ #home {
 #testimonial-section .testimonial-section h2 {
   font-family: "antic didone";
   font-weight: 500 !important;
-  font-size: 3rem !important;
+  font-size: 3rem;
   color: #091818;
   padding-top: 4.8rem !important;
 }
 #testimonial-section .testimonial-section .testimony {
-  width: 90% !important;
-  max-width: 800px !important;
+  width: 90%;
+  max-width: 800px;
   margin: auto !important;
-  padding-top: 0.8rem !important;
+  padding-top: 0.8rem;
 }
 #testimonial-section .testimonial-section .testimony .testimonial-text {
-  background: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(1rem) !important;
-  background-clip: padding-box !important;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1rem);
+  background-clip: padding-box;
   color: #091818;
-  width: 100% !important;
-  height: 310px !important;
-  position: relative !important;
+  width: 100%;
+  height: 300px;
+  position: relative;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
   border: 2px solid transparent rgb(255, 255, 255);
 }
 #testimonial-section .testimonial-section .testimony .user-text {
   font-family: "trirong thin";
   font-weight: 600 !important;
-  font-size: 1.9rem !important;
+  font-size: 1.9rem;
   color: #091818;
   width: 90% !important;
   text-align: center !important;
-  line-height: 30px !important;
+  line-height: 30px;
   position: absolute !important;
   top: 50% !important;
   left: 50% !important;
@@ -541,8 +523,8 @@ a[href="#home"]:target ~ #home {
 }
 #testimonial-section .testimonial-section .testimony .user-text .ceoName {
   display: block !important;
-  font-size: 2rem !important;
-  margin-top: 20px !important;
+  font-size: 2rem;
+  margin-top: 20px;
   font-family: "antic didone";
   font-weight: 500 !important;
   color: #091818;
@@ -570,11 +552,11 @@ a[href="#home"]:target ~ #home {
   width: 55px !important;
   padding: 8px !important;
   border-radius: 45% !important;
-  margin-bottom: 2rem !important;
+  margin-bottom: 2rem;
   cursor: pointer;
 }
 #testimonial-section .testimonial-section .testimony .user-pic.active-pic {
-  width: 60px !important;
+  width: 55px !important;
   border: 2px solid #091818 !important;
   padding: 1rem !important;
   margin-top: 0.3rem !important;
@@ -588,9 +570,9 @@ a[href="#home"]:target ~ #home {
 #testimonial-section .testimonial-right img {
   display: block !important;
   position: absolute;
-  height: 93.6vh !important;
-  width: 40% !important;
-  object-fit: cover !important;
+  height: 93.6vh;
+  width: 40%;
+  object-fit: cover;
   bottom: 0;
   right: -2rem;
   z-index: 0;
@@ -650,16 +632,18 @@ a[href="#home"]:target ~ #home {
     transform: translateY(4rem);
   }
 }
-#blog-list .card {
+#blog-list .card-container {
+  padding: 1rem !important;
+}
+#blog-list .card-container .card {
   background: rgba(255, 255, 255, 0.1) !important;
   backdrop-filter: blur(1rem) !important;
   background-clip: padding-box !important;
-  width: 100% !important;
-  height: 282px !important;
+  width: 100%;
+  height: 282px;
   position: relative !important;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2) !important;
   border: 5px solid transparent rgb(255, 255, 255) !important;
-  margin: 1.8rem !important;
 }
 
 .blog-list {
@@ -689,7 +673,7 @@ a[href="#home"]:target ~ #home {
 .blog-list h1 {
   font-family: "antic didone";
   font-weight: 500 !important;
-  font-size: 3.9rem !important;
+  font-size: 3.9rem;
   margin: 2.6rem auto -0.5rem !important;
   text-align: center !important;
   color: #091818 !important;
@@ -700,7 +684,7 @@ a[href="#home"]:target ~ #home {
 .blog-list h2 {
   font-family: "antic didone";
   font-weight: 600 !important;
-  font-size: 1.89rem !important;
+  font-size: 1.89rem;
   padding: 1rem !important;
   margin: 0.5rem 0 0 0;
   color: #091818 !important;
@@ -757,18 +741,18 @@ a[href="#home"]:target ~ #home {
 .footer-right img {
   display: block !important;
   position: absolute;
-  height: 64.2vh !important;
-  width: 40% !important;
-  object-fit: cover !important;
+  height: 64.2vh;
+  width: 40%;
+  object-fit: cover;
   bottom: 0;
-  right: 0 !important;
+  right: 0;
   z-index: 1 !important;
 }
 
 .footer-glass {
   background: linear-gradient(127deg, #A7CBD5, rgba(224, 251, 252, 0.2274509804)) !important;
   background-size: auto, contain, auto !important;
-  height: 65vh !important;
+  height: 65vh;
   width: 100% !important;
   position: relative !important;
   z-index: 1 !important;
@@ -1120,28 +1104,28 @@ article {
 }
 
 .profile-header p {
-  font-size: 1.4rem !important;
+  font-size: 1.8rem !important;
   font-family: "trirong thin" !important;
   font-weight: 700;
   line-height: 1.27;
   margin: 1rem 0;
-  padding: 0.6rem 0 !important;
+  padding: 1.5rem !important;
   color: var(--text-main);
   letter-spacing: 0.04em;
   word-break: break-word;
 }
 
 .profile-header ul {
-  margin: 0.8rem 0 !important;
-  padding: 0.8rem 0 !important;
+  margin: 0.6rem 0 !important;
+  padding: 0.6rem 0 !important;
 }
 
 .profile-header ul li {
-  font-size: 1.05rem !important;
+  font-size: 1.4rem !important;
   color: rgb(2, 35, 41) !important;
   font-family: "trirong thin" !important;
   font-weight: 600 !important;
-  margin-bottom: 0.35rem !important;
+  margin-bottom: 0.2rem !important;
   margin-left: 1.5rem !important;
   padding: 0.3rem 0 !important;
   display: block !important;
@@ -1168,21 +1152,21 @@ article {
   }
 }
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 37.5em) {
   #aboutUs {
-    height: 60vh !important; /* Shorter height for mobile */
-    background-size: contain !important; /* Ensure image fits within viewport */
+    height: 90vh !important; /* Shorter height for mobile */
+    background-size: cover !important; /* Ensure image fits within viewport */
     background-position: top center !important;
   }
   .aboutUs {
     height: 60vh !important;
-    grid-template-columns: 85% !important; /* Further reduce width for mobile */
+    grid-template-columns: 80% !important; /* Further reduce width for mobile */
   }
   .aboutUs h1 {
-    font-size: 1.4rem !important; /* Smaller font for mobile readability */
+    font-size: 2rem !important; /* Smaller font for mobile readability */
     padding: 0.6rem !important; /* Tighter padding */
-    margin-top: 2.5rem !important; /* Reduced margin for compact layout */
-    margin-bottom: -0.8rem !important;
+    margin-top: -2.5rem !important; /* Reduced margin for compact layout */
+    margin-bottom: 8rem !important;
     border-width: 1px !important; /* Thinner border for smaller screens */
     backdrop-filter: blur(0.6rem) !important; /* Optimize blur for mobile performance */
   }
@@ -1315,70 +1299,6 @@ article {
   margin: 1rem !important;
 }
 
-/* ----------- Responsive Design ----------- */
-@media (max-width: 940px) {
-  .profile-container {
-    flex-direction: column;
-    padding: 1.25rem;
-    gap: 2rem;
-  }
-  .profile-picture,
-  .profile-header {
-    width: 100%;
-    min-width: unset;
-    flex: unset;
-  }
-}
-/* ----------- Micro Details: Elegant Scrollbar for Article ----------- */
-article::-webkit-scrollbar {
-  width: 8px;
-  background: transparent;
-}
-
-article::-webkit-scrollbar-thumb {
-  background: rgba(34, 66, 132, 0.09);
-  border-radius: 8px;
-}
-
-/* --- Responsive Design: Only for Tablets and Phones --- */
-@media (max-width: 940px) {
-  article {
-    padding: 1.2rem 0.7rem;
-  }
-  .profile-container {
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-  .profile-picture,
-  .profile-header {
-    width: 100%;
-    min-width: unset;
-    flex: unset;
-    max-width: unset;
-  }
-  .profile-picture img {
-    width: 180px;
-    height: 180px;
-    max-width: 60vw;
-    max-height: 60vw;
-  }
-  .profile-video {
-    height: auto !important;
-    max-width: 98vw !important;
-    aspect-ratio: 16/9;
-  }
-  .Profile-content h2 {
-    font-size: 1.4rem !important;
-    padding: 0.6rem 0.2rem !important;
-    margin-bottom: 0.3rem !important;
-  }
-  .Profile-content p {
-    font-size: 1.1rem !important;
-    padding: 0.4rem 0 !important;
-    margin: 0.6rem 0.2rem !important;
-  }
-}
 /* Media Query for Tablets (768px and below) */
 @media screen and (max-width: 768px) {
   article {
@@ -1417,39 +1337,43 @@ article::-webkit-scrollbar-thumb {
   }
 }
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 37.5em) {
   article {
-    padding: 0.5rem !important; /* Minimal padding for mobile */
+    padding: 0.5rem !important;
+    min-height: 120vh !important; /* allow page to grow with content */
+    padding-bottom: 3rem !important; /* extra space at bottom so final text isn't cut off */
   }
   .profile-container {
-    gap: 1rem !important; /* Tighter gap */
+    gap: 1rem !important;
     flex-direction: column !important;
     align-items: center !important;
+    min-height: 120vh !important; /* allow container to expand */
+    padding-bottom: 3rem !important; /* extra spacing for content overflow */
   }
   .profile-picture {
-    min-width: 150px !important; /* Further reduced minimum width */
+    min-width: 250px !important;
     flex: 1 1 100% !important;
   }
   .profile-picture img {
-    width: 150px !important; /* Smaller image for mobile */
+    width: 250px !important;
     height: 150px !important;
-    border-width: 2px !important; /* Thinner border */
-    box-shadow: 0 2px 20px 0 rgba(68, 106, 234, 0.07) !important; /* Lighter shadow */
+    border-width: 2px !important;
+    box-shadow: 0 2px 20px 0 rgba(68, 106, 234, 0.07) !important;
   }
   .profile-video {
     max-width: 100% !important;
-    height: 200px !important; /* Smaller video height */
-    border-radius: 6px !important; /* Slightly smaller border radius */
+    height: 200px !important;
+    border-radius: 6px !important;
   }
   .profile-header {
     flex: 1 1 100% !important;
   }
-  .Profile-content h2 {
-    font-size: 1.4rem !important; /* Smaller header font */
+  .profile-content h2 {
+    font-size: 1.4rem !important;
     margin-bottom: 0.5rem !important;
   }
-  .Profile-content p {
-    font-size: 1.2rem !important; /* Smaller paragraph font */
+  .profile-content p {
+    font-size: 1.2rem !important;
     padding: 0.8rem !important;
     margin: 0.5rem !important;
   }
@@ -1507,14 +1431,16 @@ article::-webkit-scrollbar-thumb {
   }
 }
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 37.5em) {
   .footer-right img {
-    height: 40vh !important; /* Further reduced image height */
-    width: 60% !important; /* Wider for small screens */
-    object-fit: contain !important;
+    height: 99vh !important; /* Further reduced image height */
+    width: 100% !important; /* Wider for small screens */
+    object-fit: cover !important;
+    right: -9.7rem !important;
+    z-index: -1 !important;
   }
   .footer-glass {
-    height: 40vh !important; /* Compact height for mobile */
+    height: 95vh !important; /* Compact height for mobile */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
   }
   .footer-glass::before {
@@ -1528,164 +1454,131 @@ article::-webkit-scrollbar-thumb {
     backdrop-filter: blur(0rem) !important;
   }
   .footer-content h2 {
-    font-size: 2.2rem !important; /* Much smaller font */
-    line-height: 2.2rem !important;
-    margin: 1rem 0rem 0rem 1.5rem !important;
+    font-size: 5.2rem !important;
+    line-height: 4.8rem !important;
+    margin: 0 0 0 0.4rem !important;
+    position: relative !important;
+    top: 12% !important; /* pulls the heading up */
+    transform: translateY(-88%) !important;
   }
   .social-icons {
-    gap: 0.4rem !important; /* Tighter gap */
-    margin-left: 1.5rem !important;
-    padding-top: 0.2rem !important;
+    position: relative;
+    gap: 0.5rem !important; /* Tighter gap */
+    left: -6rem !important;
+    top: -1.6rem !important;
     justify-content: center !important; /* Center icons for mobile */
   }
   .social-icons li a {
-    width: 32px !important; /* Smaller icons */
-    height: 32px !important;
-    font-size: 1.2rem !important;
-    padding-top: 0.6rem !important;
+    width: 45px !important; /* Smaller icons */
+    height: 45px !important;
+    font-size: 1.7rem !important;
   }
   #footer2 {
-    height: 6vh !important; /* Minimal footer height */
-    margin-top: 1rem !important;
+    height: 15vh !important; /* Minimal footer height */
+    margin-top: 0rem !important;
     padding-bottom: 0.2rem !important;
   }
   #footer2 .footer-D {
-    flex-direction: column !important; /* Stack items vertically */
-    align-items: center !important;
+    position: relative !important;
+    display: flex !important;
+    justify-content: space-between !important; /* horizontally center children */
+    align-items: center !important; /* vertically center children */
+    width: 100% !important;
   }
   #footer2 .footer-D h3 {
-    font-size: 0.8rem !important;
-    padding-left: 0.8rem !important;
-    padding-right: 0.8rem !important;
+    position: relative !important;
+    width: auto !important;
+    font-size: 1rem !important;
+    margin: 0 !important; /* reset margins so centering works */
+    text-align: center !important; /* center text inside the h3 */
+    right: -1.5rem !important; /* remove previous offset */
+    left: -0.3rem !important;
+    top: -2.2rem !important; /* pulled up a bit */
   }
   #footer2 .footer-D h3:nth-child(2) {
-    font-size: 1.2rem !important;
-    margin-top: 0.2rem !important;
+    font-size: 1.6rem !important;
+    margin-top: 0rem !important;
   }
 }
 /* Media Query for Tablets (768px and below) */
-@media screen and (max-width: 768px) {
-  #Gallery {
-    height: 80vh !important; /* Reduced height for tablets */
-    aspect-ratio: 4/3 !important; /* Adjusted aspect ratio */
-  }
-  #Gallery::before {
-    width: 60% !important; /* Wider pseudo-element */
-    height: 80vh !important;
-    backdrop-filter: blur(2rem) !important; /* Reduced blur for performance */
-  }
-  #Gallery::after {
-    width: 45% !important;
-    height: 50vh !important;
-    backdrop-filter: blur(0.8rem) !important;
-  }
-  .Gallery {
-    height: 80vh !important;
-    grid-template-columns: 90% !important; /* Slightly reduced width */
-  }
-  .Gallery h1 {
-    font-size: 1.5rem !important; /* Smaller font size */
-    padding-top: 4rem !important;
-    margin-top: 6rem !important;
-    margin-bottom: -0.3rem !important;
-  }
-  .Gallery .gallery {
-    height: 85% !important; /* Adjusted height */
-    flex-direction: column !important; /* Stack images vertically */
-    margin-top: 1% !important;
-  }
-  .Gallery .image-box {
-    margin: 0.5% !important; /* Reduced margin */
-    flex-basis: auto !important; /* Allow natural sizing */
-  }
-  .Gallery .image-box img {
-    height: 25vh !important; /* Smaller image height */
-    object-fit: contain !important; /* Ensure full image visibility */
-  }
-  .Gallery .image-box:hover {
-    flex-basis: auto !important; /* Disable hover expansion */
-  }
-  .Gallery .image-box:nth-child(1):hover {
-    flex-basis: auto !important;
-  }
-  .Gallery .image-box .overlay {
-    height: 25vh !important; /* Match image height */
-    opacity: 0.8 !important; /* Slightly visible overlay for better UX */
-  }
-  .Gallery .image-box .overlay h2 {
-    font-size: 1.8rem !important; /* Smaller heading */
-    padding: 1.5rem !important;
-  }
-  .Gallery .image-box .overlay p {
-    font-size: 1.4rem !important; /* Smaller paragraph */
-    padding: 2rem !important;
-    top: 60% !important;
-    transform: translateY(-30%) !important;
-  }
-}
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 37.5em) {
   #Gallery {
-    height: 60vh !important; /* Further reduced height */
-    aspect-ratio: 3/2 !important; /* Adjusted for mobile */
+    height: 63vh !important;
+    width: 100% !important;
+    position: relative !important;
+    background: linear-gradient(127deg, #aab8c2, #F9FAF5) !important;
+    z-index: 1;
+    aspect-ratio: 16/10 !important;
+    overflow: hidden !important;
   }
-  #Gallery::before {
-    width: 70% !important; /* Wider pseudo-element */
-    height: 60vh !important;
-    backdrop-filter: blur(1.5rem) !important; /* Further reduced blur */
+  #Gallery .Gallery {
+    height: 63vh !important;
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: 98.8% !important;
+    place-content: center !important;
   }
-  #Gallery::after {
-    width: 50% !important;
-    height: 40vh !important;
-    backdrop-filter: blur(0.5rem) !important;
+  #Gallery .Gallery h1 {
+    font-family: "antic didone";
+    font-weight: 500 !important;
+    font-size: 1.7rem !important;
+    color: #091818;
+    padding-top: 0rem !important;
+    line-height: 2.2rem !important;
+    margin-bottom: 0.4rem !important;
+    margin-top: 0rem !important;
   }
-  .Gallery {
-    height: 60vh !important;
-    grid-template-columns: 85% !important; /* Further reduced width */
+  #Gallery .Gallery .image-box {
+    margin: 0 1% !important;
+    flex-grow: 1 !important;
+    flex-basis: 0 !important;
+    transition: 1s !important;
+    position: relative !important;
   }
-  .Gallery h1 {
-    font-size: 1.2rem !important; /* Smaller font */
-    padding-top: 3rem !important;
-    margin-top: 4rem !important;
-    margin-bottom: -0.2rem !important;
+  #Gallery .Gallery .image-box img {
+    width: 100% !important;
+    height: 125.5% !important;
+    object-fit: cover !important;
+    transition: 1s !important;
   }
-  .Gallery .gallery {
-    height: 80% !important;
-    flex-direction: column !important;
-    margin-top: 0.5% !important;
+  #Gallery .overlay {
+    width: 100% !important;
+    height: 27vh !important;
+    position: absolute !important;
+    top: 0% !important;
+    cursor: pointer;
+    background: linear-gradient(rgba(12, 34, 48, 0.2), rgba(1, 7, 8, 0.9));
+    opacity: 0 !important;
+    transition: 1s !important;
   }
-  .Gallery .image-box {
-    margin: 0.3% !important; /* Minimal margin */
+  #Gallery .overlay:hover {
+    opacity: 1 !important;
   }
-  .Gallery .image-box img {
-    height: 20vh !important; /* Smaller image height */
-    object-fit: contain !important;
+  #Gallery .overlay h2 {
+    color: rgb(255, 255, 255) !important;
+    font-family: "antic didone" !important;
+    font-weight: 500 !important;
+    font-size: 1.5rem !important;
+    position: static !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 2rem !important;
   }
-  .Gallery .image-box:hover {
-    flex-basis: auto !important;
-  }
-  .Gallery .image-box:nth-child(1):hover {
-    flex-basis: auto !important;
-  }
-  .Gallery .image-box .overlay {
-    height: 20vh !important; /* Match image height */
-    opacity: 0.9 !important; /* More visible overlay */
-  }
-  .Gallery .image-box .overlay h2 {
-    font-size: 1.4rem !important; /* Smaller heading */
-    padding: 1rem !important;
-  }
-  .Gallery .image-box .overlay p {
-    font-size: 1rem !important; /* Smaller paragraph */
-    padding: 1.5rem !important;
-    top: 55% !important;
-    transform: translateY(-25%) !important;
+  #Gallery .overlay p {
+    color: white !important;
+    font-family: "trirong thin" !important;
+    font-weight: 600 !important;
+    font-size: 1.7rem !important;
+    position: absolute !important;
+    top: 69% !important;
+    transform: translateY(-31%);
   }
 }
 /* Media Query for Tablets (768px and below) */
 @media screen and (max-width: 768px) {
   #testimonial-section {
-    height: 80vh !important; /* Reduced height for tablets */
+    height: 100vh !important; /* Reduced height for tablets */
     aspect-ratio: 4/3 !important; /* Adjusted aspect ratio */
   }
   #testimonial-section::before {
@@ -1699,7 +1592,7 @@ article::-webkit-scrollbar-thumb {
     backdrop-filter: blur(0.8rem) !important;
   }
   .testimonial-section h2 {
-    font-size: 2.2rem !important; /* Smaller font size */
+    font-size: 2.1rem !important; /* Smaller font size */
     padding-top: 3rem !important;
   }
   .testimonial-section .testimony {
@@ -1712,7 +1605,7 @@ article::-webkit-scrollbar-thumb {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15) !important; /* Lighter shadow */
   }
   .testimonial-section .testimony .user-text {
-    font-size: 1.5rem !important; /* Smaller font */
+    font-size: 1.4rem !important; /* Smaller font */
     line-height: 24px !important;
     width: 85% !important;
   }
@@ -1722,7 +1615,7 @@ article::-webkit-scrollbar-thumb {
     margin-top: 15px !important;
   }
   .testimonial-section .testimony .user-text .ceoName {
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
     margin-top: 15px !important;
   }
   .testimonial-section .testimony .testimonial-pic {
@@ -1745,9 +1638,9 @@ article::-webkit-scrollbar-thumb {
   }
 }
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 37.5em) {
   #testimonial-section {
-    height: 60vh !important; /* Further reduced height */
+    height: 70vh !important; /* Further reduced height */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
   }
   #testimonial-section::before {
@@ -1761,8 +1654,8 @@ article::-webkit-scrollbar-thumb {
     backdrop-filter: blur(0.5rem) !important;
   }
   .testimonial-section h2 {
-    font-size: 1.6rem !important; /* Smaller font */
-    padding-top: 2rem !important;
+    font-size: 2.1rem !important; /* Smaller font */
+    margin-top: -2.8rem !important;
   }
   .testimonial-section .testimony {
     width: 90% !important;
@@ -1770,11 +1663,11 @@ article::-webkit-scrollbar-thumb {
     padding-top: 0.3rem !important;
   }
   .testimonial-section .testimony .testimonial-text {
-    height: 200px !important; /* Smaller testimonial box */
+    height: 340px !important; /* Smaller testimonial box */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1) !important; /* Lighter shadow */
   }
   .testimonial-section .testimony .user-text {
-    font-size: 1.2rem !important; /* Smaller font */
+    font-size: 1.4rem !important; /* Smaller font */
     line-height: 20px !important;
     width: 80% !important;
   }
@@ -1784,15 +1677,18 @@ article::-webkit-scrollbar-thumb {
     margin-top: 10px !important;
   }
   .testimonial-section .testimony .user-text .ceoName {
-    font-size: 1.3rem !important;
+    font-size: 1.6rem !important;
     margin-top: 10px !important;
   }
   .testimonial-section .testimony .testimonial-pic {
     margin-bottom: 1rem !important;
   }
   .testimonial-section .testimony .user-pic {
+    position: relative !important;
     width: 35px !important; /* Smaller profile picture */
     padding: 4px !important;
+    left: 6.9rem !important;
+    z-index: 99 !important;
   }
   .testimonial-section .testimony .user-pic.active-pic {
     width: 40px !important;
@@ -1801,9 +1697,11 @@ article::-webkit-scrollbar-thumb {
   }
   .testimonial-right img {
     height: 50vh !important; /* Further reduced image height */
-    width: 60% !important; /* Wider for small screens */
-    object-fit: contain !important;
-    right: 0 !important;
+    width: 70% !important; /* Wider for small screens */
+    object-fit: cover !important;
+    right: -7rem !important;
+    top: 7rem !important;
+    z-index: -1 !important;
   }
 }
 /* Media Query for Tablets (768px and below) */
@@ -1829,25 +1727,70 @@ article::-webkit-scrollbar-thumb {
   }
 }
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 37.5em) {
+  #continuous-scroll {
+    --scroll-height: 10vh;
+    --scroll-container-height: 20vh;
+    --scroll-container-background: linear-gradient(127deg, #aabdc2 , #F9FAF5);
+    --scroll-container-border-radius: circle(80px at center);
+    --scroll-text-color: #091818;
+    --scroll-text-size: 2.8rem;
+    --scroll-text-stroke: 2px;
+    --scroll-text-stroke-color: rgba(39, 27, 43, 0.592);
+    --scroll-animation-duration: 46s;
+  }
   #continuous-scroll .cont-scroll {
-    height: 10vh !important; /* Further reduced height for mobile */
-    border-top: 3px solid #122023 !important; /* Thinner border */
-    border-bottom: 3px solid #122023 !important;
+    position: relative !important;
+    width: 100% !important;
+    height: var(--scroll-height) !important;
+    overflow: hidden !important;
+    margin: 0;
+    border-top: 6px solid #122023;
+    border-bottom: 6px solid #122023;
   }
-  #continuous-scroll .cont-scroll div {
-    height: 12vh !important; /* Smaller container height */
+  #continuous-scroll .cont-scroll > div {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: var(--scroll-container-height) !important;
+    background: var(--scroll-container-background);
   }
-  #continuous-scroll .cont-scroll div:nth-child(2) {
-    clip-path: circle(80px at center) !important; /* Smaller clip-path circle */
+  #continuous-scroll .cont-scroll > div:nth-child(2) {
+    background: var(--scroll-container-background);
+    max-height: var(--scroll-container-height) !important;
+    border-radius: var(--scroll-container-border-radius);
   }
-  #continuous-scroll .cont-scroll div h1 {
-    font-size: 1.5rem !important; /* Smaller font size */
-    top: -120px !important; /* Adjusted positioning */
-    animation: animate 20s linear infinite !important; /* Even faster animation */
+  #continuous-scroll .cont-scroll > div h1 {
+    position: absolute !important;
+    top: 26% !important;
+    left: 0 !important;
+    transform: translateY(-74%);
+    font-family: "antic didone";
+    font-weight: 500;
+    font-size: var(--scroll-text-size);
+    color: var(--scroll-text-color);
+    white-space: nowrap;
+    line-height: normal;
+    cursor: default;
+    will-change: transform;
+    animation: animate 30s linear infinite !important;
   }
-  #continuous-scroll .cont-scroll div:nth-child(2) h1 {
-    -webkit-text-stroke: 1px !important; /* Thinner stroke for mobile */
+  #continuous-scroll .cont-scroll > div:nth-child(2) h1 {
+    -webkit-text-stroke: var(--scroll-text-stroke) !important;
+    -webkit-text-stroke-color: var(--scroll-text-stroke-color) !important;
+    color: transparent !important;
+  }
+}
+@keyframes animate {
+  0% {
+    transform: translateX(-80%) translateY(-74%);
+  }
+  50% {
+    transform: translateX(50%) translateY(-74%);
+  }
+  100% {
+    transform: translateX(-90%) translateY(-74%);
   }
 }
 /* Media Query for Tablets (768px and below) */
@@ -1905,57 +1848,52 @@ article::-webkit-scrollbar-thumb {
   }
 }
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media (max-width: 37.5em) {
   #blog-list {
-    height: 60vh !important; /* Further reduced height */
-    aspect-ratio: 3/2 !important; /* Adjusted for mobile */
+    height: 210vh !important;
+    aspect-ratio: unset !important;
   }
-  #blog-list::before {
-    width: 70% !important; /* Wider pseudo-element */
-    height: 60vh !important;
-    backdrop-filter: blur(1.5rem) !important; /* Further reduced blur */
+  #blog-list .card-container {
+    padding: 0.3rem !important;
   }
-  #blog-list::after {
-    width: 50% !important;
-    height: 40vh !important;
-    backdrop-filter: blur(0.5rem) !important;
-  }
-  #blog-list .card {
-    height: 180px !important; /* Smaller card height */
-    margin: 0.8rem !important; /* Minimal margin */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1) !important; /* Lighter shadow */
-    border-width: 2px !important; /* Thinner border */
+  #blog-list .card-container .card {
+    height: 580px !important;
   }
   .blog-list {
-    padding: 1rem !important; /* Minimal padding */
+    padding: 0.3rem !important;
     flex-direction: column !important;
+    flex-wrap: nowrap !important;
   }
   .blog-list li {
-    flex-basis: 100% !important;
-    margin: 0.5rem !important;
+    margin: 0.5rem 0 !important;
+    flex-basis: 10% !important;
+    max-width: 100% !important;
   }
   .blog-list img {
-    height: 30vh !important; /* Further reduced image height */
+    height: 45vh !important;
     max-width: 100vw !important;
-    border-radius: 3px !important;
   }
   .blog-list h1 {
-    font-size: 1.8rem !important; /* Smaller font size */
-    margin: 1.2rem auto -0.2rem !important;
+    font-size: 2.5rem !important;
+    margin: 1rem auto 0 !important;
   }
   .blog-list h2 {
-    font-size: 1.2rem !important; /* Smaller heading */
-    padding: 0.6rem !important;
-    margin: 0.2rem 0 0 0 !important;
+    font-size: 1.9rem !important;
+    padding: 0.4rem !important;
+    text-align: center !important;
   }
   .blog-list p {
-    font-size: 1rem !important; /* Smaller paragraph */
-    padding: 0.3rem !important;
-    margin: 0.2rem 0 0 0 !important;
+    font-size: 1.8rem !important;
+    padding: 0.2rem !important;
+    text-align: center !important;
   }
-  .blog-list p small {
-    font-size: 0.9rem !important; /* Smaller small text */
-    padding: 0.3rem !important;
+  .card-body p small {
+    font-size: 1.4rem !important;
+    padding: 0.2rem !important;
+  }
+  .card a {
+    font-size: 3.88rem !important;
+    padding: 2.3rem 2.8rem !important;
   }
 }
 /* Media Query for Tablets (768px and below) */
@@ -2145,7 +2083,7 @@ article::-webkit-scrollbar-thumb {
   }
 }
 /* Media Query for Tablets (768px and below) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   ::-webkit-scrollbar {
     width: 0.8rem !important; /* Thinner scrollbar */
   }
@@ -2165,11 +2103,13 @@ article::-webkit-scrollbar-thumb {
     width: 60% !important; /* Wider pseudo-element */
     height: 80vh !important;
     backdrop-filter: blur(1.2rem) !important; /* Reduced blur */
+    z-index: -1 !important;
   }
   #landing::after, #landing2::after, #landing3::after {
     width: 45% !important;
     height: 50vh !important;
     backdrop-filter: blur(0.7rem) !important;
+    z-index: -1 !important;
   }
   #landing .landing-right, #landing2 .landing-right, #landing3 .landing-right {
     grid-template-columns: 95% !important; /* Slightly wider content area */
@@ -2217,9 +2157,9 @@ article::-webkit-scrollbar-thumb {
   }
 }
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 37.5em) {
   ::-webkit-scrollbar {
-    width: 0.5rem !important; /* Thinner scrollbar */
+    width: 0.5rem !important;
   }
   ::-webkit-scrollbar-track {
     border-radius: 0.5rem !important;
@@ -2229,63 +2169,238 @@ article::-webkit-scrollbar-thumb {
     border-radius: 0.5rem !important;
     height: 0.5rem !important;
   }
-  #landing, #landing2, #landing3 {
-    height: 60vh !important; /* Further reduced height */
-    aspect-ratio: 3/2 !important; /* Adjusted for mobile */
+  #landing {
+    height: 66.4vh !important;
+    aspect-ratio: 3/2 !important;
   }
-  #landing::before, #landing2::before, #landing3::before {
-    width: 70% !important; /* Wider pseudo-element */
-    height: 60vh !important;
-    backdrop-filter: blur(1rem) !important; /* Further reduced blur */
+  #landing::before {
+    width: 70% !important;
+    height: 80vh !important;
+    backdrop-filter: blur(1rem) !important;
+    z-index: -1 !important;
   }
-  #landing::after, #landing2::after, #landing3::after {
+  #landing::after {
     width: 50% !important;
     height: 40vh !important;
     backdrop-filter: blur(0.5rem) !important;
+    z-index: -1 !important;
   }
-  #landing .landing-right, #landing2 .landing-right, #landing3 .landing-right {
-    grid-template-columns: 90% !important; /* Adjusted content area */
+  #landing .landing-right {
+    grid-template-columns: 90% !important;
   }
-  #landing .landing-right h1, #landing2 .landing-right h1, #landing3 .landing-right h1 {
-    font-size: 2rem !important; /* Smaller font */
-    margin-top: 2.5rem !important;
-    padding-top: 0.4rem !important;
-    padding-left: 0.8rem !important;
-    padding-bottom: 0.4rem !important;
-    border-top: rgba(12, 49, 57, 0.2745098039) 0.3rem solid !important;
-    border-bottom: rgba(12, 49, 57, 0.2745098039) 0.1rem solid !important;
+  #landing .landing-right h1 {
+    font-size: 2.7rem !important;
+    margin-top: 1rem !important;
+    left: -1.5rem !important;
+    border-top: rgba(12, 49, 57, 0.2745098039) 0.5rem solid !important;
+    border-bottom: rgba(12, 49, 57, 0.2745098039) 0.2rem solid !important;
   }
-  #landing .landing-right #icon .fa-regular.fa-circle-play.fa-circle-play, #landing .landing-right #icon1 .fa-regular.fa-circle-play.fa-circle-play, #landing .landing-right #icon2 .fa-regular.fa-circle-play.fa-circle-play, #landing2 .landing-right #icon .fa-regular.fa-circle-play.fa-circle-play, #landing2 .landing-right #icon1 .fa-regular.fa-circle-play.fa-circle-play, #landing2 .landing-right #icon2 .fa-regular.fa-circle-play.fa-circle-play, #landing3 .landing-right #icon .fa-regular.fa-circle-play.fa-circle-play, #landing3 .landing-right #icon1 .fa-regular.fa-circle-play.fa-circle-play, #landing3 .landing-right #icon2 .fa-regular.fa-circle-play.fa-circle-play {
-    font-size: 3rem !important; /* Smaller icon */
-    margin-top: 0.5rem !important;
+  #landing #icon .fa-regular.fa-circle-play.fa-circle-play,
+  #landing #icon1 .fa-regular.fa-circle-play.fa-circle-play,
+  #landing #icon2 .fa-regular.fa-circle-play.fa-circle-play {
+    font-size: 6rem !important;
+    z-index: 999 !important;
+    position: relative !important;
+    cursor: pointer !important;
+    transform: translateY(4.2rem) !important;
+    margin-top: 0.5rem;
   }
-  #landing .landing-right .audio-player h2, #landing2 .landing-right .audio-player h2, #landing3 .landing-right .audio-player h2 {
-    font-size: 1.4rem !important; /* Smaller font */
-    padding-bottom: 0.2rem !important;
+  #landing .audio-player h2 {
+    display: none !important;
+    font-size: 1.5rem !important;
+    margin-top: -1.8rem !important;
+    padding-bottom: 0.1rem !important;
   }
-  #landing .landing-right .sub-landing, #landing2 .landing-right .sub-landing, #landing3 .landing-right .sub-landing {
+  #landing .sub-landing {
     font-size: 1.4rem !important;
     padding-top: 0.6rem !important;
     padding-bottom: 0.1rem !important;
   }
-  #landing .landing-right .sub-landing2, #landing2 .landing-right .sub-landing2, #landing3 .landing-right .sub-landing2 {
-    font-size: 1.2rem !important;
-    padding-bottom: 0.6rem !important;
+  #landing .sub-landing2 {
+    font-size: 1.4rem !important;
+    padding-bottom: 0.2rem !important;
   }
-  #landing .landing-right ul li, #landing2 .landing-right ul li, #landing3 .landing-right ul li {
-    font-size: 1rem !important; /* Smaller font */
+  #landing ul li {
+    font-size: 1rem !important;
     left: 1.5rem !important;
   }
-  #landing .image-box img, #landing .image-box2 img, #landing2 .image-box img, #landing2 .image-box2 img, #landing3 .image-box img, #landing3 .image-box2 img {
-    height: 50vh !important; /* Further reduced image height */
-    max-width: 100% !important;
-    object-fit: contain !important;
-    right: 0 !important;
+  #landing .image-box img,
+  #landing .image-box2 img {
+    display: block;
+    position: relative !important;
+    height: 60vh !important;
+    width: 100% !important;
+    max-width: 350px !important;
+    object-fit: cover !important;
+    right: 100% !important;
+    transform: translateX(-41%) !important;
+    top: 10% !important;
   }
-  .border-white {
+  #landing .border-white {
     border: 4px solid #ffffff !important;
     border-bottom: 1px solid #ffffff !important;
-    box-shadow: 0 -3px 6px -3px rgba(0, 0, 0, 0.2), 0 3px 6px -3px rgba(0, 0, 0, 0.2) !important; /* Lighter shadow */
+    box-shadow: 0 -3px 6px -3px rgba(0, 0, 0, 0.2), 0 3px 6px -3px rgba(0, 0, 0, 0.2) !important;
+  }
+  #landing3 {
+    height: 60vh !important;
+    aspect-ratio: 3/2 !important;
+  }
+  #landing3::before {
+    width: 70% !important;
+    height: 80vh !important;
+    backdrop-filter: blur(1rem) !important;
+    z-index: -1 !important;
+  }
+  #landing3::after {
+    width: 50% !important;
+    height: 40vh !important;
+    backdrop-filter: blur(0.5rem) !important;
+    z-index: -1 !important;
+  }
+  #landing3 .landing-right {
+    grid-template-columns: 90% !important;
+  }
+  #landing3 .landing-right h1 {
+    font-size: 2.7rem !important;
+    margin-top: 1rem !important;
+    left: -1.5rem !important;
+    border-top: rgba(12, 49, 57, 0.2745098039) 0.5rem solid !important;
+    border-bottom: rgba(12, 49, 57, 0.2745098039) 0.2rem solid !important;
+  }
+  #landing3 #icon .fa-regular.fa-circle-play.fa-circle-play,
+  #landing3 #icon1 .fa-regular.fa-circle-play.fa-circle-play,
+  #landing3 #icon2 .fa-regular.fa-circle-play.fa-circle-play {
+    font-size: 6rem !important;
+    z-index: 999 !important;
+    position: relative !important;
+    cursor: pointer !important;
+    top: 30% !important;
+    transform: translateY(-70%) !important;
+    margin-top: 0.5rem;
+  }
+  #landing3 .audio-player h2 {
+    display: none !important;
+    position: relative !important;
+    font-size: 1.5rem !important;
+    top: -1.6rem !important;
+    padding-bottom: 0.1rem !important;
+  }
+  #landing3 .sub-landing {
+    font-size: 1.4rem !important;
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.1rem !important;
+  }
+  #landing3 .sub-landing2 {
+    font-size: 1.4rem !important;
+    padding-bottom: 0.2rem !important;
+  }
+  #landing3 ul li {
+    font-size: 1rem !important;
+    left: 1.5rem !important;
+  }
+  #landing3 .image-box img,
+  #landing3 .image-box2 img {
+    display: block;
+    position: relative;
+    height: 54vh !important;
+    width: 100% !important;
+    max-width: 350px !important;
+    object-fit: cover !important;
+    right: -57% !important;
+    transform: translateX(-43%) !important;
+    top: 10%;
+  }
+  #landing3 .image-box #landing2 img,
+  #landing3 .image-box #landing3 img,
+  #landing3 .image-box2 #landing2 img,
+  #landing3 .image-box2 #landing3 img {
+    display: block;
+  }
+  #landing3 .image-box .border-white,
+  #landing3 .image-box2 .border-white {
+    border: 4px solid #ffffff !important;
+    border-bottom: 1px solid #ffffff !important;
+    box-shadow: 0 -3px 6px -3px rgba(0, 0, 0, 0.2), 0 3px 6px -3px rgba(0, 0, 0, 0.2) !important;
+  }
+  #landing2 {
+    height: 60vh !important;
+    aspect-ratio: 3/2 !important;
+  }
+  #landing2::before {
+    width: 70% !important;
+    height: 80vh !important;
+    backdrop-filter: blur(1rem) !important;
+    z-index: -1 !important;
+  }
+  #landing2::after {
+    width: 50% !important;
+    height: 40vh !important;
+    backdrop-filter: blur(0.5rem) !important;
+    z-index: -1 !important;
+  }
+  #landing2 .landing-right {
+    grid-template-columns: 90% !important;
+  }
+  #landing2 .landing-right h1 {
+    font-size: 2.7rem !important;
+    margin-top: 1rem !important;
+    left: -1.5rem !important;
+    border-top: rgba(12, 49, 57, 0.2745098039) 0.5rem solid !important;
+    border-bottom: rgba(12, 49, 57, 0.2745098039) 0.2rem solid !important;
+  }
+  #landing2 .audio-player #icon .fa-regular.fa-circle-play.fa-circle-play,
+  #landing2 .audio-player #icon1 .fa-regular.fa-circle-play.fa-circle-play,
+  #landing2 .audio-player #icon2 .fa-regular.fa-circle-play.fa-circle-play {
+    font-size: 6rem !important;
+    z-index: 999 !important;
+    position: relative !important;
+    cursor: pointer !important;
+    top: 80% !important;
+    transform: translateY(-20%) !important;
+  }
+  #landing2 .audio-player h2 {
+    display: none !important;
+    position: relative !important;
+    font-size: 1.5rem !important;
+    top: -1.6rem !important;
+    padding-bottom: 0.1rem !important;
+  }
+  #landing2 .sub-landing {
+    font-size: 1.4rem !important;
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.1rem !important;
+  }
+  #landing2 .sub-landing2 {
+    font-size: 1.4rem !important;
+    padding-bottom: 0.2rem !important;
+  }
+  #landing2 ul li {
+    font-size: 1rem !important;
+    left: 1.5rem !important;
+  }
+  #landing2 .image-box img,
+  #landing2 .image-box2 img {
+    display: block;
+    position: relative;
+    height: 70vh !important;
+    width: 100% !important;
+    max-width: 350px !important;
+    object-fit: cover !important;
+    right: -68% !important;
+    transform: translateX(-32%) !important;
+    top: -3.6rem !important;
+  }
+  #landing2 .image-box #landing2 img,
+  #landing2 .image-box #landing3 img,
+  #landing2 .image-box2 #landing2 img,
+  #landing2 .image-box2 #landing3 img {
+    display: block;
+  }
+  #landing2 .image-box .border-white,
+  #landing2 .image-box2 .border-white {
+    border: 4px solid #ffffff !important;
+    border-bottom: 1px solid #ffffff !important;
+    box-shadow: 0 -3px 6px -3px rgba(0, 0, 0, 0.2), 0 3px 6px -3px rgba(0, 0, 0, 0.2) !important;
   }
 }
 /* Media Query for Tablets (768px and below) */
@@ -2307,10 +2422,11 @@ article::-webkit-scrollbar-thumb {
 /* Media Query for Mobile Phones (480px and below) */
 @media screen and (max-width: 480px) {
   #landing .landing-right a, #landing2 .landing-right a, #landing3 .landing-right a, .card .landing-right a, .error-left .landing-right a {
-    padding: 0.8rem 0 !important; /* Minimal padding */
-    width: 7rem !important; /* Smaller button width */
-    margin-top: -2rem !important; /* Adjusted margin */
-    font-size: 1rem !important; /* Smaller font */
+    right: 11rem !important;
+    padding: 1.5rem 0 !important; /* Minimal padding */
+    width: 10rem !important; /* Smaller button width */
+    margin-bottom: 3rem !important; /* Adjusted margin */
+    font-size: 1.7rem !important; /* Smaller font */
     border-width: 0.6px !important; /* Thinner border */
   }
   #landing .landing-right a span, #landing2 .landing-right a span, #landing3 .landing-right a span, .card .landing-right a span, .error-left .landing-right a span {
@@ -2321,7 +2437,7 @@ article::-webkit-scrollbar-thumb {
   }
 }
 /* Media Query for Tablets (768px and below) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   header .nav-container .navbar {
     padding: 0.15rem 0.5rem !important; /* Reduced padding */
     height: 3.5rem !important; /* Smaller height */
@@ -2329,8 +2445,8 @@ article::-webkit-scrollbar-thumb {
     backdrop-filter: blur(0.8rem) !important; /* Reduced blur for performance */
   }
   header .nav-container .logo {
-    width: 7rem !important; /* Smaller logo */
-    top: -3.5rem !important;
+    width: 8rem !important; /* Smaller logo */
+    top: -0.5rem !important;
     left: 2rem !important; /* Adjusted position */
   }
   header .nav-container #menuBtn {
@@ -2347,29 +2463,58 @@ article::-webkit-scrollbar-thumb {
   }
 }
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 37.5em) {
   header .nav-container .navbar {
-    padding: 0.1rem 0.3rem !important; /* Minimal padding */
-    height: 3rem !important; /* Smaller height */
+    padding: 0.1rem 0.1rem !important; /* Minimal padding */
+    height: 5rem !important; /* Smaller height */
     box-shadow: 6px 6px 6px rgba(45, 55, 68, 0.06) !important; /* Lighter shadow */
     backdrop-filter: blur(0.5rem) !important; /* Further reduced blur */
   }
   header .nav-container .logo {
-    width: 5.5rem !important; /* Smaller logo */
-    top: -3rem !important;
-    left: 1rem !important; /* Adjusted position */
+    width: 9rem !important; /* Smaller logo */
+    height: 14.5rem !important;
+    top: -4.7rem !important;
+    left: -0.9rem !important; /* Adjusted position */
   }
   header .nav-container #menuBtn {
-    left: 88% !important; /* Adjusted position */
-    font-size: 1rem !important; /* Smaller icon size */
+    left: 90% !important; /* Adjusted position */
+    font-size: 2rem !important; /* Smaller icon size */
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: -1 !important;
   }
   header .nav-container .navbar-nav li a {
-    padding: 0.3rem 0.8rem !important; /* Minimal padding */
-    font-size: 1rem !important; /* Smaller font */
+    display: flex !important;
+    align-items: center !important;
+    padding: 0.4rem 1rem 0.4rem 1.5rem !important; /* move content right by ~1.5rem */
+    margin: 0 !important; /* remove margin */
+    font-size: 1.1rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    line-height: 1.1 !important;
+    z-index: 1 !important;
+    left: auto !important;
+    right: auto !important;
+  }
+  header .nav-container:hover {
+    color: #011e1c !important;
   }
   header .nav-container ul li {
-    display: block !important; /* Stack menu items vertically */
-    margin: 0.2rem 0 !important; /* Minimal spacing */
+    display: inline-block !important;
+  }
+  header .nav-container .side-nav .btn-close {
+    position: relative !important;
+    left: 29% !important;
+    transform: translateX(-71%);
+    top: 70px !important;
+    right: 0px;
+    font-size: 3rem !important;
+    outline: none !important;
+    z-index: 999 !important;
+    padding: 1rem !important;
+    margin: 0 !important;
   }
 }
 /* FONTS*/
@@ -2457,25 +2602,25 @@ body, html {
 /* LANDING PAGE 1*/
 #landing {
   position: relative !important;
-  width: 100% !important;
-  height: 100.1vh !important;
-  aspect-ratio: 16/10 !important;
-  background: linear-gradient(127deg, #A7CBD5, rgba(224, 251, 252, 0.2274509804)) !important;
-  z-index: 1;
-  overflow: hidden !important;
+  width: 100%;
+  height: 100.1vh;
+  aspect-ratio: 16/10;
+  background: linear-gradient(127deg, #A7CBD5, rgba(224, 251, 252, 0.2274509804));
+  z-index: 1 !important;
+  overflow: hidden;
 }
 #landing::before {
-  content: " " !important;
-  position: absolute !important;
-  top: -5rem !important;
-  left: 0 !important;
-  width: 50% !important;
-  height: 100vh !important;
-  border-bottom-right-radius: 100% !important;
-  background: linear-gradient(225deg, rgba(167, 201, 213, 0.4666666667) 0%, rgba(167, 203, 213, 0.4666666667) 75%, rgba(167, 203, 213, 0.4666666667) 100%) !important;
-  backdrop-filter: blur(1.7rem) !important;
-  background-clip: border-box !important;
-  z-index: -1 !important;
+  content: " ";
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  border-bottom-right-radius: 100%;
+  background: linear-gradient(225deg, rgba(167, 201, 213, 0.4666666667) 0%, rgba(167, 203, 213, 0.4666666667) 75%, rgba(167, 203, 213, 0.4666666667) 100%);
+  backdrop-filter: blur(1.7rem);
+  background-clip: border-box;
+  z-index: -3 !important;
   animation: move-up 2s infinite alternate;
 }
 @keyframes move-up {
@@ -2487,16 +2632,16 @@ body, html {
   }
 }
 #landing::after {
-  content: " " !important;
-  position: absolute !important;
-  bottom: 0rem !important;
-  right: 0 !important;
-  width: 39% !important;
-  height: 70vh !important;
-  border-top-left-radius: 100% !important;
-  background: linear-gradient(125deg, rgba(167, 203, 213, 0.4392156863) 0%, rgba(167, 203, 213, 0.4392156863) 75%, rgba(167, 203, 213, 0.4392156863) 100%) !important;
-  backdrop-filter: blur(1rem) !important;
-  background-clip: border-box !important;
+  content: " ";
+  position: absolute;
+  bottom: 0rem;
+  right: 0;
+  width: 39%;
+  height: 70vh;
+  border-top-left-radius: 100%;
+  background: linear-gradient(125deg, rgba(167, 203, 213, 0.4392156863) 0%, rgba(167, 203, 213, 0.4392156863) 75%, rgba(167, 203, 213, 0.4392156863) 100%);
+  backdrop-filter: blur(1rem);
+  background-clip: border-box;
   z-index: -2 !important;
   animation: move-up 4s infinite alternate;
 }
@@ -2509,45 +2654,52 @@ body, html {
   }
 }
 #landing .landing-right {
-  height: 100vh !important;
-  position: relative !important;
-  display: grid !important;
-  grid-template-columns: 90% !important;
-  place-content: start center !important;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 90%;
+  place-content: start center;
 }
 #landing .landing-right h1 {
-  position: relative !important;
-  font-family: "antic didone" !important;
-  font-weight: 500 !important;
-  font-size: 4.2rem !important;
-  color: #091818 !important;
-  margin-top: 5.6rem !important;
-  padding-top: 0.9rem !important;
-  padding-left: 1.4rem !important;
-  padding-bottom: 0.9rem !important;
+  position: relative;
+  font-family: "antic didone";
+  font-weight: 500;
+  font-size: 4.2rem;
+  color: #091818;
+  transform: translateY(5.6rem);
+  padding-top: 0.9rem;
+  padding-left: 1.4rem;
+  padding-bottom: 0.9rem;
   background-color: rgba(199, 236, 254, 0.2);
-  border-bottom: 0.2rem solid rgba(12, 49, 57, 0.2745098039) !important;
-  border-top: rgba(12, 49, 57, 0.2745098039) 0.6rem solid !important;
-  border-top-left-radius: 0.1rem !important;
-  border-bottom-left-radius: 0.1rem !important;
-}
-#landing .landing-right #icon2 .fa-regular.fa-circle-play.fa-circle-play {
-  font-size: 6rem !important;
-  color: rgba(4, 33, 39, 0.741) !important;
-  cursor: pointer !important;
-  margin-top: 1rem !important;
+  border-bottom: 0.2rem solid rgba(12, 49, 57, 0.2745098039);
+  border-top: rgba(12, 49, 57, 0.2745098039) 0.6rem solid;
+  border-top-left-radius: 0.1rem;
+  border-bottom-left-radius: 0.1rem;
 }
 #landing .landing-right .audio-player h2 {
   font-family: "trirong thin" !important;
   font-weight: 600 !important;
   font-size: 2.3rem !important;
   color: #091818 !important;
+  transform: translateY(6.3rem);
+  white-space: wrap !important;
+}
+#landing .landing-right #icon2 .fa-regular.fa-circle-play.fa-circle-play {
+  font-size: 6rem !important;
+  color: rgba(4, 33, 39, 0.741) !important;
+  cursor: pointer !important;
+  top: 150% !important;
+  transform: translateY(100%) !important;
+  position: relative !important;
+  z-index: 9999 !important;
 }
 #landing .landing-right .sub-landing {
+  position: relative;
   font-family: "trirong thin";
   font-weight: 800;
   font-size: 2.3rem;
   color: #091818;
+  transform: translateY(5.6rem);
   padding-top: 1rem !important;
   padding-bottom: 0.3rem !important;
   white-space: wrap !important;
@@ -2556,6 +2708,7 @@ body, html {
   font-family: "trirong thin";
   font-weight: 600;
   font-size: 2rem;
+  transform: translateY(5.6rem);
   padding-bottom: 1rem !important;
   color: #091818;
 }
@@ -2571,31 +2724,32 @@ body, html {
   z-index: 9999;
 }
 #landing .image-box {
-  position: relative !important;
+  position: relative;
   display: grid;
   grid-template-columns: 100%;
-  justify-items: center !important;
+  justify-items: center;
   align-items: center;
 }
 #landing .image-box img {
   display: block;
-  position: absolute;
-  height: 95.5vh !important;
-  max-width: 100% !important;
-  object-fit: cover !important;
-  bottom: 0;
-  right: 0rem;
+  height: 95.5vh;
+  max-width: 100%;
+  object-fit: cover;
+  bottom: 0rem;
+  left: 140%;
+  transform: translateY(2rem) translateX(121%);
+  z-index: -1 !important;
 }
 
 /*LANDING PAGE 2 */
 #landing2 {
-  position: relative !important;
-  width: 100% !important;
-  height: 102vh !important;
-  aspect-ratio: 16/10 !important;
-  background: linear-gradient(127deg, #CCE3DD, #F9FAF5) !important;
-  z-index: 1;
-  overflow: hidden !important;
+  position: relative;
+  width: 100%;
+  height: 100.1vh;
+  aspect-ratio: 16/10;
+  background: linear-gradient(127deg, #CCE3DD, #F9FAF5);
+  z-index: 1 !important;
+  overflow: hidden;
 }
 #landing2::before {
   content: " " !important;
@@ -2649,20 +2803,20 @@ body, html {
   place-content: start center !important;
 }
 #landing2 .landing-right h1 {
-  position: relative !important;
+  position: relative;
   font-family: "antic didone";
-  font-weight: 500 !important;
-  font-size: 4.3rem !important;
-  color: #091818 !important;
+  font-weight: 500;
+  font-size: 4.3rem;
+  color: #091818;
   margin-top: 5.6rem !important;
-  padding-top: 0.9rem !important;
-  padding-left: 1.4rem !important;
-  padding-bottom: 0.9rem !important;
+  padding-top: 0.9rem;
+  padding-left: 1.4rem;
+  padding-bottom: 0.9rem;
   background-color: rgba(204, 227, 221, 0.8);
-  border-bottom: rgba(5, 37, 44, 0.368627451) 0.2rem solid !important;
-  border-top: rgba(5, 37, 44, 0.368627451) 0.6rem solid !important;
-  border-top-left-radius: 0.1rem !important;
-  border-bottom-left-radius: 0.1rem !important;
+  border-bottom: rgba(5, 37, 44, 0.368627451) 0.2rem solid;
+  border-top: rgba(5, 37, 44, 0.368627451) 0.6rem solid;
+  border-top-left-radius: 0.1rem;
+  border-bottom-left-radius: 0.1rem;
 }
 #landing2 .landing-right .audio-player h2 {
   font-family: "trirong thin";
@@ -2706,17 +2860,17 @@ body, html {
   white-space: wrap !important;
 }
 #landing2 .image-box2 {
-  display: grid !important;
-  grid-template-rows: 100% !important;
-  justify-items: center !important;
-  align-items: center !important;
+  display: grid;
+  grid-template-rows: 100%;
+  justify-items: center;
+  align-items: center;
 }
 #landing2 .image-box2 img {
-  display: block !important;
+  display: block;
   position: absolute;
-  height: 113vh !important;
-  max-width: 100% !important;
-  object-fit: cover !important;
+  height: 111vh;
+  max-width: 100%;
+  object-fit: cover;
   bottom: 0;
   right: -8rem;
   z-index: 9;
@@ -2732,13 +2886,13 @@ body, html {
 }
 
 #landing3 {
-  position: relative !important;
-  width: 100% !important;
-  height: 101vh !important;
-  aspect-ratio: 16/10 !important;
-  background: linear-gradient(127deg, #aab8c2, #F9FAF5) !important;
-  z-index: 1;
-  overflow: hidden !important;
+  position: relative;
+  width: 100%;
+  height: 101vh;
+  aspect-ratio: 16/10;
+  background: linear-gradient(127deg, #aab8c2, #F9FAF5);
+  z-index: 1 !important;
+  overflow: hidden;
 }
 #landing3::before {
   content: " " !important;
@@ -2792,11 +2946,11 @@ body, html {
   place-content: start center !important;
 }
 #landing3 .landing-right h1 {
-  position: relative !important;
+  position: relative;
   font-family: "antic didone";
-  font-weight: 500 !important;
-  font-size: 4.1rem !important;
-  color: #091818 !important;
+  font-weight: 500;
+  font-size: 4.1rem;
+  color: #091818;
   margin-top: 5.6rem !important;
   padding-top: 0.9rem !important;
   padding-left: 1.4rem !important;
@@ -2848,17 +3002,17 @@ body, html {
   left: 3rem !important;
 }
 #landing3 .image-box2 {
-  display: grid !important;
-  grid-template-rows: 100% !important;
-  justify-items: center !important;
-  align-items: center !important;
+  display: grid;
+  grid-template-rows: 100%;
+  justify-items: center;
+  align-items: center;
 }
 #landing3 .image-box2 img {
-  display: block !important;
+  display: block;
   position: absolute;
-  height: 95.4vh !important;
-  max-width: 100% !important;
-  object-fit: cover !important;
+  height: 95.4vh;
+  max-width: 100%;
+  object-fit: cover;
   bottom: 0;
   right: -1rem;
   z-index: 9;

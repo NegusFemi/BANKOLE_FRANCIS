@@ -7,10 +7,6 @@ $font-color: #091818;
     position: relative !important;
     width: 100% !important;
     height: 105vh !important;
-    //object-fit: contain !important;
-    //object-position: center !important;
-    //display: block !important;
-    //margin: 0 auto !important;
     background-image: linear-gradient(75deg, rgba(16, 29, 64, 0.5), rgb(255, 255, 255, 0.15)),url(/images/BANKY8.jpg);
     background-size: cover !important;
     background-position: center !important;
@@ -26,39 +22,19 @@ $font-color: #091818;
 h1 {
     font-family: 'antic didone' !important;
     font-weight: 500 !important;
-    font-size: 2.3rem !important;
+    font-size: 2.3rem;
     //position: absolute !important;
     color: rgb(252, 247, 253);
     text-align: center !important;
     background-color: rgba(255, 255, 255, 0.1) !important;
     backdrop-filter: blur(0.99rem) !important;
     background-clip: padding-box !important;
-    padding: 1rem !important;
+    padding: 0.7rem !important;
     margin-top: 6rem !important;
-    margin-bottom: -1.6rem !important;
+    margin-bottom: -1.6rem;
     border: 1.5px solid rgba(255, 255, 255, 0.3);
-    //border-radius: 2rem !important;
 }
 }
 }
 
-/* --- Responsive Design: Tablets and Phones --- */
-@media (max-width: 940px) {
-  #aboutUs {
-    height: 60vh !important;
-    background-size: cover !important;
-    background-position: center !important;
-    .aboutUs {
-      height: 55vh !important;
-      grid-template-columns: 100% !important;
-      h1 {
-        font-size: 1.25rem !important;
-        padding: 0.7rem !important;
-        margin-top: 2.3rem !important;
-        margin-bottom: -0.7rem !important;
-        border-width: 1px !important;
-      }
-    }
-  }
-}
 

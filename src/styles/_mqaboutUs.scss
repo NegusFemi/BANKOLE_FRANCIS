@@ -19,21 +19,21 @@
 }
 
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 37.5em) {
     #aboutUs {
-        height: 60vh !important; /* Shorter height for mobile */
-        background-size: contain !important; /* Ensure image fits within viewport */
+        height: 90vh !important; /* Shorter height for mobile */
+        background-size: cover !important; /* Ensure image fits within viewport */
         background-position: top center !important;
     }
     .aboutUs {
         height: 60vh !important;
-        grid-template-columns: 85% !important; /* Further reduce width for mobile */
+        grid-template-columns: 80% !important; /* Further reduce width for mobile */
     }
     .aboutUs h1 {
-        font-size: 1.4rem !important; /* Smaller font for mobile readability */
+        font-size: 2rem !important; /* Smaller font for mobile readability */
         padding: 0.6rem !important; /* Tighter padding */
-        margin-top: 2.5rem !important; /* Reduced margin for compact layout */
-        margin-bottom: -0.8rem !important;
+        margin-top: -2.5rem !important; /* Reduced margin for compact layout */
+        margin-bottom: 8rem !important;
         border-width: 1px !important; /* Thinner border for smaller screens */
         backdrop-filter: blur(0.6rem) !important; /* Optimize blur for mobile performance */
     }

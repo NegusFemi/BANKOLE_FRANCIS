@@ -2,7 +2,7 @@ $font-color: #091818;
 
 /* TESTIMONIAL SECTION START*/
 #testimonial-section {
-    height: 102vh !important;
+    height: 102vh;
     width: 100% !important;
     position: relative !important;
     background: linear-gradient(127deg, #aac2bf , #e7fbf7) !important;
@@ -61,34 +61,34 @@ $font-color: #091818;
     h2 {
         font-family: 'antic didone';
         font-weight: 500 !important;
-        font-size: 3rem !important;
+        font-size: 3rem;
         color: $font-color;
         padding-top: 4.8rem !important;
     }
     .testimony{
-        width: 90% !important;
-        max-width: 800px !important;
+        width: 90%;
+        max-width: 800px;
         margin: auto !important;
-        padding-top: 0.8rem !important;
+        padding-top: 0.8rem;
     .testimonial-text {
-        background: rgba(255, 255, 255, 0.1) !important;
-        backdrop-filter: blur(1rem) !important;
-        background-clip: padding-box !important;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(1rem);
+        background-clip: padding-box;
         color: $font-color;
-        width: 100% !important;
-        height: 310px !important;
-        position: relative !important;
+        width: 100%;
+        height: 300px;
+        position: relative;
         box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
         border: 2px solid transparent rgba(255, 255, 255, 1);
     }
     .user-text {
         font-family: 'trirong thin';
         font-weight: 600 !important;
-        font-size: 1.9rem !important;
+        font-size: 1.9rem;
         color: $font-color;
         width: 90% !important;
         text-align: center !important;
-        line-height: 30px !important;
+        line-height: 30px;
         position: absolute !important;
         top: 50% !important;
         left: 50% !important;
@@ -102,8 +102,8 @@ $font-color: #091818;
     }
     .user-text .ceoName {
         display: block !important;
-        font-size: 2rem !important;
-        margin-top: 20px !important;
+        font-size: 2rem;
+        margin-top: 20px;
         font-family: 'antic didone';
         font-weight: 500 !important;
         color: $font-color;
@@ -131,12 +131,11 @@ $font-color: #091818;
         width: 55px !important;
         padding: 8px !important;
         border-radius: 45% !important;
-        //margin: 10px !important;
-        margin-bottom: 2rem !important;
+        margin-bottom: 2rem;
         cursor: pointer;
     }
     .user-pic.active-pic {
-        width: 60px !important;
+        width: 55px !important;
         border: 2px solid $font-color !important;
         padding: 1rem !important;
         margin-top: 0.3rem !important;
@@ -151,9 +150,9 @@ $font-color: #091818;
     img {
         display: block !important;
         position: absolute;
-        height: 93.6vh !important;
-        width: 40% !important;
-        object-fit: cover !important;
+        height: 93.6vh;
+        width: 40%;
+        object-fit: cover;
         bottom: 0;
         right: -2rem;
         z-index: 0;
