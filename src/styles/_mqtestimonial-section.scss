@@ -82,8 +82,10 @@
     }
   }
   .testimonial-section {
+    margin-top: 3rem !important; /* moved down by ~3rem */
     h2 {
       font-size: 2.1rem !important; /* Smaller font */
+      font-weight: 600 !important;
       margin-top: -2.8rem !important;
     }
     .testimony {
@@ -96,6 +98,7 @@
       }
       .user-text {
         font-size: 1.4rem !important; /* Smaller font */
+        font-weight: 600 !important;
         line-height: 20px !important;
         width: 80% !important;
       }
@@ -105,7 +108,8 @@
         margin-top: 10px !important;
       }
       .user-text .ceoName {
-        font-size: 1.6rem !important;
+        font-size: 1.7rem !important;
+        font-weight: 600 !important;
         margin-top: 10px !important;
       }
       .testimonial-pic {
@@ -130,7 +134,7 @@
       height: 50vh !important; /* Further reduced image height */
       width: 70% !important; /* Wider for small screens */
       object-fit: cover !important;
-      right: -7rem !important;
+      right: -8rem !important;
       top: 7rem !important;
       z-index: -1 !important;
     }

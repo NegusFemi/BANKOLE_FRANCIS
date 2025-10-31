@@ -59,7 +59,7 @@
 @media screen and (max-width: 37.5em) {
   .footer-right {
     img {
-      height: 99vh !important; /* Further reduced image height */
+      height: 49vh !important; /* Further reduced image height */
       width: 100% !important; /* Wider for small screens */
       object-fit: cover !important;
       right: -9.7rem !important;
@@ -67,7 +67,7 @@
     }
   }
   .footer-glass {
-    height: 95vh !important; /* Compact height for mobile */
+    height: 45vh !important; /* Compact height for mobile */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
     &::before {
       width: 70% !important; /* Wider pseudo-element */
