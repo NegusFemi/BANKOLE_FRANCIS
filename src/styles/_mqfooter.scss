@@ -59,7 +59,7 @@
 @media screen and (max-width: 37.5em) {
   .footer-right {
     img {
-      height: 89vh !important; /* Further reduced image height */
+      height: 60vh !important; /* Further reduced image height */
       width: 100% !important; /* Wider for small screens */
       object-fit: cover !important;
       right: -9.7rem !important;
@@ -67,7 +67,7 @@
     }
   }
   .footer-glass {
-    height: 82vh !important; /* Compact height for mobile */
+    height: 62vh !important; /* Compact height for mobile */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
     &::before {
       width: 70% !important; /* Wider pseudo-element */
@@ -92,7 +92,7 @@
     position: relative;
     gap: 0.5rem !important; /* Tighter gap */
     left: -6rem !important;
-    top: -1.6rem !important;
+    top: 1.6rem !important;
     justify-content: center !important; /* Center icons for mobile */
   }
   .social-icons li a {
@@ -103,7 +103,7 @@
   #footer2 {
     height: 12vh !important; /* Minimal footer height */
     margin-top: 0rem !important;
-    margin-bottom: -3rem !important;
+    margin-bottom: 0rem !important;
     padding-bottom: 0.2rem !important;
     .footer-D {
       position: relative !important;

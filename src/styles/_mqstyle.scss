@@ -101,7 +101,7 @@ $blur-light: 0.5rem;
   }
 
   #landing {
-    height: 66.4vh !important;
+    height: 68.4vh !important;
     aspect-ratio: 3/2 !important;
 
     &::before {
@@ -122,7 +122,8 @@ $blur-light: 0.5rem;
       grid-template-columns: 90% !important;
 
       h1 {
-        font-size: 2.7rem !important;
+        font-size: 2.8rem !important;
+        font-weight: 600 !important;
         margin-top: 1rem !important;
         left: -1.5rem !important;
         border-top: #0c313946 0.5rem solid !important;
@@ -145,19 +146,21 @@ $blur-light: 0.5rem;
 
     .audio-player h2 {
       display: none !important;
-      font-size: 1.5rem !important;
+      font-size: 1.6rem !important;
+      font-weight: 600 !important;
       margin-top: -1.8rem !important;
       padding-bottom: 0.1rem !important;
     }
 
     .sub-landing {
-      font-size: 1.4rem !important;
+      font-size: 1.6rem !important;
+      font-weight: 600 !important;
       padding-top: 0.6rem !important;
       padding-bottom: 0.1rem !important;
     }
 
     .sub-landing2 {
-      font-size: 1.4rem !important;
+      font-size: 1.6rem !important;
       padding-bottom: 0.2rem !important;
     }
 
@@ -171,7 +174,7 @@ $blur-light: 0.5rem;
       img {
         display: block;
         position: relative !important;
-        height: 60vh !important;
+        height: 63vh !important;
         width: 100% !important;
         max-width: 350px !important;
         object-fit: cover !important;
@@ -190,7 +193,7 @@ $blur-light: 0.5rem;
   }
 
   #landing3 {
-    height: 60vh !important;
+    height: 68.4vh !important;
     aspect-ratio: 3/2 !important;
 
     &::before {
@@ -211,7 +214,8 @@ $blur-light: 0.5rem;
       grid-template-columns: 90% !important;
 
       h1 {
-        font-size: 2.7rem !important;
+        font-size: 2.8rem !important;
+        font-weight: 600 !important;
         margin-top: 1rem !important;
         left: -1.5rem !important;
         border-top: #0c313946 0.5rem solid !important;
@@ -242,13 +246,15 @@ $blur-light: 0.5rem;
     }
 
     .sub-landing {
-      font-size: 1.4rem !important;
+      font-size: 1.6rem !important;
+      font-weight: 600 !important;
       padding-top: 0.6rem !important;
       padding-bottom: 0.1rem !important;
     }
 
     .sub-landing2 {
-      font-size: 1.4rem !important;
+      font-size: 1.6rem !important;
+      font-weight: 600 !important;
       padding-bottom: 0.2rem !important;
     }
 
@@ -262,7 +268,7 @@ $blur-light: 0.5rem;
       img {
         display: block;
         position: relative;
-        height: 54vh !important;
+        height: 64vh !important;
         width: 100% !important;
         max-width: 350px !important;
         object-fit: cover !important;
@@ -286,7 +292,7 @@ $blur-light: 0.5rem;
 }
 
 #landing2 {
-    height: 60vh !important;
+    height: 68.4vh !important;
     aspect-ratio: 3/2 !important;
 
     &::before {
@@ -341,13 +347,15 @@ $blur-light: 0.5rem;
     }
   }
     .sub-landing {
-      font-size: 1.4rem !important;
+      font-size: 1.6rem !important;
+      font-weight: 600 !important;
       padding-top: 0.6rem !important;
       padding-bottom: 0.1rem !important;
     }
 
     .sub-landing2 {
-      font-size: 1.4rem !important;
+      font-size: 1.6rem !important;
+      font-weight: 600 !important;
       padding-bottom: 0.2rem !important;
     }
 
@@ -361,7 +369,7 @@ $blur-light: 0.5rem;
       img {
         display: block;
         position: relative;
-        height: 70vh !important;
+        height: 77vh !important;
         width: 100% !important;
         max-width: 350px !important;
         object-fit: cover !important;

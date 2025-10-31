@@ -1433,14 +1433,14 @@ article {
 /* Media Query for Mobile Phones (480px and below) */
 @media screen and (max-width: 37.5em) {
   .footer-right img {
-    height: 89vh !important; /* Further reduced image height */
+    height: 60vh !important; /* Further reduced image height */
     width: 100% !important; /* Wider for small screens */
     object-fit: cover !important;
     right: -9.7rem !important;
     z-index: -1 !important;
   }
   .footer-glass {
-    height: 82vh !important; /* Compact height for mobile */
+    height: 62vh !important; /* Compact height for mobile */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
   }
   .footer-glass::before {
@@ -1465,7 +1465,7 @@ article {
     position: relative;
     gap: 0.5rem !important; /* Tighter gap */
     left: -6rem !important;
-    top: -1.6rem !important;
+    top: 1.6rem !important;
     justify-content: center !important; /* Center icons for mobile */
   }
   .social-icons li a {
@@ -1476,7 +1476,7 @@ article {
   #footer2 {
     height: 12vh !important; /* Minimal footer height */
     margin-top: 0rem !important;
-    margin-bottom: -3rem !important;
+    margin-bottom: 0rem !important;
     padding-bottom: 0.2rem !important;
   }
   #footer2 .footer-D {
@@ -1528,7 +1528,7 @@ article {
     padding: 0.3rem !important;
     line-height: 2.4rem !important;
     margin-bottom: 0.4rem !important;
-    top: -0.5rem !important;
+    margin-top: -0.3rem !important;
   }
   #Gallery .Gallery .image-box {
     margin: 0 1% !important;
@@ -1539,7 +1539,7 @@ article {
   }
   #Gallery .Gallery .image-box img {
     width: 100% !important;
-    height: 126.5% !important;
+    height: 136.5% !important;
     object-fit: cover !important;
     transition: 1s !important;
   }
@@ -1655,10 +1655,10 @@ article {
     backdrop-filter: blur(0.5rem) !important;
   }
   .testimonial-section {
-    margin-top: 3rem !important; /* moved down by ~5rem */
+    margin-top: 1.8rem !important; /* moved down by ~5rem */
   }
   .testimonial-section h2 {
-    font-size: 2.4rem !important; /* Smaller font */
+    font-size: 2.7rem !important; /* Smaller font */
     font-weight: 600 !important;
     margin-top: -2.8rem !important;
   }
@@ -1672,7 +1672,7 @@ article {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1) !important; /* Lighter shadow */
   }
   .testimonial-section .testimony .user-text {
-    font-size: 1.4rem !important; /* Smaller font */
+    font-size: 1.6rem !important; /* Smaller font */
     font-weight: 600 !important;
     line-height: 20px !important;
     width: 80% !important;
@@ -1857,14 +1857,14 @@ article {
 /* Media Query for Mobile Phones (480px and below) */
 @media (max-width: 37.5em) {
   #blog-list {
-    height: 170vh !important;
+    height: 190vh !important;
     aspect-ratio: unset !important;
   }
   #blog-list .card-container {
     padding: 0.3rem !important;
   }
   #blog-list .card-container .card {
-    height: 630px !important;
+    height: 620px !important;
   }
   .blog-list {
     padding: 0.3rem !important;
@@ -1873,7 +1873,7 @@ article {
   }
   .blog-list li {
     margin: 0.5rem 0 !important;
-    flex-basis: 10% !important;
+    flex-basis: 9% !important;
     max-width: 100% !important;
   }
   .blog-list img {
@@ -2178,7 +2178,7 @@ article {
     height: 0.5rem !important;
   }
   #landing {
-    height: 66.4vh !important;
+    height: 68.4vh !important;
     aspect-ratio: 3/2 !important;
   }
   #landing::before {
@@ -2197,7 +2197,8 @@ article {
     grid-template-columns: 90% !important;
   }
   #landing .landing-right h1 {
-    font-size: 2.7rem !important;
+    font-size: 2.8rem !important;
+    font-weight: 600 !important;
     margin-top: 1rem !important;
     left: -1.5rem !important;
     border-top: rgba(12, 49, 57, 0.2745098039) 0.5rem solid !important;
@@ -2215,17 +2216,19 @@ article {
   }
   #landing .audio-player h2 {
     display: none !important;
-    font-size: 1.5rem !important;
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
     margin-top: -1.8rem !important;
     padding-bottom: 0.1rem !important;
   }
   #landing .sub-landing {
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
     padding-top: 0.6rem !important;
     padding-bottom: 0.1rem !important;
   }
   #landing .sub-landing2 {
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
     padding-bottom: 0.2rem !important;
   }
   #landing ul li {
@@ -2236,7 +2239,7 @@ article {
   #landing .image-box2 img {
     display: block;
     position: relative !important;
-    height: 60vh !important;
+    height: 63vh !important;
     width: 100% !important;
     max-width: 350px !important;
     object-fit: cover !important;
@@ -2250,7 +2253,7 @@ article {
     box-shadow: 0 -3px 6px -3px rgba(0, 0, 0, 0.2), 0 3px 6px -3px rgba(0, 0, 0, 0.2) !important;
   }
   #landing3 {
-    height: 60vh !important;
+    height: 68.4vh !important;
     aspect-ratio: 3/2 !important;
   }
   #landing3::before {
@@ -2269,7 +2272,8 @@ article {
     grid-template-columns: 90% !important;
   }
   #landing3 .landing-right h1 {
-    font-size: 2.7rem !important;
+    font-size: 2.8rem !important;
+    font-weight: 600 !important;
     margin-top: 1rem !important;
     left: -1.5rem !important;
     border-top: rgba(12, 49, 57, 0.2745098039) 0.5rem solid !important;
@@ -2294,12 +2298,14 @@ article {
     padding-bottom: 0.1rem !important;
   }
   #landing3 .sub-landing {
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
     padding-top: 0.6rem !important;
     padding-bottom: 0.1rem !important;
   }
   #landing3 .sub-landing2 {
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
     padding-bottom: 0.2rem !important;
   }
   #landing3 ul li {
@@ -2310,7 +2316,7 @@ article {
   #landing3 .image-box2 img {
     display: block;
     position: relative;
-    height: 54vh !important;
+    height: 64vh !important;
     width: 100% !important;
     max-width: 350px !important;
     object-fit: cover !important;
@@ -2331,7 +2337,7 @@ article {
     box-shadow: 0 -3px 6px -3px rgba(0, 0, 0, 0.2), 0 3px 6px -3px rgba(0, 0, 0, 0.2) !important;
   }
   #landing2 {
-    height: 60vh !important;
+    height: 68.4vh !important;
     aspect-ratio: 3/2 !important;
   }
   #landing2::before {
@@ -2374,12 +2380,14 @@ article {
     padding-bottom: 0.1rem !important;
   }
   #landing2 .sub-landing {
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
     padding-top: 0.6rem !important;
     padding-bottom: 0.1rem !important;
   }
   #landing2 .sub-landing2 {
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
+    font-weight: 600 !important;
     padding-bottom: 0.2rem !important;
   }
   #landing2 ul li {
@@ -2390,7 +2398,7 @@ article {
   #landing2 .image-box2 img {
     display: block;
     position: relative;
-    height: 70vh !important;
+    height: 77vh !important;
     width: 100% !important;
     max-width: 350px !important;
     object-fit: cover !important;
