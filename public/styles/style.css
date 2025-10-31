@@ -1476,7 +1476,7 @@ article {
   #footer2 {
     height: 12vh !important; /* Minimal footer height */
     margin-top: 0rem !important;
-    bottom: -3rem !important;
+    margin-bottom: -3rem !important;
     padding-bottom: 0.2rem !important;
   }
   #footer2 .footer-D {
@@ -1525,10 +1525,10 @@ article {
     font-weight: 600 !important;
     font-size: 2rem !important;
     color: #091818;
-    padding-top: 0rem !important;
+    padding: 0.3rem !important;
     line-height: 2.4rem !important;
     margin-bottom: 0.4rem !important;
-    margin-top: -0.5rem !important;
+    top: -0.5rem !important;
   }
   #Gallery .Gallery .image-box {
     margin: 0 1% !important;
@@ -1655,7 +1655,7 @@ article {
     backdrop-filter: blur(0.5rem) !important;
   }
   .testimonial-section {
-    margin-top: 4rem !important; /* moved down by ~5rem */
+    margin-top: 3rem !important; /* moved down by ~5rem */
   }
   .testimonial-section h2 {
     font-size: 2.4rem !important; /* Smaller font */
@@ -1857,14 +1857,14 @@ article {
 /* Media Query for Mobile Phones (480px and below) */
 @media (max-width: 37.5em) {
   #blog-list {
-    height: 200vh !important;
+    height: 170vh !important;
     aspect-ratio: unset !important;
   }
   #blog-list .card-container {
     padding: 0.3rem !important;
   }
   #blog-list .card-container .card {
-    height: 600px !important;
+    height: 630px !important;
   }
   .blog-list {
     padding: 0.3rem !important;
