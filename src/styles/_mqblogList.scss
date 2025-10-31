@@ -56,12 +56,12 @@
 /* Media Query for Mobile Phones (480px and below) */
 @media (max-width: 37.5em) {
   #blog-list {
-    height: 210vh !important; // Slight tweak for small screens
+    height: 200vh !important; // Slight tweak for small screens
     aspect-ratio: unset !important;
     .card-container {
       padding: 0.3rem !important;
       .card {
-        height: 580px !important; // Smaller height
+        height: 600px !important; // Smaller height
       }
     }
   }
@@ -84,7 +84,8 @@
   }
 
   .blog-list h1 {
-    font-size: 2.5rem !important; // Smaller heading
+    font-size: 2.7rem !important; // Smaller heading
+    font-weight: 600 !important;
     margin: 1rem auto 0 !important;
   }
   .blog-list h2 {
