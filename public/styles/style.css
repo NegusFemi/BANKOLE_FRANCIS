@@ -1440,7 +1440,7 @@ article {
     z-index: -1 !important;
   }
   .footer-glass {
-    height: 45vh !important; /* Compact height for mobile */
+    height: 75vh !important; /* Compact height for mobile */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
   }
   .footer-glass::before {
@@ -1474,7 +1474,7 @@ article {
     font-size: 1.7rem !important;
   }
   #footer2 {
-    height: 15vh !important; /* Minimal footer height */
+    height: 12vh !important; /* Minimal footer height */
     margin-top: 0rem !important;
     padding-bottom: 0.2rem !important;
   }
@@ -1640,7 +1640,7 @@ article {
 /* Media Query for Mobile Phones (480px and below) */
 @media screen and (max-width: 37.5em) {
   #testimonial-section {
-    height: 70vh !important; /* Further reduced height */
+    height: 68vh !important; /* Further reduced height */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
   }
   #testimonial-section::before {
@@ -1654,10 +1654,10 @@ article {
     backdrop-filter: blur(0.5rem) !important;
   }
   .testimonial-section {
-    margin-top: 3rem !important; /* moved down by ~3rem */
+    margin-top: 5rem !important; /* moved down by ~5rem */
   }
   .testimonial-section h2 {
-    font-size: 2.1rem !important; /* Smaller font */
+    font-size: 2.2rem !important; /* Smaller font */
     font-weight: 600 !important;
     margin-top: -2.8rem !important;
   }

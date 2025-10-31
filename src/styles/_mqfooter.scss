@@ -67,7 +67,7 @@
     }
   }
   .footer-glass {
-    height: 45vh !important; /* Compact height for mobile */
+    height: 75vh !important; /* Compact height for mobile */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
     &::before {
       width: 70% !important; /* Wider pseudo-element */
@@ -101,7 +101,7 @@
     font-size: 1.7rem !important;
   }
   #footer2 {
-    height: 15vh !important; /* Minimal footer height */
+    height: 12vh !important; /* Minimal footer height */
     margin-top: 0rem !important;
     padding-bottom: 0.2rem !important;
     .footer-D {
