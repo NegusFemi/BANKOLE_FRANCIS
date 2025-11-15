@@ -1857,7 +1857,7 @@ article {
 /* Media Query for Mobile Phones (480px and below) */
 @media (max-width: 37.5em) {
   #blog-list {
-    height: 190vh !important;
+    height: 195vh !important;
     aspect-ratio: unset !important;
   }
   #blog-list .card-container {
@@ -2214,7 +2214,7 @@ article {
     z-index: 999 !important;
     position: relative !important;
     cursor: pointer !important;
-    transform: translateY(4.2rem) !important;
+    transform: translateY(4rem) !important;
     margin-top: 0.5rem;
   }
   #landing .audio-player h2 {
@@ -2243,7 +2243,7 @@ article {
   #landing .image-box2 img {
     display: block;
     position: relative !important;
-    height: 63vh !important;
+    height: 63.7vh !important;
     width: 100% !important;
     max-width: 350px !important;
     object-fit: cover !important;
@@ -2291,7 +2291,7 @@ article {
     position: relative !important;
     cursor: pointer !important;
     top: 30% !important;
-    transform: translateY(-70%) !important;
+    transform: translateY(-60%) !important;
     margin-top: 0.5rem;
   }
   #landing3 .audio-player h2 {
