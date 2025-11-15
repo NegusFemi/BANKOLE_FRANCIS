@@ -9,7 +9,7 @@ icons.forEach((iconElement, index) => {
         if (!songElement.paused) {
             // Pause the clicked song if it is playing
             songElement.pause();
-            iconElement.innerHTML = '<i class="fa-regular fa-circle-play" style="color: rgba(4, 33, 39, 0.952); font-size: 6rem !important; cursor: pointer; margin-top: 1rem;"></i>';
+            iconElement.innerHTML = '<i class="fa-regular fa-circle-play" style="color: rgba(4, 33, 39, 0.952); font-size: 6rem !important; !important; cursor: pointer; margin-top: 1rem;"></i>';
         } else {
             // Pause all other songs and reset their icons
             songs.forEach((s, i) => {

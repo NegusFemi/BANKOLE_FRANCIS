@@ -57,7 +57,7 @@
       .navbar-nav li a {
         display: flex !important;
         align-items: center !important;
-        padding: 0.4rem 1rem 0.4rem 1.5rem !important; /* move content right by ~1.5rem */
+        padding: 3.4rem -1.5rem -3rem 2rem !important; /* move content right by ~1.5rem */
         margin: 0 !important; /* remove margin */
         font-size: 1.2rem !important;
         font-weight: 600 !important;
@@ -81,8 +81,8 @@
       .side-nav {
   .btn-close {
                     position: relative !important;
-                    left: 29% !important;
-                    transform: translateX(-71%);
+                    left: 28% !important;
+                    transform: translateX(-70%);
                     top: 70px !important;
                     right: 0px;
                     font-size: 3rem !important;;

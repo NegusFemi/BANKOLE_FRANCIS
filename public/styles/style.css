@@ -102,7 +102,7 @@ header .nav-container .side-nav a:hover {
 }
 header .nav-container .side-nav .btn-close {
   position: absolute !important;
-  left: 22% !important;
+  left: 20% !important;
   transform: translateX(-78%);
   top: 60px !important;
   right: 0px;
@@ -1368,11 +1368,11 @@ article {
   .profile-header {
     flex: 1 1 100% !important;
   }
-  .profile-content h2 {
-    font-size: 1.4rem !important;
+  .Profile-content h2 {
+    font-size: 2.4rem !important;
     margin-bottom: 0.5rem !important;
   }
-  .profile-content p {
+  .Profile-content p {
     font-size: 1.2rem !important;
     padding: 0.8rem !important;
     margin: 0.5rem !important;
@@ -1458,14 +1458,14 @@ article {
     line-height: 4.8rem !important;
     margin: 0 0 0 0.4rem !important;
     position: relative !important;
-    top: 12% !important; /* pulls the heading up */
-    transform: translateY(-88%) !important;
+    top: 65% !important; /* pulls the heading up */
+    transform: translateY(-50%) !important;
   }
   .social-icons {
     position: relative;
     gap: 0.5rem !important; /* Tighter gap */
     left: -6rem !important;
-    top: 1.6rem !important;
+    top: 7rem !important;
     justify-content: center !important; /* Center icons for mobile */
   }
   .social-icons li a {
@@ -1475,7 +1475,7 @@ article {
   }
   #footer2 {
     height: 12vh !important; /* Minimal footer height */
-    margin-top: 0rem !important;
+    top: 7rem !important;
     margin-bottom: 0rem !important;
     padding-bottom: 0.2rem !important;
   }
@@ -1494,7 +1494,7 @@ article {
     text-align: center !important; /* center text inside the h3 */
     right: -1.5rem !important; /* remove previous offset */
     left: -0.3rem !important;
-    top: -2.2rem !important; /* pulled up a bit */
+    top: 0rem !important; /* pulled up a bit */
   }
   #footer2 .footer-D h3:nth-child(2) {
     font-size: 1.6rem !important;
@@ -1862,6 +1862,7 @@ article {
   }
   #blog-list .card-container {
     padding: 0.3rem !important;
+    margin-bottom: 1rem !important;
   }
   #blog-list .card-container .card {
     height: 620px !important;
@@ -1873,7 +1874,7 @@ article {
   }
   .blog-list li {
     margin: 0.5rem 0 !important;
-    flex-basis: 9% !important;
+    flex-basis: 7% !important;
     max-width: 100% !important;
   }
   .blog-list img {
@@ -2104,7 +2105,7 @@ article {
     height: 0.8rem !important;
   }
   #landing, #landing2, #landing3 {
-    height: 80vh !important; /* Reduced height */
+    height: 85vh !important; /* Reduced height */
     aspect-ratio: 4/3 !important; /* Adjusted aspect ratio */
   }
   #landing::before, #landing2::before, #landing3::before {
@@ -2141,11 +2142,13 @@ article {
   }
   #landing .landing-right .sub-landing, #landing2 .landing-right .sub-landing, #landing3 .landing-right .sub-landing {
     font-size: 1.8rem !important;
+    font-weight: 600 !important;
     padding-top: 0.8rem !important;
     padding-bottom: 0.2rem !important;
   }
   #landing .landing-right .sub-landing2, #landing2 .landing-right .sub-landing2, #landing3 .landing-right .sub-landing2 {
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
+    font-weight: 600 !important;
     padding-bottom: 0.8rem !important;
   }
   #landing .landing-right ul li, #landing2 .landing-right ul li, #landing3 .landing-right ul li {
@@ -2178,7 +2181,7 @@ article {
     height: 0.5rem !important;
   }
   #landing {
-    height: 68.4vh !important;
+    height: 70vh !important;
     aspect-ratio: 3/2 !important;
   }
   #landing::before {
@@ -2222,13 +2225,14 @@ article {
     padding-bottom: 0.1rem !important;
   }
   #landing .sub-landing {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
     font-weight: 600 !important;
     padding-top: 0.6rem !important;
     padding-bottom: 0.1rem !important;
   }
   #landing .sub-landing2 {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
+    font-weight: 600 !important;
     padding-bottom: 0.2rem !important;
   }
   #landing ul li {
@@ -2253,7 +2257,7 @@ article {
     box-shadow: 0 -3px 6px -3px rgba(0, 0, 0, 0.2), 0 3px 6px -3px rgba(0, 0, 0, 0.2) !important;
   }
   #landing3 {
-    height: 68.4vh !important;
+    height: 70vh !important;
     aspect-ratio: 3/2 !important;
   }
   #landing3::before {
@@ -2298,13 +2302,13 @@ article {
     padding-bottom: 0.1rem !important;
   }
   #landing3 .sub-landing {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
     font-weight: 600 !important;
     padding-top: 0.6rem !important;
     padding-bottom: 0.1rem !important;
   }
   #landing3 .sub-landing2 {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
     font-weight: 600 !important;
     padding-bottom: 0.2rem !important;
   }
@@ -2337,7 +2341,7 @@ article {
     box-shadow: 0 -3px 6px -3px rgba(0, 0, 0, 0.2), 0 3px 6px -3px rgba(0, 0, 0, 0.2) !important;
   }
   #landing2 {
-    height: 68.4vh !important;
+    height: 70vh !important;
     aspect-ratio: 3/2 !important;
   }
   #landing2::before {
@@ -2380,13 +2384,13 @@ article {
     padding-bottom: 0.1rem !important;
   }
   #landing2 .sub-landing {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
     font-weight: 600 !important;
     padding-top: 0.6rem !important;
     padding-bottom: 0.1rem !important;
   }
   #landing2 .sub-landing2 {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
     font-weight: 600 !important;
     padding-bottom: 0.2rem !important;
   }
@@ -2502,7 +2506,7 @@ article {
   header .nav-container .navbar-nav li a {
     display: flex !important;
     align-items: center !important;
-    padding: 0.4rem 1rem 0.4rem 1.5rem !important; /* move content right by ~1.5rem */
+    padding: 3.4rem -1.5rem -3rem 2rem !important; /* move content right by ~1.5rem */
     margin: 0 !important; /* remove margin */
     font-size: 1.2rem !important;
     font-weight: 600 !important;
@@ -2523,8 +2527,8 @@ article {
   }
   header .nav-container .side-nav .btn-close {
     position: relative !important;
-    left: 29% !important;
-    transform: translateX(-71%);
+    left: 28% !important;
+    transform: translateX(-70%);
     top: 70px !important;
     right: 0px;
     font-size: 3rem !important;
@@ -2629,7 +2633,7 @@ body, html {
 #landing::before {
   content: " ";
   position: absolute;
-  top: -5rem;
+  top: -4rem;
   left: 0;
   width: 50%;
   height: 100vh;
@@ -2637,7 +2641,7 @@ body, html {
   background: linear-gradient(225deg, rgba(167, 201, 213, 0.4666666667) 0%, rgba(167, 203, 213, 0.4666666667) 75%, rgba(167, 203, 213, 0.4666666667) 100%);
   backdrop-filter: blur(1.7rem);
   background-clip: border-box;
-  z-index: -3 !important;
+  z-index: -1 !important;
   animation: move-up 2s infinite alternate;
 }
 @keyframes move-up {
@@ -2683,7 +2687,7 @@ body, html {
   font-weight: 500;
   font-size: 4.2rem;
   color: #091818;
-  transform: translateY(5.6rem);
+  margin-top: 5.6rem !important;
   padding-top: 0.9rem;
   padding-left: 1.4rem;
   padding-bottom: 0.9rem;
@@ -2698,15 +2702,16 @@ body, html {
   font-weight: 600 !important;
   font-size: 2.3rem !important;
   color: #091818 !important;
-  transform: translateY(6.3rem);
+  transform: translateY(0.3rem);
   white-space: wrap !important;
 }
-#landing .landing-right #icon2 .fa-regular.fa-circle-play.fa-circle-play {
+#landing .landing-right .audio-player #icon2 .fa-regular.fa-circle-play.fa-circle-play {
   font-size: 6rem !important;
-  color: rgba(4, 33, 39, 0.741) !important;
+  color: rgba(19, 41, 47, 0.8588235294) !important;
   cursor: pointer !important;
-  top: 150% !important;
-  transform: translateY(100%) !important;
+  top: 100% !important;
+  transform: translateY(0%) !important;
+  margin-top: 1rem !important;
   position: relative !important;
   z-index: 9999 !important;
 }
@@ -2716,7 +2721,6 @@ body, html {
   font-weight: 800;
   font-size: 2.3rem;
   color: #091818;
-  transform: translateY(5.6rem);
   padding-top: 1rem !important;
   padding-bottom: 0.3rem !important;
   white-space: wrap !important;
@@ -2725,7 +2729,6 @@ body, html {
   font-family: "trirong thin";
   font-weight: 600;
   font-size: 2rem;
-  transform: translateY(5.6rem);
   padding-bottom: 1rem !important;
   color: #091818;
 }
@@ -2841,7 +2844,7 @@ body, html {
   font-size: 2.3rem;
   color: #091818;
   padding-top: 0rem !important;
-  padding-bottom: 0.4rem !important;
+  padding-bottom: 0.3rem !important;
   white-space: wrap !important;
 }
 #landing2 .landing-right #icon1 .fa-regular.fa-circle-play.fa-circle-play {
@@ -2983,7 +2986,7 @@ body, html {
   font-size: 2.3rem;
   color: #091818;
   padding-top: 0rem !important;
-  padding-bottom: 0.4rem !important;
+  padding-bottom: 0.3rem !important;
   white-space: wrap !important;
 }
 #landing3 .landing-right .audio-player #icon .fa-regular.fa-circle-play.fa-circle-play {

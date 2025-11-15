@@ -134,7 +134,7 @@ body, html {
 &::before{
     content: ' ';
     position: absolute;
-    top: -5rem;
+    top: -4rem;
     left: 0;
     width: 50%;
     height: 100vh;
@@ -142,7 +142,7 @@ body, html {
     background: linear-gradient(225deg, #a7c9d577 0%, #A7CBD577 75%, #A7CBD577 100%);
     backdrop-filter: blur(1.7rem);
     background-clip: border-box;
-    z-index: -3 !important;
+    z-index: -1 !important;
     animation: move-up 2s infinite alternate;
 @keyframes move-up {
     from {
@@ -187,7 +187,8 @@ h1 {
     font-weight: 500;
     font-size: 4.2rem;
     color: $font-color;
-    transform: translateY(5.6rem);
+    margin-top: 5.6rem !important;
+    //transform: translateY(5.6rem);
     padding-top: 0.9rem;
     padding-left: 1.4rem;
     padding-bottom: 0.9rem;
@@ -204,26 +205,30 @@ h1 {
     font-weight:600 !important;
     font-size: 2.3rem !important;
     color: $font-color !important;
-    transform: translateY(6.3rem);
+    //padding-top: 1rem !important;
+    //padding: -3rem !important;
+    transform: translateY(0.3rem);
     white-space: wrap !important;
-}
 }
 #icon2 .fa-regular.fa-circle-play.fa-circle-play {
     font-size: 6rem !important;
-    color: rgba(4, 33, 39, 0.741) !important;
+    color:  #13292fdb !important;
     cursor: pointer !important;
-    top: 150% !important;
-    transform: translateY(100%) !important;
+    top: 100% !important;
+    transform: translateY(0%) !important;
+    margin-top: 1rem !important;
     position: relative !important;
     z-index: 9999 !important;
 }
+}
+
 .sub-landing {
     position: relative;
     font-family: 'trirong thin';
     font-weight: 800;
     font-size: 2.3rem;
     color: $font-color;
-    transform: translateY(5.6rem);
+    //transform: translateY(5.6rem);
     padding-top: 1rem !important;
     padding-bottom: 0.3rem !important;
     white-space: wrap !important;
@@ -232,7 +237,7 @@ h1 {
     font-family: 'trirong thin';
     font-weight: 600;
     font-size: 2rem;
-    transform: translateY(5.6rem);
+    //transform: translateY(5.6rem);
     padding-bottom: 1rem !important;
     color: $font-color;
 }
@@ -349,7 +354,7 @@ h2 {
     font-size: 2.3rem;
     color: $font-color;
     padding-top: 0rem !important;
-    padding-bottom: 0.4rem !important;
+    padding-bottom: 0.3rem !important;
     white-space: wrap !important;
 }
 }
@@ -493,7 +498,7 @@ h2 {
     font-size: 2.3rem;
     color: $font-color;
     padding-top: 0rem !important;
-    padding-bottom: 0.4rem !important;
+    padding-bottom: 0.3rem !important;
     white-space: wrap !important;
 }
 #icon .fa-regular.fa-circle-play.fa-circle-play{
