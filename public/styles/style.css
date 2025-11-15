@@ -2214,7 +2214,7 @@ article {
     z-index: 999 !important;
     position: relative !important;
     cursor: pointer !important;
-    transform: translateY(4rem) !important;
+    transform: translateY(3.5rem) !important;
     margin-top: 0.5rem;
   }
   #landing .audio-player h2 {
