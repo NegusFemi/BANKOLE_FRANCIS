@@ -1505,7 +1505,7 @@ article {
 /* Media Query for Mobile Phones (480px and below) */
 @media screen and (max-width: 37.5em) {
   #Gallery {
-    height: 63vh !important;
+    height: 73vh !important;
     width: 100% !important;
     position: relative !important;
     background: linear-gradient(127deg, #aab8c2, #F9FAF5) !important;
@@ -1514,7 +1514,7 @@ article {
     overflow: hidden !important;
   }
   #Gallery .Gallery {
-    height: 63vh !important;
+    height: 73vh !important;
     position: relative !important;
     display: grid !important;
     grid-template-columns: 98.8% !important;
@@ -1522,13 +1522,13 @@ article {
   }
   #Gallery .Gallery h1 {
     font-family: "antic didone";
-    font-weight: 600 !important;
+    font-weight: 500 !important;
     font-size: 2rem !important;
     color: #091818;
     padding: 0.3rem !important;
     line-height: 2.4rem !important;
     margin-bottom: 0.4rem !important;
-    margin-top: -0.3rem !important;
+    margin-top: 0rem !important;
   }
   #Gallery .Gallery .image-box {
     margin: 0 1% !important;
@@ -2243,7 +2243,7 @@ article {
   #landing .image-box2 img {
     display: block;
     position: relative !important;
-    height: 63.7vh !important;
+    height: 84vh !important;
     width: 100% !important;
     max-width: 350px !important;
     object-fit: cover !important;
@@ -2320,7 +2320,7 @@ article {
   #landing3 .image-box2 img {
     display: block;
     position: relative;
-    height: 64vh !important;
+    height: 84vh !important;
     width: 100% !important;
     max-width: 350px !important;
     object-fit: cover !important;
@@ -2402,7 +2402,7 @@ article {
   #landing2 .image-box2 img {
     display: block;
     position: relative;
-    height: 77vh !important;
+    height: 84vh !important;
     width: 100% !important;
     max-width: 350px !important;
     object-fit: cover !important;
@@ -2500,7 +2500,7 @@ article {
     left: 90% !important; /* Adjusted position */
     font-size: 2rem !important; /* Smaller icon size */
     margin: 0 !important;
-    padding: 0 !important;
+    padding: -0.7rem !important;
     z-index: -1 !important;
   }
   header .nav-container .navbar-nav li a {

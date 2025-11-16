@@ -8,7 +8,7 @@ $font-color: #091818;
 /* Media Query for Mobile Phones (480px and below) */
 @media screen and (max-width: 37.5em) {
   #Gallery {
-    height: 63vh !important;
+    height: 73vh !important;
     width: 100% !important;
     position: relative !important;
     background: linear-gradient(127deg, #aab8c2 , #F9FAF5) !important;
@@ -16,20 +16,20 @@ $font-color: #091818;
     aspect-ratio: 16/10 !important;
     overflow: hidden !important;
     .Gallery {
-    height: 63vh !important;
+    height: 73vh !important;
     position: relative !important;
     display: grid !important;
     grid-template-columns: 98.8% !important;
     place-content: center !important;
     h1 {
     font-family: 'antic didone';
-    font-weight: 600 !important;
+    font-weight: 500 !important;
     font-size: 2rem !important;
     color: $font-color;
     padding: 0.3rem !important;
     line-height: 2.4rem !important;
     margin-bottom: 0.4rem !important;
-    margin-top: -0.3rem !important;
+    margin-top: 0rem !important;
 }
 .image-box {
     margin: 0 1% !important;
