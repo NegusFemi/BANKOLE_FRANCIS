@@ -1528,7 +1528,7 @@ article {
     padding: 0.3rem !important;
     line-height: 2.4rem !important;
     margin-bottom: 0.4rem !important;
-    margin-top: 0rem !important;
+    margin-top: 0 !important;
   }
   #Gallery .Gallery .image-box {
     margin: 0 1% !important;
