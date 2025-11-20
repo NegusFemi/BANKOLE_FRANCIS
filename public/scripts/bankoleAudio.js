@@ -20,7 +20,7 @@ icons.forEach((iconElement, index) => {
             });
             // Play the selected song and update its icon
             const isMobile = window.matchMedia('(max-width: 37.5em)').matches;
-            const pauseMargin = isMobile ? '-0.5rem !important' : '1rem !important';
+            const pauseMargin = isMobile ? '1.1rem !important' : '1rem !important';
             songElement.play();
             iconElement.innerHTML = `<i class="fa-regular fa-circle-pause" style="color: rgba(4, 33, 39, 0.952); font-size: 6rem; cursor: pointer; margin-top: ${pauseMargin}; position: relative !important; z-index: 9999 !important"></i>`;
         }

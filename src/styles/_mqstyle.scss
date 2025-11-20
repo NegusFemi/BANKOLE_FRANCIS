@@ -103,7 +103,7 @@ $blur-light: 0.5rem;
   }
 
   #landing {
-    height: 80vh !important;
+    height: 85vh !important;
     aspect-ratio: 3/2 !important;
 
     &::before {
@@ -141,7 +141,7 @@ $blur-light: 0.5rem;
         z-index: 999 !important;
         position: relative !important;
         cursor: pointer !important;
-        transform: translateY(3.5rem) !important;
+        transform: translateY(4.6rem) !important;
         margin-top: 0.5rem;
       }
     }
@@ -196,7 +196,7 @@ $blur-light: 0.5rem;
   }
 
   #landing3 {
-    height: 80vh !important;
+    height: 85vh !important;
     aspect-ratio: 3/2 !important;
 
     &::before {
@@ -234,8 +234,8 @@ $blur-light: 0.5rem;
         z-index: 999 !important;
         position: relative !important;
         cursor: pointer !important;
-        top: 30% !important;
-        transform: translateY(-60%) !important;
+        top: 60% !important;
+        transform: translateY(-70%) !important;
         margin-top: 0.5rem;
       }
     }
@@ -295,7 +295,7 @@ $blur-light: 0.5rem;
 }
 
 #landing2 {
-    height: 80vh !important;
+    height: 85vh !important;
     aspect-ratio: 3/2 !important;
 
     &::before {
@@ -335,8 +335,8 @@ $blur-light: 0.5rem;
         z-index: 999 !important;
         position: relative !important;
         cursor: pointer !important;
-        top: 80% !important;
-        transform: translateY(-20%) !important;
+        top: 60% !important;
+        transform: translateY(2%) !important;
        //margin-top: 4rem !important ;
       }
     }

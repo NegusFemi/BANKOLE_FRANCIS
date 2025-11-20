@@ -56,10 +56,12 @@
 }
 
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 37.5em) {
   article {
+    width: 100% !important;
+    height: 100% !important;
     padding: 1rem !important; /* Minimal padding */
-  }
+  
   .profile-container {
     gap: 1rem !important; /* Tighter gap */
     padding: 1.2rem !important; /* Minimal padding */
@@ -68,13 +70,13 @@
     align-items: center !important;
   }
   .profile-picture {
-    min-width: 120px !important; /* Smaller minimum width */
+    min-width: 200px !important; /* Smaller minimum width */
     flex: 1 1 100% !important;
     gap: 0.5rem !important; /* Tighter gap */
   }
   .profile-picture img {
-    width: 150px !important; /* Smaller image size */
-    height: 150px !important;
+    width: 190px !important; /* Smaller image size */
+    height: 190px !important;
     margin: 1rem !important; /* Minimal margin */
     padding: 0.1rem !important;
     border-width: 1.5px !important; /* Thinner border */
@@ -82,32 +84,34 @@
     max-height: 90vw !important;
   }
   .profile-picture video {
-    width: 150px !important; /* Smaller video size */
+    width: 200px !important; /* Smaller video size */
     border-radius: 12px !important; /* Smaller border radius */
     max-width: 90vw !important;
   }
   .profile-header {
     flex: 1 1 100% !important;
     text-align: center !important;
-  }
-  .profile-header h2 {
-    font-size: 1.6rem !important; /* Smaller heading */
+  
+  h2 {
+    font-size: 2.6rem !important; /* Smaller heading */
     padding: 0.6rem 0.1rem !important;
     margin-bottom: 0.4rem !important;
   }
-  .profile-header p {
-    font-size: 1rem !important; /* Smaller paragraph */
+  p {
+    font-size: 2rem !important; /* Smaller paragraph */
     margin: 0.5rem 0 !important;
     padding: 0.3rem 0 !important;
   }
-  .profile-header ul {
+  ul {
     margin: 0.4rem 0 !important;
     padding: 0.4rem 0 !important;
   }
-  .profile-header ul li {
-    font-size: 0.85rem !important; /* Smaller list font */
+  ul li {
+    font-size: 1rem !important; /* Smaller list font */
     margin-left: 0.8rem !important;
     margin-bottom: 0.2rem !important;
     padding: 0.1rem 0 !important;
   }
+}
+}
 }
