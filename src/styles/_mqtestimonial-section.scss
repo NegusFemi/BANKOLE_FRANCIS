@@ -68,7 +68,7 @@
 /* Media Query for Mobile Phones (480px and below) */
 @media screen and (max-width: 37.5em) {
   #testimonial-section {
-    height: 68vh !important; /* Further reduced height */
+    height: 69.5vh !important; /* Further reduced height */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
     &::before {
       width: 70% !important; /* Wider pseudo-element */
@@ -136,6 +136,82 @@
       object-fit: cover !important;
       right: -8rem !important;
       top: 7rem !important;
+      z-index: -1 !important;
+    }
+  }
+}
+
+/* Media Query for Mobile Phones (400px and below) */
+@media screen and (max-width: 30em) {
+  #testimonial-section {
+    height: 84vh !important; /* Further reduced height */
+    aspect-ratio: 3/2 !important; /* Adjusted for mobile */
+    &::before {
+      width: 70% !important; /* Wider pseudo-element */
+      height: 60vh !important;
+      backdrop-filter: blur(1.5rem) !important; /* Further reduced blur */
+    }
+    &::after {
+      width: 50% !important;
+      height: 40vh !important;
+      backdrop-filter: blur(0.5rem) !important;
+    }
+  }
+  .testimonial-section {
+    margin-top: 1.8rem !important; /* moved down by ~5rem */
+    h2 {
+      font-size: 2.7rem !important; /* Smaller font */
+      font-weight: 600 !important;
+      margin-top: -2.8rem !important;
+    }
+    .testimony {
+      width: 90% !important;
+      max-width: 400px !important;
+      padding-top: 0.3rem !important;
+      .testimonial-text {
+        height: 340px !important; /* Smaller testimonial box */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1) !important; /* Lighter shadow */
+      }
+      .user-text {
+        font-size: 1.6rem !important; /* Smaller font */
+        font-weight: 600 !important;
+        line-height: 20px !important;
+        width: 80% !important;
+      }
+      .user-text.fas {
+        font-size: 20px !important;
+        margin-bottom: 20px !important;
+        margin-top: 10px !important;
+      }
+      .user-text .ceoName {
+        font-size: 1.7rem !important;
+        font-weight: 600 !important;
+        margin-top: 10px !important;
+      }
+      .testimonial-pic {
+        margin-bottom: 1rem !important;
+      }
+      .user-pic {
+        position: relative !important;
+        width: 35px !important; /* Smaller profile picture */
+        padding: 4px !important;
+        left: 6.9rem !important;
+        z-index: 99 !important;
+      }
+      .user-pic.active-pic {
+        width: 40px !important;
+        padding: 0.6rem !important;
+        margin-top: 0.1rem !important;
+      }
+    }
+  }
+  .testimonial-right {
+    img {
+      height: 65.9vh !important; /* Further reduced image height */
+      width: 70% !important; /* Wider for small screens */
+      object-fit: cover !important;
+      right: -8rem !important;
+      top: 4rem !important;
       z-index: -1 !important;
     }
   }

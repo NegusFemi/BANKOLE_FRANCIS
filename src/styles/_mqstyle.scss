@@ -103,7 +103,7 @@ $blur-light: 0.5rem;
   }
 
   #landing {
-    height: 85vh !important;
+    height: 89vh !important;
     aspect-ratio: 3/2 !important;
 
     &::before {
@@ -183,7 +183,7 @@ $blur-light: 0.5rem;
         object-fit: cover !important;
         right: 100% !important;
         transform: translateX(-41%) !important;
-        top: 10% !important;
+        top: 6% !important;
       }
     }
 
@@ -372,13 +372,13 @@ $blur-light: 0.5rem;
       img {
         display: block;
         position: relative;
-        height: 84vh !important;
+        height: 93vh !important;
         width: 100% !important;
         max-width: 350px !important;
         object-fit: cover !important;
-        right: -68% !important;
-        transform: translateX(-32%) !important;
-        top: -3.6rem !important;
+        right: -36% !important;
+        transform: translateX(0%) !important;
+        top: -4.8rem !important;
       }
 
       #landing2 img,

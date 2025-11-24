@@ -8,7 +8,8 @@ header .nav-container .navbar {
   display: flex;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.001) !important;
-  backdrop-filter: blur(1rem) !important;
+  -webkit-backdrop-filter: blur(1rem) !important;
+          backdrop-filter: blur(1rem) !important;
   background-clip: padding-box !important;
   box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.1);
   border: 0px solid transparent;
@@ -68,7 +69,8 @@ header .nav-container .side-nav {
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.001);
-  backdrop-filter: blur(0.9rem) !important;
+  -webkit-backdrop-filter: blur(0.9rem) !important;
+          backdrop-filter: blur(0.9rem) !important;
   background-clip: padding-box;
   box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.1);
   border: 5px solid transparent rgb(255, 255, 255);
@@ -171,7 +173,8 @@ a[href="#home"]:target ~ #home {
   width: 0%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(0rem);
+  -webkit-backdrop-filter: blur(0rem);
+          backdrop-filter: blur(0rem);
   background-clip: padding-box;
   box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.1);
   border: 0 solid transparent;
@@ -222,7 +225,8 @@ a[href="#home"]:target ~ #home {
   color: rgb(252, 247, 253);
   text-align: center !important;
   background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(0.99rem) !important;
+  -webkit-backdrop-filter: blur(0.99rem) !important;
+          backdrop-filter: blur(0.99rem) !important;
   background-clip: padding-box !important;
   padding: 0.7rem !important;
   margin-top: 6rem !important;
@@ -249,7 +253,8 @@ a[href="#home"]:target ~ #home {
   height: 100vh !important;
   border-bottom-right-radius: 100% !important;
   background: linear-gradient(225deg, #aab8c2 0%, #aab8c2 75%, #aab8c2 100%) !important;
-  backdrop-filter: blur(3rem) !important;
+  -webkit-backdrop-filter: blur(3rem) !important;
+          backdrop-filter: blur(3rem) !important;
   background-clip: border-box !important;
   z-index: -1 !important;
   animation: move-up 2s infinite alternate;
@@ -271,7 +276,8 @@ a[href="#home"]:target ~ #home {
   height: 70vh !important;
   border-top-left-radius: 100% !important;
   background: linear-gradient(125deg, rgba(170, 184, 194, 0.4666666667) 0%, rgba(170, 184, 194, 0.4666666667) 75%, rgba(170, 184, 194, 0.4666666667) 100%) !important;
-  backdrop-filter: blur(1rem) !important;
+  -webkit-backdrop-filter: blur(1rem) !important;
+          backdrop-filter: blur(1rem) !important;
   background-clip: border-box !important;
   z-index: -2 !important;
   animation: move-up 4s infinite alternate;
@@ -324,7 +330,8 @@ a[href="#home"]:target ~ #home {
 #Gallery .Gallery .image-box img {
   width: 100% !important;
   height: 100%;
-  object-fit: cover !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
   transition: 1s !important;
 }
 #Gallery .Gallery .image-box:hover {
@@ -437,7 +444,8 @@ a[href="#home"]:target ~ #home {
   height: 100vh !important;
   border-bottom-right-radius: 100% !important;
   background: linear-gradient(225deg, rgba(170, 194, 194, 0.4392156863) 0%, rgba(170, 194, 189, 0.5254901961) 75%, #aac2c2 100%) !important;
-  backdrop-filter: blur(3rem) !important;
+  -webkit-backdrop-filter: blur(3rem) !important;
+          backdrop-filter: blur(3rem) !important;
   background-clip: border-box !important;
   z-index: -1 !important;
   animation: move-up 2s infinite alternate;
@@ -459,7 +467,8 @@ a[href="#home"]:target ~ #home {
   height: 70vh !important;
   border-top-left-radius: 100% !important;
   background: linear-gradient(125deg, rgba(170, 194, 190, 0.4666666667) 0%, rgba(170, 194, 191, 0.4666666667) 75%, rgba(170, 194, 193, 0.4666666667) 100%) !important;
-  backdrop-filter: blur(1rem) !important;
+  -webkit-backdrop-filter: blur(1rem) !important;
+          backdrop-filter: blur(1rem) !important;
   background-clip: border-box !important;
   z-index: -2 !important;
   animation: move-up 4s infinite alternate;
@@ -493,7 +502,8 @@ a[href="#home"]:target ~ #home {
 }
 #testimonial-section .testimonial-section .testimony .testimonial-text {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
   background-clip: padding-box;
   color: #091818;
   width: 100%;
@@ -572,7 +582,8 @@ a[href="#home"]:target ~ #home {
   position: absolute;
   height: 93.6vh;
   width: 40%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   bottom: 0;
   right: -2rem;
   z-index: 0;
@@ -597,7 +608,8 @@ a[href="#home"]:target ~ #home {
   height: 100vh !important;
   border-bottom-right-radius: 100% !important;
   background: linear-gradient(225deg, #aab8c2 0%, #aab8c2 75%, #aac2c2 100%) !important;
-  backdrop-filter: blur(3rem) !important;
+  -webkit-backdrop-filter: blur(3rem) !important;
+          backdrop-filter: blur(3rem) !important;
   background-clip: border-box !important;
   z-index: -1 !important;
   animation: move-up 2s infinite alternate;
@@ -619,7 +631,8 @@ a[href="#home"]:target ~ #home {
   height: 70vh !important;
   border-top-left-radius: 100% !important;
   background: linear-gradient(125deg, #aab8c2 0%, #aab8c2 75%, rgba(170, 194, 193, 0.4666666667) 100%) !important;
-  backdrop-filter: blur(1rem) !important;
+  -webkit-backdrop-filter: blur(1rem) !important;
+          backdrop-filter: blur(1rem) !important;
   background-clip: border-box !important;
   z-index: -2 !important;
   animation: move-up 4s infinite alternate;
@@ -637,7 +650,8 @@ a[href="#home"]:target ~ #home {
 }
 #blog-list .card-container .card {
   background: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(1rem) !important;
+  -webkit-backdrop-filter: blur(1rem) !important;
+          backdrop-filter: blur(1rem) !important;
   background-clip: padding-box !important;
   width: 100%;
   height: 282px;
@@ -743,7 +757,8 @@ a[href="#home"]:target ~ #home {
   position: absolute;
   height: 64.2vh;
   width: 40%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   bottom: 0;
   right: 0;
   z-index: 1 !important;
@@ -773,7 +788,8 @@ a[href="#home"]:target ~ #home {
   height: 100vh !important;
   border-bottom-right-radius: 100% !important;
   background: linear-gradient(5deg, rgba(167, 201, 213, 0.4666666667) 0%, rgba(167, 203, 213, 0.4666666667) 75%, rgba(167, 203, 213, 0.4666666667) 100%) !important;
-  backdrop-filter: blur(3rem) !important;
+  -webkit-backdrop-filter: blur(3rem) !important;
+          backdrop-filter: blur(3rem) !important;
   background-clip: border-box !important;
   z-index: -1 !important;
   animation: move-up 2s infinite alternate;
@@ -795,7 +811,8 @@ a[href="#home"]:target ~ #home {
   height: 70vh !important;
   border-top-left-radius: 100% !important;
   background: linear-gradient(125deg, rgba(167, 203, 213, 0.4392156863) 0%, rgba(167, 203, 213, 0.4392156863) 75%, rgba(167, 203, 213, 0.4392156863) 100%) !important;
-  backdrop-filter: blur(0rem) !important;
+  -webkit-backdrop-filter: blur(0rem) !important;
+          backdrop-filter: blur(0rem) !important;
   background-clip: border-box !important;
   z-index: -10000000000000000 !important;
   animation: move-up 4s infinite alternate;
@@ -864,7 +881,8 @@ footer-content {
   height: 10vh !important;
   position: relative !important;
   background: linear-gradient(127deg, #A7CBD5, rgba(224, 251, 252, 0.2274509804)) !important;
-  backdrop-filter: blur(1rem) !important;
+  -webkit-backdrop-filter: blur(1rem) !important;
+          backdrop-filter: blur(1rem) !important;
   background-clip: padding-box !important;
   display: flex !important;
   align-items: center !important;
@@ -934,7 +952,8 @@ footer-content {
   padding: 2rem 1.3rem 1rem 1.3rem !important;
   margin: 1rem !important;
   background: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(0.5rem) !important;
+  -webkit-backdrop-filter: blur(0.5rem) !important;
+          backdrop-filter: blur(0.5rem) !important;
   background-clip: padding-box !important;
   color: #091818;
   width: 100% !important;
@@ -965,7 +984,8 @@ footer-content {
   width: 0%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(0rem);
+  -webkit-backdrop-filter: blur(0rem);
+          backdrop-filter: blur(0rem);
   background-clip: padding-box;
   box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.1);
   border: 0 solid transparent;
@@ -1002,7 +1022,8 @@ footer-content {
   position: absolute !important;
   height: 100vh !important;
   width: 96% !important;
-  object-fit: contain !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
   border-radius: 25px !important;
   padding: 1rem !important;
 }
@@ -1037,7 +1058,8 @@ article {
   display: flex;
   flex-wrap: wrap;
   gap: 2.2rem;
-  backdrop-filter: blur(15px) saturate(140%);
+  -webkit-backdrop-filter: blur(15px) saturate(140%);
+          backdrop-filter: blur(15px) saturate(140%);
   border: var(--border);
   padding: 2.5rem;
   margin-bottom: 2rem;
@@ -1061,7 +1083,8 @@ article {
   height: 300px;
   margin: 2.2rem !important;
   padding: 0.2rem !important;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   border: 3px solid #f6d7b1;
   box-shadow: 0 3px 30px 0 rgba(68, 106, 234, 0.09);
@@ -1148,7 +1171,8 @@ article {
     padding: 0.8rem !important; /* Reduce padding */
     margin-top: 4rem !important; /* Adjust margin for better spacing */
     margin-bottom: -1rem !important;
-    backdrop-filter: blur(0.8rem) !important; /* Slightly less blur for performance */
+    -webkit-backdrop-filter: blur(0.8rem) !important;
+            backdrop-filter: blur(0.8rem) !important; /* Slightly less blur for performance */
   }
 }
 /* Media Query for Mobile Phones (480px and below) */
@@ -1168,7 +1192,8 @@ article {
     margin-top: -2.5rem !important; /* Reduced margin for compact layout */
     margin-bottom: 8rem !important;
     border-width: 1px !important; /* Thinner border for smaller screens */
-    backdrop-filter: blur(0.6rem) !important; /* Optimize blur for mobile performance */
+    -webkit-backdrop-filter: blur(0.6rem) !important;
+            backdrop-filter: blur(0.6rem) !important; /* Optimize blur for mobile performance */
   }
 }
 /* Elegant Blog Post CSS - 2025 Trends */
@@ -1244,7 +1269,8 @@ article {
 .profile-picture img {
   width: 310px;
   height: 310px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   border: 3.5px solid #f6d7b1;
   box-shadow: 0 3px 30px 0 rgba(68, 106, 234, 0.09);
@@ -1261,7 +1287,8 @@ article {
   height: 450px !important;
   border-radius: 8px;
   background: #fafaff;
-  object-fit: contain !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
   display: block;
   margin: 0 auto;
   margin-left: auto !important;
@@ -1383,7 +1410,8 @@ article {
   .footer-right img {
     height: 50vh !important; /* Smaller image height */
     width: 50% !important; /* Wider image to maintain visibility */
-    object-fit: contain !important; /* Ensure full image visibility */
+    -o-object-fit: contain !important;
+       object-fit: contain !important; /* Ensure full image visibility */
   }
   .footer-glass {
     height: 50vh !important; /* Reduced height for tablets */
@@ -1392,12 +1420,14 @@ article {
   .footer-glass::before {
     width: 60% !important; /* Wider pseudo-element for better coverage */
     height: 80vh !important;
-    backdrop-filter: blur(2rem) !important; /* Reduced blur for performance */
+    -webkit-backdrop-filter: blur(2rem) !important;
+            backdrop-filter: blur(2rem) !important; /* Reduced blur for performance */
   }
   .footer-glass::after {
     width: 45% !important;
     height: 50vh !important;
-    backdrop-filter: blur(0rem) !important;
+    -webkit-backdrop-filter: blur(0rem) !important;
+            backdrop-filter: blur(0rem) !important;
   }
   .footer-content h2 {
     font-size: 3.5rem !important; /* Smaller font size */
@@ -1435,7 +1465,8 @@ article {
   .footer-right img {
     height: 60vh !important; /* Further reduced image height */
     width: 100% !important; /* Wider for small screens */
-    object-fit: cover !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
     right: -9.7rem !important;
     z-index: -1 !important;
   }
@@ -1446,12 +1477,14 @@ article {
   .footer-glass::before {
     width: 70% !important; /* Wider pseudo-element */
     height: 60vh !important;
-    backdrop-filter: blur(1.5rem) !important; /* Further reduced blur */
+    -webkit-backdrop-filter: blur(1.5rem) !important;
+            backdrop-filter: blur(1.5rem) !important; /* Further reduced blur */
   }
   .footer-glass::after {
     width: 50% !important;
     height: 40vh !important;
-    backdrop-filter: blur(0rem) !important;
+    -webkit-backdrop-filter: blur(0rem) !important;
+            backdrop-filter: blur(0rem) !important;
   }
   .footer-content h2 {
     font-size: 5.4rem !important;
@@ -1540,7 +1573,8 @@ article {
   #Gallery .Gallery .image-box img {
     width: 100% !important;
     height: 136.5% !important;
-    object-fit: cover !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
     transition: 1s !important;
   }
   #Gallery .overlay {
@@ -1614,7 +1648,8 @@ article {
   #Gallery .Gallery .image-box img {
     width: 100% !important;
     height: 146% !important;
-    object-fit: cover !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
     transition: 1s !important;
   }
   #Gallery .overlay {
@@ -1659,12 +1694,14 @@ article {
   #testimonial-section::before {
     width: 60% !important; /* Wider pseudo-element */
     height: 80vh !important;
-    backdrop-filter: blur(2rem) !important; /* Reduced blur for performance */
+    -webkit-backdrop-filter: blur(2rem) !important;
+            backdrop-filter: blur(2rem) !important; /* Reduced blur for performance */
   }
   #testimonial-section::after {
     width: 45% !important;
     height: 50vh !important;
-    backdrop-filter: blur(0.8rem) !important;
+    -webkit-backdrop-filter: blur(0.8rem) !important;
+            backdrop-filter: blur(0.8rem) !important;
   }
   .testimonial-section h2 {
     font-size: 2.1rem !important; /* Smaller font size */
@@ -1708,7 +1745,8 @@ article {
   .testimonial-right img {
     height: 70vh !important; /* Smaller image height */
     width: 50% !important; /* Wider for better visibility */
-    object-fit: contain !important; /* Ensure full image visibility */
+    -o-object-fit: contain !important;
+       object-fit: contain !important; /* Ensure full image visibility */
     right: -1rem !important;
   }
 }
@@ -1721,12 +1759,14 @@ article {
   #testimonial-section::before {
     width: 70% !important; /* Wider pseudo-element */
     height: 60vh !important;
-    backdrop-filter: blur(1.5rem) !important; /* Further reduced blur */
+    -webkit-backdrop-filter: blur(1.5rem) !important;
+            backdrop-filter: blur(1.5rem) !important; /* Further reduced blur */
   }
   #testimonial-section::after {
     width: 50% !important;
     height: 40vh !important;
-    backdrop-filter: blur(0.5rem) !important;
+    -webkit-backdrop-filter: blur(0.5rem) !important;
+            backdrop-filter: blur(0.5rem) !important;
   }
   .testimonial-section {
     margin-top: 1.8rem !important; /* moved down by ~5rem */
@@ -1779,7 +1819,8 @@ article {
   .testimonial-right img {
     height: 50vh !important; /* Further reduced image height */
     width: 70% !important; /* Wider for small screens */
-    object-fit: cover !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
     right: -8rem !important;
     top: 7rem !important;
     z-index: -1 !important;
@@ -1794,12 +1835,14 @@ article {
   #testimonial-section::before {
     width: 70% !important; /* Wider pseudo-element */
     height: 60vh !important;
-    backdrop-filter: blur(1.5rem) !important; /* Further reduced blur */
+    -webkit-backdrop-filter: blur(1.5rem) !important;
+            backdrop-filter: blur(1.5rem) !important; /* Further reduced blur */
   }
   #testimonial-section::after {
     width: 50% !important;
     height: 40vh !important;
-    backdrop-filter: blur(0.5rem) !important;
+    -webkit-backdrop-filter: blur(0.5rem) !important;
+            backdrop-filter: blur(0.5rem) !important;
   }
   .testimonial-section {
     margin-top: 1.8rem !important; /* moved down by ~5rem */
@@ -1852,7 +1895,8 @@ article {
   .testimonial-right img {
     height: 65.9vh !important; /* Further reduced image height */
     width: 70% !important; /* Wider for small screens */
-    object-fit: cover !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
     right: -8rem !important;
     top: 4rem !important;
     z-index: -1 !important;
@@ -1956,12 +2000,14 @@ article {
   #blog-list::before {
     width: 60% !important; /* Wider pseudo-element */
     height: 80vh !important;
-    backdrop-filter: blur(2rem) !important; /* Reduced blur for performance */
+    -webkit-backdrop-filter: blur(2rem) !important;
+            backdrop-filter: blur(2rem) !important; /* Reduced blur for performance */
   }
   #blog-list::after {
     width: 45% !important;
     height: 50vh !important;
-    backdrop-filter: blur(0.8rem) !important;
+    -webkit-backdrop-filter: blur(0.8rem) !important;
+            backdrop-filter: blur(0.8rem) !important;
   }
   #blog-list .card {
     height: 220px !important; /* Smaller card height */
@@ -2311,13 +2357,15 @@ article {
   #landing::before, #landing2::before, #landing3::before {
     width: 60% !important; /* Wider pseudo-element */
     height: 80vh !important;
-    backdrop-filter: blur(1.2rem) !important; /* Reduced blur */
+    -webkit-backdrop-filter: blur(1.2rem) !important;
+            backdrop-filter: blur(1.2rem) !important; /* Reduced blur */
     z-index: -1 !important;
   }
   #landing::after, #landing2::after, #landing3::after {
     width: 45% !important;
     height: 50vh !important;
-    backdrop-filter: blur(0.7rem) !important;
+    -webkit-backdrop-filter: blur(0.7rem) !important;
+            backdrop-filter: blur(0.7rem) !important;
     z-index: -1 !important;
   }
   #landing .landing-right, #landing2 .landing-right, #landing3 .landing-right {
@@ -2358,7 +2406,8 @@ article {
   #landing .image-box img, #landing .image-box2 img, #landing2 .image-box img, #landing2 .image-box2 img, #landing3 .image-box img, #landing3 .image-box2 img {
     height: 60vh !important; /* Smaller image height */
     max-width: 90% !important; /* Adjusted max width */
-    object-fit: contain !important; /* Ensure full image visibility */
+    -o-object-fit: contain !important;
+       object-fit: contain !important; /* Ensure full image visibility */
     right: 0 !important;
   }
   .border-white {
@@ -2387,13 +2436,15 @@ article {
   #landing::before {
     width: 70% !important;
     height: 80vh !important;
-    backdrop-filter: blur(1rem) !important;
+    -webkit-backdrop-filter: blur(1rem) !important;
+            backdrop-filter: blur(1rem) !important;
     z-index: -1 !important;
   }
   #landing::after {
     width: 50% !important;
     height: 40vh !important;
-    backdrop-filter: blur(0.5rem) !important;
+    -webkit-backdrop-filter: blur(0.5rem) !important;
+            backdrop-filter: blur(0.5rem) !important;
     z-index: -1 !important;
   }
   #landing .landing-right {
@@ -2446,7 +2497,8 @@ article {
     height: 84vh !important;
     width: 100% !important;
     max-width: 350px !important;
-    object-fit: cover !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
     right: 100% !important;
     transform: translateX(-41%) !important;
     top: 6% !important;
@@ -2463,13 +2515,15 @@ article {
   #landing3::before {
     width: 70% !important;
     height: 80vh !important;
-    backdrop-filter: blur(1rem) !important;
+    -webkit-backdrop-filter: blur(1rem) !important;
+            backdrop-filter: blur(1rem) !important;
     z-index: -1 !important;
   }
   #landing3::after {
     width: 50% !important;
     height: 40vh !important;
-    backdrop-filter: blur(0.5rem) !important;
+    -webkit-backdrop-filter: blur(0.5rem) !important;
+            backdrop-filter: blur(0.5rem) !important;
     z-index: -1 !important;
   }
   #landing3 .landing-right {
@@ -2523,7 +2577,8 @@ article {
     height: 84vh !important;
     width: 100% !important;
     max-width: 350px !important;
-    object-fit: cover !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
     right: -57% !important;
     transform: translateX(-43%) !important;
     top: 10%;
@@ -2547,13 +2602,15 @@ article {
   #landing2::before {
     width: 70% !important;
     height: 80vh !important;
-    backdrop-filter: blur(1rem) !important;
+    -webkit-backdrop-filter: blur(1rem) !important;
+            backdrop-filter: blur(1rem) !important;
     z-index: -1 !important;
   }
   #landing2::after {
     width: 50% !important;
     height: 40vh !important;
-    backdrop-filter: blur(0.5rem) !important;
+    -webkit-backdrop-filter: blur(0.5rem) !important;
+            backdrop-filter: blur(0.5rem) !important;
     z-index: -1 !important;
   }
   #landing2 .landing-right {
@@ -2605,7 +2662,8 @@ article {
     height: 93vh !important;
     width: 100% !important;
     max-width: 350px !important;
-    object-fit: cover !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
     right: -36% !important;
     transform: translateX(0%) !important;
     top: -4.8rem !important;
@@ -2662,7 +2720,8 @@ article {
     padding: 0.15rem 0.5rem !important; /* Reduced padding */
     height: 3.5rem !important; /* Smaller height */
     box-shadow: 8px 8px 8px rgba(45, 55, 68, 0.08) !important; /* Lighter shadow */
-    backdrop-filter: blur(0.8rem) !important; /* Reduced blur for performance */
+    -webkit-backdrop-filter: blur(0.8rem) !important;
+            backdrop-filter: blur(0.8rem) !important; /* Reduced blur for performance */
   }
   header .nav-container .logo {
     width: 8rem !important; /* Smaller logo */
@@ -2689,7 +2748,8 @@ article {
     padding: 0.1rem 0.1rem !important; /* Minimal padding */
     height: 5rem !important; /* Smaller height */
     box-shadow: 6px 6px 6px rgba(45, 55, 68, 0.06) !important; /* Lighter shadow */
-    backdrop-filter: blur(0.5rem) !important; /* Further reduced blur */
+    -webkit-backdrop-filter: blur(0.5rem) !important;
+            backdrop-filter: blur(0.5rem) !important; /* Further reduced blur */
   }
   header .nav-container .logo {
     width: 8rem !important; /* Smaller logo */
@@ -2840,7 +2900,8 @@ body, html {
   height: 100vh;
   border-bottom-right-radius: 100%;
   background: linear-gradient(225deg, rgba(167, 201, 213, 0.4666666667) 0%, rgba(167, 203, 213, 0.4666666667) 75%, rgba(167, 203, 213, 0.4666666667) 100%);
-  backdrop-filter: blur(1.7rem);
+  -webkit-backdrop-filter: blur(1.7rem);
+          backdrop-filter: blur(1.7rem);
   background-clip: border-box;
   z-index: -1 !important;
   animation: move-up 2s infinite alternate;
@@ -2862,7 +2923,8 @@ body, html {
   height: 70vh;
   border-top-left-radius: 100%;
   background: linear-gradient(125deg, rgba(167, 203, 213, 0.4392156863) 0%, rgba(167, 203, 213, 0.4392156863) 75%, rgba(167, 203, 213, 0.4392156863) 100%);
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
   background-clip: border-box;
   z-index: -2 !important;
   animation: move-up 4s infinite alternate;
@@ -2955,7 +3017,8 @@ body, html {
   display: block;
   height: 95.5vh;
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   bottom: 0rem;
   left: 140%;
   transform: translateY(2rem) translateX(121%);
@@ -2981,7 +3044,8 @@ body, html {
   height: 100vh !important;
   border-bottom-right-radius: 100% !important;
   background: linear-gradient(225deg, #CCE3DD 0%, #CCE3DD 75%, #CCE3DD 100%) !important;
-  backdrop-filter: blur(0.7rem) !important;
+  -webkit-backdrop-filter: blur(0.7rem) !important;
+          backdrop-filter: blur(0.7rem) !important;
   background-clip: border-box !important;
   z-index: -1 !important;
   animation: move-up 2s infinite alternate;
@@ -3003,7 +3067,8 @@ body, html {
   height: 70vh !important;
   border-top-left-radius: 100% !important;
   background: linear-gradient(125deg, rgba(204, 227, 221, 0.4666666667) 0%, rgba(204, 227, 221, 0.4666666667) 75%, rgba(204, 227, 221, 0.4666666667) 100%) !important;
-  backdrop-filter: blur(0rem) !important;
+  -webkit-backdrop-filter: blur(0rem) !important;
+          backdrop-filter: blur(0rem) !important;
   background-clip: border-box !important;
   z-index: -2 !important;
   animation: move-up 4s infinite alternate;
@@ -3091,7 +3156,8 @@ body, html {
   position: absolute;
   height: 111vh;
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   bottom: 0;
   right: -8rem;
   z-index: 9;
@@ -3124,7 +3190,8 @@ body, html {
   height: 100vh !important;
   border-bottom-right-radius: 100% !important;
   background: linear-gradient(225deg, #aab8c2 0%, #aab8c2 75%, #aab8c2 100%) !important;
-  backdrop-filter: blur(3rem) !important;
+  -webkit-backdrop-filter: blur(3rem) !important;
+          backdrop-filter: blur(3rem) !important;
   background-clip: border-box !important;
   z-index: -1 !important;
   animation: move-up 2s infinite alternate;
@@ -3146,7 +3213,8 @@ body, html {
   height: 70vh !important;
   border-top-left-radius: 100% !important;
   background: linear-gradient(125deg, rgba(130, 167, 190, 0.4666666667) 0%, rgba(170, 184, 194, 0.4666666667) 75%, rgba(170, 184, 194, 0.4666666667) 100%) !important;
-  backdrop-filter: blur(1rem) !important;
+  -webkit-backdrop-filter: blur(1rem) !important;
+          backdrop-filter: blur(1rem) !important;
   background-clip: border-box !important;
   z-index: -2 !important;
   animation: move-up 4s infinite alternate;
@@ -3233,10 +3301,9 @@ body, html {
   position: absolute;
   height: 95.4vh;
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   bottom: 0;
   right: -1rem;
   z-index: 9;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

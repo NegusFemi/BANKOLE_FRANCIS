@@ -80,3 +80,79 @@ p {
 } 
 }
 }
+
+/* Media Query for Mobile Phones (400px and below) */
+@media screen and (max-width: 30em) { 
+    #Gallery {
+    height: 90vh !important;
+    width: 100% !important;
+    position: relative !important;
+    background: linear-gradient(127deg, #aab8c2 , #F9FAF5) !important;
+    z-index: 1;
+    aspect-ratio: 16/10 !important;
+    overflow: hidden !important;
+    .Gallery {
+    height: 86vh !important;
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: 98.8% !important;
+    place-content: center !important;
+    h1 {
+    font-family: 'antic didone';
+    font-weight: 500 !important;
+    font-size: 2rem !important;
+    color: $font-color;
+    padding: 0.3rem !important;
+    line-height: 2.4rem !important;
+    margin-bottom: 0.4rem !important;
+    margin-top: 0 !important;
+}
+.image-box {
+    margin: 0 1% !important;
+    flex-grow: 1 !important;
+    flex-basis: 0 !important;
+    transition: 1s !important;
+    position: relative !important;
+img {
+    width: 100% !important;
+    height: 146% !important;
+    object-fit: cover !important;
+    transition: 1s !important;
+}
+}
+}
+ .overlay {
+    width: 100% !important;
+    height: 38vh !important;
+    position: absolute !important;
+    top: 0% !important;
+    cursor: pointer;
+    background: linear-gradient(rgba(12, 34, 48, 0.2), rgba(1, 7, 8, 0.9));
+    opacity: 0 !important;
+    transition: 1s !important;
+&:hover {
+        opacity: 1 !important;
+    }
+h2{
+    color: rgb(255, 255, 255) !important;
+    font-family: 'antic didone' !important;
+    font-weight: 500 !important;
+    font-size: 1.5rem !important;
+    position: static !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 2rem !important;
+}
+p {
+    color: white !important;
+    font-family: 'trirong thin' !important;
+    font-weight: 600 !important;
+    font-size: 1.7rem !important;
+    position: absolute !important;
+    //padding: 2rem !important;
+    top: 69% !important;
+    transform: translateY(-31%);
+}
+} 
+}
+}

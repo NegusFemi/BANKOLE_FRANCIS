@@ -29,8 +29,7 @@
               </a></li>
               <li><a href="#" x-bind:class="{'border-white': (tab==='tab3' && window.innerWidth >= 37.5 * 16), 'active-tab': (tab==='tab3' && window.innerWidth < 37.5 * 16)}" x-on:click="tab='tab3'">
                 <span x-data="{tab: 'tab3'}" x-bind:class="{'break-word': window.innerWidth < 37.5 * 16}">
-                  CROWN HIM <br x-show="window.innerWidth < 37.5 * 16">
-                   KING
+                  CROWN HIM<br x-show="window.innerWidth < 37.5 * 16"> KING
                 </span>
               </a></li>
               <style>
@@ -41,7 +40,7 @@
                   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2) !important;
                   border: 7px solid transparent rgb(255, 255, 255) !important;
                   padding: -2.2rem -2.05rem !important;
-                  margin: -2rem 0 0 -2rem !important;
+                  margin: -2rem 0 0 -2rem;
                 }
               </style>
           </ul>
