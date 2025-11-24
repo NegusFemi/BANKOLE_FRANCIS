@@ -117,7 +117,7 @@
 /* Media Query for Mobile Phones (400px and below) */
 @media screen and (max-width: 30em) {
    #blog-list {
-    height: 245vh !important; // Slight tweak for small screens
+    height: 240vh !important; // Slight tweak for small screens
     aspect-ratio: unset !important;
     .card-container {
       padding: 0.3rem !important;

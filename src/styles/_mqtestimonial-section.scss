@@ -142,7 +142,7 @@
 }
 
 /* Media Query for Mobile Phones (400px and below) */
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 25em) {
   #testimonial-section {
     height: 84vh !important; /* Further reduced height */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
@@ -189,7 +189,7 @@
         margin-top: 10px !important;
       }
       .testimonial-pic {
-        margin-bottom: 1rem !important;
+        margin-bottom: -0.5rem !important;
       }
       .user-pic {
         position: relative !important;

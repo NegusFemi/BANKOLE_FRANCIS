@@ -1579,7 +1579,7 @@ article {
 /* Media Query for Mobile Phones (400px and below) */
 @media screen and (max-width: 30em) {
   #Gallery {
-    height: 90vh !important;
+    height: 88vh !important;
     width: 100% !important;
     position: relative !important;
     background: linear-gradient(127deg, #aab8c2, #F9FAF5) !important;
@@ -1619,7 +1619,7 @@ article {
   }
   #Gallery .overlay {
     width: 100% !important;
-    height: 38vh !important;
+    height: 35vh !important;
     position: absolute !important;
     top: 0% !important;
     cursor: pointer;
@@ -1786,7 +1786,7 @@ article {
   }
 }
 /* Media Query for Mobile Phones (400px and below) */
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 25em) {
   #testimonial-section {
     height: 84vh !important; /* Further reduced height */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
@@ -1835,7 +1835,7 @@ article {
     margin-top: 10px !important;
   }
   .testimonial-section .testimony .testimonial-pic {
-    margin-bottom: 1rem !important;
+    margin-bottom: -0.5rem !important;
   }
   .testimonial-section .testimony .user-pic {
     position: relative !important;
@@ -2055,7 +2055,7 @@ article {
 /* Media Query for Mobile Phones (400px and below) */
 @media screen and (max-width: 30em) {
   #blog-list {
-    height: 245vh !important;
+    height: 240vh !important;
     aspect-ratio: unset !important;
   }
   #blog-list .card-container {
@@ -2606,7 +2606,7 @@ article {
     width: 100% !important;
     max-width: 350px !important;
     object-fit: cover !important;
-    right: -36% !important;
+    right: -38% !important;
     transform: translateX(0%) !important;
     top: -4.8rem !important;
   }
@@ -2645,7 +2645,7 @@ article {
     right: 11rem !important;
     padding: 1.5rem 0 !important; /* Minimal padding */
     width: 10rem !important; /* Smaller button width */
-    margin-bottom: 0rem !important; /* Adjusted margin */
+    margin-bottom: 1rem !important; /* Adjusted margin */
     font-size: 1.7rem !important; /* Smaller font */
     border-width: 0.6px !important; /* Thinner border */
   }
