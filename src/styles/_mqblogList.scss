@@ -115,9 +115,9 @@
 }
 
 /* Media Query for Mobile Phones (400px and below) */
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 25em) {
    #blog-list {
-    height: 240vh !important; // Slight tweak for small screens
+    height: 235vh !important; // Slight tweak for small screens
     aspect-ratio: unset !important;
     .card-container {
       padding: 0.3rem !important;

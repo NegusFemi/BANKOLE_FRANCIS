@@ -168,6 +168,7 @@
       width: 90% !important;
       max-width: 400px !important;
       padding-top: 0.3rem !important;
+      margin-top: 1rem !important;
       .testimonial-text {
         height: 340px !important; /* Smaller testimonial box */
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1) !important; /* Lighter shadow */
@@ -201,7 +202,7 @@
       .user-pic.active-pic {
         width: 40px !important;
         padding: 0.6rem !important;
-        margin-top: 0.1rem !important;
+        margin-top: -0.6rem !important;
       }
     }
   }
