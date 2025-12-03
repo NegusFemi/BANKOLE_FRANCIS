@@ -54,7 +54,7 @@
 }
 
 /* Media Query for Mobile Phones (480px and below) */
-@media (max-width: 37.5em) {
+@media screen and (min-width: 35em) and (max-width: 37.5em) {
   #blog-list {
     height: 195vh !important; // Slight tweak for small screens
     aspect-ratio: unset !important;

@@ -56,7 +56,7 @@
 }
 
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 37.5em) {
+@media screen and (min-width: 35em) and (max-width: 37.5em) {
   .footer-right {
     img {
       height: 60vh !important; /* Further reduced image height */
@@ -176,7 +176,7 @@
   }
   #footer2 {
     height: 12vh !important; /* Minimal footer height */
-    top: 5rem !important;
+    top: 6.5rem !important;
     margin-bottom: 0rem !important;
     padding-bottom: 0.2rem !important;
     .footer-D {

@@ -20,7 +20,7 @@
 }
 
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 35em) and (max-width: 37.5em) {
   #landing, #landing2, #landing3, .card, .error-left {
     .landing-right {
       a {
@@ -28,7 +28,30 @@
         right: 11rem !important;
         padding: 1.5rem 0 !important; /* Minimal padding */
         width: 10rem !important; /* Smaller button width */
-        margin-bottom: 1rem !important; /* Adjusted margin */
+        margin-bottom: 3rem !important; /* Adjusted margin */
+        font-size: 1.7rem !important; /* Smaller font */
+        border-width: 0.6px !important; /* Thinner border */
+        span {
+          box-shadow: 6px 6px 6px rgba(45, 55, 68, 0.06) !important; /* Lighter shadow */
+        }
+      }
+      .btn-1 a:hover {
+        font-size: 1.2rem !important; /* Smaller hover font */
+      }
+    }
+  }
+}
+
+/* Media Query for Mobile Phones (400px and below) */
+@media screen and (max-width: 25em) {
+  #landing, #landing2, #landing3, .card, .error-left {
+    .landing-right {
+      a {
+        //top: -4rem !important;
+        right: 11rem !important;
+        padding: 1.5rem 0 !important; /* Minimal padding */
+        width: 10rem !important; /* Smaller button width */
+        margin-bottom: 0.5rem !important; /* Adjusted margin */
         font-size: 1.7rem !important; /* Smaller font */
         border-width: 0.6px !important; /* Thinner border */
         span {
