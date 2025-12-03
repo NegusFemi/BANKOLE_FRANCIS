@@ -1660,7 +1660,7 @@ article {
   }
   #footer2 {
     height: 12vh !important; /* Minimal footer height */
-    top: 6.5rem !important;
+    top: 7rem !important;
     margin-bottom: 0rem !important;
     padding-bottom: 0.2rem !important;
   }
@@ -1688,9 +1688,9 @@ article {
 }
 /* Media Query for Tablets (768px and below) */
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (min-width: 35em) and (max-width: 37.5em) {
+@media screen and (min-width: 37em) and (max-width: 37.5em) {
   #Gallery {
-    height: 73vh !important;
+    height: 75vh !important;
     width: 100% !important;
     position: relative !important;
     background: linear-gradient(127deg, #aab8c2, #F9FAF5) !important;
@@ -1699,7 +1699,7 @@ article {
     overflow: hidden !important;
   }
   #Gallery .Gallery {
-    height: 73vh !important;
+    height: 75vh !important;
     position: relative !important;
     display: grid !important;
     grid-template-columns: 98.8% !important;
@@ -1713,7 +1713,7 @@ article {
     padding: 0.3rem !important;
     line-height: 2.4rem !important;
     margin-bottom: 0.4rem !important;
-    margin-top: 0 !important;
+    margin-top: -0.7rem !important;
   }
   #Gallery .Gallery .image-box {
     margin: 0 1% !important;
@@ -1947,7 +1947,7 @@ article {
     margin-top: 10px !important;
   }
   .testimonial-section .testimony .testimonial-pic {
-    margin-bottom: 1rem !important;
+    margin-bottom: -2.5rem !important;
   }
   .testimonial-section .testimony .user-pic {
     position: relative !important;
@@ -2021,7 +2021,7 @@ article {
     margin-top: 10px !important;
   }
   .testimonial-section .testimony .testimonial-pic {
-    margin-bottom: -1rem !important;
+    margin-bottom: -2rem !important;
   }
   .testimonial-section .testimony .user-pic {
     position: relative !important;
@@ -2188,9 +2188,9 @@ article {
   }
 }
 /* Media Query for Mobile Phones (480px and below) */
-@media screen and (min-width: 35em) and (max-width: 37.5em) {
+@media screen and (min-width: 37em) and (max-width: 37.5em) {
   #blog-list {
-    height: 195vh !important;
+    height: 185vh !important;
     aspect-ratio: unset !important;
   }
   #blog-list .card-container {
