@@ -8,7 +8,7 @@ $font-color: #091818;
 /* Media Query for Mobile Phones (480px and below) */
 @media screen and (min-width: 37.5em) and (max-width: 37.7em) {
   #Gallery {
-    height: 78vh !important;
+    height: 67vh !important;
     width: 100% !important;
     position: relative !important;
     background: linear-gradient(127deg, #aab8c2 , #F9FAF5) !important;
@@ -16,7 +16,7 @@ $font-color: #091818;
     aspect-ratio: 16/10 !important;
     overflow: hidden !important;
     .Gallery {
-    height: 78vh !important;
+    height: 67vh !important;
     position: relative !important;
     display: grid !important;
     grid-template-columns: 98.8% !important;
@@ -84,7 +84,7 @@ p {
 /* Media Query for Mobile Phones (400px and below) */
 @media screen and (max-width: 25em) { 
     #Gallery {
-    height: 87vh !important;
+    height: 67vh !important;
     width: 100% !important;
     position: relative !important;
     background: linear-gradient(127deg, #aab8c2 , #F9FAF5) !important;
@@ -92,7 +92,7 @@ p {
     aspect-ratio: 16/10 !important;
     overflow: hidden !important;
     .Gallery {
-    height: 86vh !important;
+    height: 67vh !important;
     position: relative !important;
     display: grid !important;
     grid-template-columns: 98.8% !important;
@@ -105,7 +105,7 @@ p {
     padding: 0.3rem !important;
     line-height: 2.4rem !important;
     margin-bottom: 0.4rem !important;
-    margin-top: 0 !important;
+    margin-top: -1.2rem !important;
 }
 .image-box {
     margin: 0 1% !important;

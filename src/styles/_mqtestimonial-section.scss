@@ -68,7 +68,7 @@
 /* Media Query for Mobile Phones (480px and below) */
 @media screen and (min-width: 37.5em) and (max-width: 37.7em) {
   #testimonial-section {
-    height: 69.5vh !important; /* Further reduced height */
+    height: 68vh !important; /* Further reduced height */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
     &::before {
       width: 70% !important; /* Wider pseudo-element */
@@ -168,13 +168,13 @@
       width: 90% !important;
       max-width: 400px !important;
       padding-top: 0.3rem !important;
-      margin-top: 1rem !important;
       .testimonial-text {
-        height: 340px !important; /* Smaller testimonial box */
+        margin-top: 3rem !important;
+        height: 400px !important; /* Smaller testimonial box */
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1) !important; /* Lighter shadow */
       }
       .user-text {
-        font-size: 1.6rem !important; /* Smaller font */
+        font-size: 1.7rem !important; /* Smaller font */
         font-weight: 600 !important;
         line-height: 20px !important;
         width: 80% !important;
@@ -190,13 +190,15 @@
         margin-top: 10px !important;
       }
       .testimonial-pic {
-        margin-bottom: -3rem !important;
+        top: 2rem !important; /* push down by 1rem */
+        margin-bottom: 0 !important; /* remove negative bottom margin */
       }
       .user-pic {
         position: relative !important;
         width: 35px !important; /* Smaller profile picture */
         padding: 4px !important;
         left: 6.9rem !important;
+        top: 2.5rem !important;
         z-index: 99 !important;
       }
       .user-pic.active-pic {

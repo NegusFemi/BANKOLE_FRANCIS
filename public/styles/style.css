@@ -1690,7 +1690,7 @@ article {
 /* Media Query for Mobile Phones (480px and below) */
 @media screen and (min-width: 37.5em) and (max-width: 37.7em) {
   #Gallery {
-    height: 78vh !important;
+    height: 67vh !important;
     width: 100% !important;
     position: relative !important;
     background: linear-gradient(127deg, #aab8c2, #F9FAF5) !important;
@@ -1699,7 +1699,7 @@ article {
     overflow: hidden !important;
   }
   #Gallery .Gallery {
-    height: 78vh !important;
+    height: 67vh !important;
     position: relative !important;
     display: grid !important;
     grid-template-columns: 98.8% !important;
@@ -1764,7 +1764,7 @@ article {
 /* Media Query for Mobile Phones (400px and below) */
 @media screen and (max-width: 25em) {
   #Gallery {
-    height: 87vh !important;
+    height: 67vh !important;
     width: 100% !important;
     position: relative !important;
     background: linear-gradient(127deg, #aab8c2, #F9FAF5) !important;
@@ -1773,7 +1773,7 @@ article {
     overflow: hidden !important;
   }
   #Gallery .Gallery {
-    height: 86vh !important;
+    height: 67vh !important;
     position: relative !important;
     display: grid !important;
     grid-template-columns: 98.8% !important;
@@ -1787,7 +1787,7 @@ article {
     padding: 0.3rem !important;
     line-height: 2.4rem !important;
     margin-bottom: 0.4rem !important;
-    margin-top: 0 !important;
+    margin-top: -1.2rem !important;
   }
   #Gallery .Gallery .image-box {
     margin: 0 1% !important;
@@ -1900,7 +1900,7 @@ article {
 /* Media Query for Mobile Phones (480px and below) */
 @media screen and (min-width: 37.5em) and (max-width: 37.7em) {
   #testimonial-section {
-    height: 69.5vh !important; /* Further reduced height */
+    height: 68vh !important; /* Further reduced height */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
   }
   #testimonial-section::before {
@@ -1998,14 +1998,14 @@ article {
     width: 90% !important;
     max-width: 400px !important;
     padding-top: 0.3rem !important;
-    margin-top: 1rem !important;
   }
   .testimonial-section .testimony .testimonial-text {
-    height: 340px !important; /* Smaller testimonial box */
+    margin-top: 3rem !important;
+    height: 400px !important; /* Smaller testimonial box */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1) !important; /* Lighter shadow */
   }
   .testimonial-section .testimony .user-text {
-    font-size: 1.6rem !important; /* Smaller font */
+    font-size: 1.7rem !important; /* Smaller font */
     font-weight: 600 !important;
     line-height: 20px !important;
     width: 80% !important;
@@ -2021,13 +2021,15 @@ article {
     margin-top: 10px !important;
   }
   .testimonial-section .testimony .testimonial-pic {
-    margin-bottom: -3rem !important;
+    top: 2rem !important; /* push down by 1rem */
+    margin-bottom: 0 !important; /* remove negative bottom margin */
   }
   .testimonial-section .testimony .user-pic {
     position: relative !important;
     width: 35px !important; /* Smaller profile picture */
     padding: 4px !important;
     left: 6.9rem !important;
+    top: 2.5rem !important;
     z-index: 99 !important;
   }
   .testimonial-section .testimony .user-pic.active-pic {
@@ -2241,7 +2243,7 @@ article {
 /* Media Query for Mobile Phones (400px and below) */
 @media screen and (max-width: 25em) {
   #blog-list {
-    height: 235vh !important;
+    height: 210vh !important;
     aspect-ratio: unset !important;
   }
   #blog-list .card-container {

@@ -1941,7 +1941,7 @@ article {
 /* Media Query for Mobile Phones (480px and below) */
 @media screen and (min-width: 37.5em) and (max-width: 37.7em) {
   #testimonial-section {
-    height: 69.5vh !important; /* Further reduced height */
+    height: 68vh !important; /* Further reduced height */
     aspect-ratio: 3/2 !important; /* Adjusted for mobile */
   }
   #testimonial-section::before {
@@ -2067,7 +2067,8 @@ article {
     margin-top: 10px !important;
   }
   .testimonial-section .testimony .testimonial-pic {
-    margin-bottom: -3rem !important;
+    top: 2rem !important; /* push down by 1rem */
+    margin-bottom: 0 !important; /* remove negative bottom margin */
   }
   .testimonial-section .testimony .user-pic {
     position: relative !important;
